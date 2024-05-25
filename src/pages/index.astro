@@ -2,7 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import axios from 'axios';
 import fs from 'fs';
-import Card from '../components/Card.astro';
+import Card from '../components/Card/Card.astro';
+import Selector from '../components/Selector/Selector.astro';
 
 import lastSave from '../../nhlData.json';
 const title = 'Sport Schedule USA';
@@ -13,22 +14,43 @@ try {
   const dataTeams = await fetchTeams.data.standings;
   activeTeams = dataTeams
     .map((team) => {
-      team.value = team.teamAbbrev?.default;
-      team.id = team.teamAbbrev?.default;
-      team.label = team.teamName?.default;
-      return team;
+      const { teamAbbrev, teamName, teamLogo } = team;
+      return {
+        value: teamAbbrev?.default,
+        id: teamAbbrev?.default,
+        label: teamName?.default,
+        teamLogo: teamLogo,
+        teamAbbrev: teamAbbrev,
+      };
     })
     .sort((a, b) => (a.placeName?.default > b.placeName?.default ? 1 : -1));
   fs.writeFileSync('nhlData.json', JSON.stringify(activeTeams));
 } catch (error) {
   activeTeams = lastSave || [];
 }
+
+const teamsSelectedIds = activeTeams
+  .map((team, id) => {
+    if (id < 5) {
+      return team.id;
+    }
+  })
+  .filter((t) => t);
 ---
 
 <Layout {title}>
   <main>
     <h1>Welcome to <span class="text-gradient">{title}</span></h1>
-    {activeTeams.length && activeTeams.map((team, i) => <Card {team} {i} />)}
+
+    {
+      teamsSelectedIds.length &&
+        teamsSelectedIds.map((team, i) => (
+          <>
+            <Selector {teamsSelectedIds} {activeTeams} {i} />
+            <Card {activeTeams} {i} />
+          </>
+        ))
+    }
   </main>
 </Layout>
 
