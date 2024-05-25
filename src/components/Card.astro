@@ -1,61 +1,132 @@
 ---
-interface Props {
-	title: string;
-	body: string;
-	href: string;
+export interface team {
+  clinchIndicator?: string;
+  conferenceAbbrev: ConferenceAbbrev;
+  conferenceHomeSequence: number;
+  conferenceL10Sequence: number;
+  conferenceName: ConferenceName;
+  conferenceRoadSequence: number;
+  conferenceSequence: number;
+  date: Date;
+  divisionAbbrev: DivisionAbbrev;
+  divisionHomeSequence: number;
+  divisionL10Sequence: number;
+  divisionName: DivisionName;
+  divisionRoadSequence: number;
+  divisionSequence: number;
+  gameTypeId: number;
+  gamesPlayed: number;
+  goalDifferential: number;
+  goalDifferentialPctg: number;
+  goalAgainst: number;
+  goalFor: number;
+  goalsForPctg: number;
+  homeGamesPlayed: number;
+  homeGoalDifferential: number;
+  homeGoalsAgainst: number;
+  homeGoalsFor: number;
+  homeLosses: number;
+  homeOtLosses: number;
+  homePoints: number;
+  homeRegulationPlusOtWins: number;
+  homeRegulationWins: number;
+  homeTies: number;
+  homeWins: number;
+  l10GamesPlayed: number;
+  l10GoalDifferential: number;
+  l10GoalsAgainst: number;
+  l10GoalsFor: number;
+  l10Losses: number;
+  l10OtLosses: number;
+  l10Points: number;
+  l10RegulationPlusOtWins: number;
+  l10RegulationWins: number;
+  l10Ties: number;
+  l10Wins: number;
+  leagueHomeSequence: number;
+  leagueL10Sequence: number;
+  leagueRoadSequence: number;
+  leagueSequence: number;
+  losses: number;
+  otLosses: number;
+  placeName: Name;
+  pointPctg: number;
+  points: number;
+  regulationPlusOtWinPctg: number;
+  regulationPlusOtWins: number;
+  regulationWinPctg: number;
+  regulationWins: number;
+  roadGamesPlayed: number;
+  roadGoalDifferential: number;
+  roadGoalsAgainst: number;
+  roadGoalsFor: number;
+  roadLosses: number;
+  roadOtLosses: number;
+  roadPoints: number;
+  roadRegulationPlusOtWins: number;
+  roadRegulationWins: number;
+  roadTies: number;
+  roadWins: number;
+  seasonId: number;
+  shootoutLosses: number;
+  shootoutWins: number;
+  streakCode: StreakCode;
+  streakCount: number;
+  teamName: Name;
+  teamCommonName: Name;
+  teamAbbrev: TeamAbbrev;
+  teamLogo: string;
+  ties: number;
+  waiversSequence: number;
+  wildcardSequence: number;
+  winPctg: number;
+  wins: number;
 }
 
-const { href, title, body } = Astro.props;
+export enum ConferenceAbbrev {
+  E = 'E',
+  W = 'W',
+}
+
+export enum ConferenceName {
+  Eastern = 'Eastern',
+  Western = 'Western',
+}
+
+export enum DivisionAbbrev {
+  A = 'A',
+  C = 'C',
+  M = 'M',
+  P = 'P',
+}
+
+export enum DivisionName {
+  Atlantic = 'Atlantic',
+  Central = 'Central',
+  Metropolitan = 'Metropolitan',
+  Pacific = 'Pacific',
+}
+
+export interface Name {
+  default: string;
+  fr?: string;
+}
+
+export enum StreakCode {
+  L = 'L',
+  Ot = 'OT',
+  W = 'W',
+}
+
+export interface TeamAbbrev {
+  default: string;
+}
+
+const { team, i } = Astro.props;
+const { teamName } = team;
 ---
 
-<li class="link-card">
-	<a href={href}>
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p>
-			{body}
-		</p>
-	</a>
-</li>
-<style>
-	.link-card {
-		list-style: none;
-		display: flex;
-		padding: 1px;
-		background-color: #23262d;
-		background-image: none;
-		background-size: 400%;
-		border-radius: 7px;
-		background-position: 100%;
-		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-	}
-	.link-card > a {
-		width: 100%;
-		text-decoration: none;
-		line-height: 1.4;
-		padding: calc(1.5rem - 1px);
-		border-radius: 8px;
-		color: white;
-		background-color: #23262d;
-		opacity: 0.8;
-	}
-	h2 {
-		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-	p {
-		margin-top: 0.5rem;
-		margin-bottom: 0;
-	}
-	.link-card:is(:hover, :focus-within) {
-		background-position: 0;
-		background-image: var(--accent-gradient);
-	}
-	.link-card:is(:hover, :focus-within) h2 {
-		color: rgb(var(--accent-light));
-	}
-</style>
+<h2>
+  {i + 1} : {teamName.fr}
+</h2>
+<style></style>
