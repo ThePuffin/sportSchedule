@@ -2,29 +2,33 @@
 import Layout from '../layouts/Layout.astro';
 import axios from 'axios';
 import fs from 'fs';
-import Card from '../components/Card.astro'
+import Card from '../components/Card.astro';
 
 import lastSave from '../../nhlData.json';
 const title = 'Sport Schedule USA';
-let dataTeams;
+let activeTeams;
 try {
   const fetchTeams = await axios.get('https://api-web.nhle.com/v1/standings/now');
 
-  dataTeams = await fetchTeams.data.standings;
-  fs.writeFileSync('nhlData.json', JSON.stringify(dataTeams));
-  console.log('get data');
+  const dataTeams = await fetchTeams.data.standings;
+  activeTeams = dataTeams
+    .map((team) => {
+      team.value = team.teamAbbrev?.default;
+      team.id = team.teamAbbrev?.default;
+      team.label = team.teamName?.default;
+      return team;
+    })
+    .sort((a, b) => (a.placeName?.default > b.placeName?.default ? 1 : -1));
+  fs.writeFileSync('nhlData.json', JSON.stringify(activeTeams));
 } catch (error) {
-  console.log('fakeData', error);
-  dataTeams = lastSave || [];
+  activeTeams = lastSave || [];
 }
-
-console.log(dataTeams);
 ---
 
 <Layout {title}>
   <main>
     <h1>Welcome to <span class="text-gradient">{title}</span></h1>
-    {dataTeams.map((team, i)=> <Card {team} {i} /> )}
+    {activeTeams.length && activeTeams.map((team, i) => <Card {team} {i} />)}
   </main>
 </Layout>
 

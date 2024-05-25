@@ -122,11 +122,13 @@ export interface TeamAbbrev {
   default: string;
 }
 
+import TeamCard from './Card.jsx';
 const { team, i } = Astro.props;
 const { teamName } = team;
+let frTeamName = teamName.fr;
+const props = { frTeamName, i };
 ---
 
-<h2>
-  {i + 1} : {teamName.fr}
-</h2>
+<TeamCard {...props} client:load />
+
 <style></style>
