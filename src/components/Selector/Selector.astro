@@ -1,8 +1,19 @@
 ---
 import Selector from './Selector.tsx';
+import Test from './Test.tsx';
 
 const { i, activeTeams, teamsSelectedIds } = Astro.props;
-const props = { i, activeTeams, teamsSelectedIds };
+let test = activeTeams[i].id;
+
+const handleChangeTeam = async ({ index, newTeamId }) => {
+  if (index >= 0 && newTeamId) {
+    console.log(newTeamId);
+    test = newTeamId;
+  }
+  return;
+};
+const props = { i, activeTeams, teamsSelectedIds, handleChangeTeam, test };
 ---
 
 <Selector {...props} client:load />
+<Test {test} client:load />

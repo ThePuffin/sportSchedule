@@ -1,0 +1,24 @@
+---
+import Body from './Body';
+import Card from '../Card/Card.astro';
+import Selector from '../Selector/Selector.astro';
+
+let { activeTeams } = Astro.props;
+const teamsSelectedIds = activeTeams
+  .map((team, id) => {
+    if (id < 5) {
+      return team.id;
+    }
+  })
+  .filter((t) => t);
+---
+
+{
+  teamsSelectedIds.length &&
+    teamsSelectedIds.map((team, i) => (
+      <>
+        <Selector {teamsSelectedIds} {activeTeams} {i} />
+        <Card {activeTeams} {i} />
+      </>
+    ))
+}

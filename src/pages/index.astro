@@ -2,55 +2,40 @@
 import Layout from '../layouts/Layout.astro';
 import axios from 'axios';
 import fs from 'fs';
-import Card from '../components/Card/Card.astro';
-import Selector from '../components/Selector/Selector.astro';
+
+import Body from '../components/Body/Body.astro';
 
 import lastSave from '../../nhlData.json';
 const title = 'Sport Schedule USA';
-let activeTeams;
+
+const activeTeams = [];
 try {
   const fetchTeams = await axios.get('https://api-web.nhle.com/v1/standings/now');
 
   const dataTeams = await fetchTeams.data.standings;
-  activeTeams = dataTeams
-    .map((team) => {
-      const { teamAbbrev, teamName, teamLogo } = team;
-      return {
+  dataTeams
+    .sort((a, b) => (a.placeName?.default > b.placeName?.default ? 1 : -1))
+    .forEach((team) => {
+      const { teamAbbrev, teamName, teamLogo, placeName } = team;
+
+      activeTeams.push({
         value: teamAbbrev?.default,
         id: teamAbbrev?.default,
         label: teamName?.default,
         teamLogo: teamLogo,
         teamAbbrev: teamAbbrev,
-      };
-    })
-    .sort((a, b) => (a.placeName?.default > b.placeName?.default ? 1 : -1));
+      });
+    });
   fs.writeFileSync('nhlData.json', JSON.stringify(activeTeams));
 } catch (error) {
-  activeTeams = lastSave || [];
+  activeTeams.push(lastSave);
 }
-
-const teamsSelectedIds = activeTeams
-  .map((team, id) => {
-    if (id < 5) {
-      return team.id;
-    }
-  })
-  .filter((t) => t);
 ---
 
 <Layout {title}>
   <main>
     <h1>Welcome to <span class="text-gradient">{title}</span></h1>
-
-    {
-      teamsSelectedIds.length &&
-        teamsSelectedIds.map((team, i) => (
-          <>
-            <Selector {teamsSelectedIds} {activeTeams} {i} />
-            <Card {activeTeams} {i} />
-          </>
-        ))
-    }
+    {activeTeams.length && <Body {activeTeams} />}
   </main>
 </Layout>
 
