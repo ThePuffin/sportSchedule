@@ -1,7 +1,7 @@
 ---
-import Body from './Body';
 import Card from '../Card/Card.astro';
 import Selector from '../Selector/Selector.astro';
+import {teamsSelectedId} from '../../store/store'
 
 let { activeTeams } = Astro.props;
 const teamsSelectedIds = activeTeams
@@ -11,6 +11,7 @@ const teamsSelectedIds = activeTeams
     }
   })
   .filter((t) => t);
+teamsSelectedId.set(teamsSelectedIds)
 ---
 
 {
