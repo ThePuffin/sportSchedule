@@ -1,8 +1,8 @@
 import React from 'react';
 import Select from 'react-select';
-import { teamSelected } from '../../store/store.js';
+import { teamSelected } from '../../../store/store.js';
 
-export default function Selector({ teamsSelectedIds, activeTeams, i, test }) {
+export default function Selector({ teamsSelectedIds, activeTeams, i }) {
   let teamsId = teamSelected.get();
   const teamId = teamsSelectedIds[i];
   if (teamsId[0] === undefined) {

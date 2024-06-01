@@ -1,0 +1,10 @@
+---
+import Selector from './Selector/Selector.tsx';
+import TeamCard from './Card/Card.tsx';
+
+const { i, activeTeams, teamsSelectedIds } = Astro.props;
+const props = { i, activeTeams, teamsSelectedIds };
+---
+
+<Selector {...props} client:load />
+<TeamCard {...props} client:load />

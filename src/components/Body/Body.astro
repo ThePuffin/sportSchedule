@@ -1,7 +1,6 @@
 ---
-import Card from '../Card/Card.astro';
-import Selector from '../Selector/Selector.astro';
-import {teamsSelectedId} from '../../store/store'
+import Team from '../Team/Team.astro';
+import { teamsSelectedId } from '../../store/store';
 
 let { activeTeams } = Astro.props;
 const teamsSelectedIds = activeTeams
@@ -11,15 +10,14 @@ const teamsSelectedIds = activeTeams
     }
   })
   .filter((t) => t);
-teamsSelectedId.set(teamsSelectedIds)
+teamsSelectedId.set(teamsSelectedIds);
 ---
 
 {
   teamsSelectedIds.length &&
     teamsSelectedIds.map((team, i) => (
       <>
-        <Selector {teamsSelectedIds} {activeTeams} {i} />
-        <Card {activeTeams} {i} />
+        <Team {teamsSelectedIds} {activeTeams} {i} />
       </>
     ))
 }
