@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import axios from 'axios';
-import fs from 'fs';
+// import fs from 'fs';
 
 import Body from '../components/Body/Body.astro';
 
@@ -16,17 +16,19 @@ try {
   dataTeams
     .sort((a, b) => (a.placeName?.default > b.placeName?.default ? 1 : -1))
     .forEach((team) => {
-      const { teamAbbrev, teamName, teamLogo, placeName } = team;
+      const { teamAbbrev, teamName, teamLogo, divisionName, teamCommonName, conferenceName } = team;
 
       activeTeams.push({
         value: teamAbbrev?.default,
         id: teamAbbrev?.default,
         label: teamName?.default,
         teamLogo: teamLogo,
-        teamAbbrev: teamAbbrev,
+        teamCommonName: teamCommonName.default,
+        conferenceName,
+        divisionName,
       });
     });
-  fs.writeFileSync('nhlData.json', JSON.stringify(activeTeams));
+  // fs.writeFileSync('nhlData.json', JSON.stringify(activeTeams));
 } catch (error) {
   activeTeams.push(lastSave);
 }
