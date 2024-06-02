@@ -1,8 +1,8 @@
-import './Card.css';
-import './colorsTeam.css';
-import React, { Component, useEffect } from 'react';
-import { teamSelected } from '../../../store/store.js';
-import currentSeason from '../../../../temporaryData/currentSeason.json';
+import "./Card.css";
+import "./colorsTeam.css";
+import React, { Component, useEffect } from "react";
+import { teamSelected } from "../../../store/store.js";
+import currentSeason from "../../../../temporaryData/currentSeason.json";
 
 export default class TeamCard extends Component {
   constructor(props) {
@@ -28,7 +28,9 @@ export default class TeamCard extends Component {
       const newSelectionId = newSelections[i];
 
       if (newSelectionId && this.state.id !== newSelectionId) {
-        const newTeam = this.state.activeTeams.find((activeTeam) => activeTeam.id === newSelectionId);
+        const newTeam = this.state.activeTeams.find(
+          (activeTeam) => activeTeam.id === newSelectionId,
+        );
         this.getGames(newSelectionId);
         this.setState({ team: newTeam, id: newTeam.id });
       }
@@ -57,8 +59,8 @@ export default class TeamCard extends Component {
         awayTeamShort: game.awayTeam.abbrev,
         homeTeamId: game.homeTeam.abbrev,
         homeTeamShort: game.homeTeam.abbrev,
-        arenaName: game.venue?.default || '',
-        gameDate: new Date(game.gameDate).toISOString().split('T')[0],
+        arenaName: game.venue?.default || "",
+        gameDate: new Date(game.gameDate).toISOString().split("T")[0],
         teamSelectedId,
         timestampDate: new Date(game.gameDate).getTime(),
         show:

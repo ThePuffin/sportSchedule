@@ -1,6 +1,6 @@
-import React from 'react';
-import Select from 'react-select';
-import { teamSelected } from '../../../store/store.js';
+import React from "react";
+import Select from "react-select";
+import { teamSelected } from "../../../store/store.js";
 
 export default function Selector({ teamsSelectedIds, activeTeams, i }) {
   let teamsId = teamSelected.get();
@@ -10,7 +10,7 @@ export default function Selector({ teamsSelectedIds, activeTeams, i }) {
   }
 
   const teamData = activeTeams.find((team) => team.value === teamId);
-  const { label = '', teamLogo } = teamData;
+  const { label = "", teamLogo } = teamData;
 
   const changeTeam = async (event) => {
     teamsId = [...teamSelected.get()];
@@ -18,11 +18,19 @@ export default function Selector({ teamsSelectedIds, activeTeams, i }) {
 
     teamSelected.set(teamsId);
   };
-  const filtredTeam = activeTeams.filter((team) => !teamsSelectedIds.includes(team.value));
+  const filtredTeam = activeTeams.filter(
+    (team) => !teamsSelectedIds.includes(team.value),
+  );
 
   return (
     <div className="App">
-      <Select defaultValue={teamId} placeholder={label} onChange={changeTeam} isSearchable options={filtredTeam} />
+      <Select
+        defaultValue={teamId}
+        placeholder={label}
+        onChange={changeTeam}
+        isSearchable
+        options={filtredTeam}
+      />
     </div>
   );
 }

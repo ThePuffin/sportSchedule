@@ -1,4 +1,4 @@
-import { atom } from 'nanostores';
+import { atom } from "nanostores";
 
 let size = 5;
 let teamsEmpty = [...Array(size)].fill(undefined);
