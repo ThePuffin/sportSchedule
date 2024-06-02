@@ -13,11 +13,19 @@ const teamsSelectedIds = activeTeams
 teamsSelectedId.set(teamsSelectedIds);
 ---
 
+<table>
+  <tbody>
+    <tr>
 {
   teamsSelectedIds.length &&
     teamsSelectedIds.map((team, i) => (
       <>
+              <td>
         <Team {teamsSelectedIds} {activeTeams} {i} />
+              </td>
       </>
     ))
 }
+    </tr>
+  </tbody>
+</table>

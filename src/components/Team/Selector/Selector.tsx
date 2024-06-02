@@ -10,7 +10,7 @@ export default function Selector({ teamsSelectedIds, activeTeams, i }) {
   }
 
   const teamData = activeTeams.find((team) => team.value === teamId);
-  const teamName = teamData?.label ?? '';
+  const { label = '', teamLogo } = teamData;
 
   const changeTeam = async (event) => {
     teamsId = [...teamSelected.get()];
@@ -22,7 +22,7 @@ export default function Selector({ teamsSelectedIds, activeTeams, i }) {
 
   return (
     <div className="App">
-      <Select defaultValue={teamId} placeholder={teamName} onChange={changeTeam} isSearchable options={filtredTeam} />
+      <Select defaultValue={teamId} placeholder={label} onChange={changeTeam} isSearchable options={filtredTeam} />
     </div>
   );
 }

@@ -75,46 +75,48 @@ export default class TeamCard extends Component {
     const dateSelected = new Date();
 
     return (
-      // <div id={this.state.team.id} className="App">
-      //   <h2>
-      //     {this.state.i + 1}
-      //     <img src={this.state.team.teamLogo} alt={this.state.team.value} />
-      //     {this.state.team.label}
-      //   </h2>
-      //   <p>{this.state.gamesData[0]?.homeTeamId}</p>
-      //   vs
-      //   <p>{this.state.gamesData[0]?.awayTeamId}</p>
-      // </div>
+      this.state.team.id && (
+        <div id={this.state.team.id} className="App">
+          <h2>
+            <img src={this.state.team.teamLogo} alt={this.state.team.value} />
+            {this.state.team.label}
+          </h2>
+          <h5>first game: </h5>
+          <p>{this.state.gamesData[0]?.homeTeamId}</p>
+          vs
+          <p>{this.state.gamesData[0]?.awayTeamId}</p>
+        </div>
+      )
 
       // TODO: uncomment when columns are ok
-      this.state.gamesData &&
-      this.state.gamesData.map((data) => {
-        return (
-          <div
-            className={
-              data.arenaName && data.show
-                ? data.selectedTeam
-                  ? `card t${data.homeTeamId}`
-                  : `card awayGame`
-                : 'card unclickable'
-            }
-          >
-            <div className={dateSelected >= 0 ? 'selected' : ''}>
-              <div className={data.show ? 'ext-box' : 'whiteCard'}>
-                <div>
-                  <p className={hideDate ? 'cardText hideDate' : 'cardText'}>{data.gameDate}</p>
-                </div>
-                <h4 className="cardText">{data.awayTeamShort}</h4>
-                {!data.show ? <img src={this.state.team.teamLogo} alt={this.state.team.value} /> : ''}
-                <p className="cardText vs">vs</p>
-                <h4 className="cardText">{data.homeTeamShort}</h4>
-                {data.show ? <img src={this.state.team.teamLogo} alt={this.state.team.value} /> : ''}
-                <p className="cardText arena"> {data.arenaName}</p>
-              </div>
-            </div>
-          </div>
-        );
-      })
+      // this.state.gamesData &&
+      // this.state.gamesData.map((data) => {
+      //   return (
+      //     <div
+      //       className={
+      //         data.arenaName && data.show
+      //           ? data.selectedTeam
+      //             ? `card t${data.homeTeamId}`
+      //             : `card awayGame`
+      //           : 'card unclickable'
+      //       }
+      //     >
+      //       <div className={dateSelected >= 0 ? 'selected' : ''}>
+      //         <div className={data.show ? 'ext-box' : 'whiteCard'}>
+      //           <div>
+      //             <p className={hideDate ? 'cardText hideDate' : 'cardText'}>{data.gameDate}</p>
+      //           </div>
+      //           <h4 className="cardText">{data.awayTeamShort}</h4>
+      //           {!data.show ? <img src={this.state.team.teamLogo} alt={this.state.team.value} /> : ''}
+      //           <p className="cardText vs">vs</p>
+      //           <h4 className="cardText">{data.homeTeamShort}</h4>
+      //           {data.show ? <img src={this.state.team.teamLogo} alt={this.state.team.value} /> : ''}
+      //           <p className="cardText arena"> {data.arenaName}</p>
+      //         </div>
+      //       </div>
+      //     </div>
+      //   );
+      // })
     );
   }
 }
