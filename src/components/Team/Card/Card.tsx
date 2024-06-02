@@ -75,7 +75,8 @@ export default class TeamCard extends Component {
     const dateSelected = new Date();
 
     return (
-      this.state.team.id && (
+      this.state.team.id &&
+      this.state.gamesData.length && (
         <div id={this.state.team.id} className="App">
           <h2>
             <img src={this.state.team.teamLogo} alt={this.state.team.value} />
