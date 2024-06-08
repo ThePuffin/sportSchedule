@@ -5,7 +5,7 @@ import { teamSelected } from '../../../store/store.js';
 import currentSeason from '../../../../temporaryData/currentSeason.json';
 import axios from 'axios';
 
-export default class TeamCard extends Component {
+export default class TeamCard extends Component<any, any> {
   constructor(props) {
     super(props);
     const team = props.activeTeams[props.i];
