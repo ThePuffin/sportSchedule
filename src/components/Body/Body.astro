@@ -1,6 +1,7 @@
 ---
-import Team from '../Team/Team.astro';
-import { teamsSelectedId } from '../../store/store';
+import Team from './Team/Team.astro';
+import { teamsSelectedId } from '../../store/store.js';
+import DateSelector from './DateSelector/DateSelector';
 
 let { activeTeams } = Astro.props;
 // const teamsSelectedIds = activeTeams
@@ -13,7 +14,7 @@ let { activeTeams } = Astro.props;
 const teamsSelectedIds =['DAL','NYR','FLA', 'EDM']
 teamsSelectedId.set(teamsSelectedIds);
 ---
-
+<DateSelector/>
 <table>
   <tbody>
     <tr>

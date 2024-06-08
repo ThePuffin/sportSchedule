@@ -1,9 +1,10 @@
 import './Card.css';
 import './colorsTeam.css';
 import React, { Component, useEffect } from 'react';
-import { teamSelected } from '../../../store/store.js';
-import currentSeason from '../../../../temporaryData/currentSeason.json';
+import { teamSelected } from '../../../../store/store.js';
+import currentSeason from '../../../../../temporaryData/currentSeason.json';
 import axios from 'axios';
+import { readableDate } from '../../../../utils/date.js';
 
 export default class TeamCard extends Component<any, any> {
   constructor(props) {
@@ -61,7 +62,7 @@ export default class TeamCard extends Component<any, any> {
           homeTeamId: game.homeTeam.abbrev,
           homeTeamShort: game.homeTeam.abbrev,
           arenaName: game.venue?.default || '',
-          gameDate: new Date(game.gameDate).toISOString().split('T')[0],
+          gameDate: readableDate(game.gameDate),
           teamSelectedId,
           timestampDate: new Date(game.gameDate).getTime(),
           show:

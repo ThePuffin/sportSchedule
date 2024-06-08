@@ -1,6 +1,6 @@
 import React from 'react';
 import Select from 'react-select';
-import { teamSelected } from '../../../store/store.js';
+import { teamSelected } from '../../../../store/store.js';
 
 export default function Selector({ teamsSelectedIds, activeTeams, i, teamSelectedId }) {
   let teamsId = teamSelected.get();
