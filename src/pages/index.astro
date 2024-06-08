@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import axios from 'axios';
-// import fs from 'fs';
 
 import Body from '../components/Body/Body.astro';
 
@@ -9,28 +8,35 @@ import lastSave from '../../nhlData.json';
 const title = 'Sport Schedule USA';
 
 const activeTeams = [];
+const allGames = {}
 try {
   const fetchTeams = await axios.get('https://api-web.nhle.com/v1/standings/now');
-
+ 
   const dataTeams = await fetchTeams.data.standings;
   dataTeams
     .sort((a, b) => (a.placeName?.default > b.placeName?.default ? 1 : -1))
-    .forEach((team) => {
+    .forEach(async (team) => {
       const { teamAbbrev, teamName, teamLogo, divisionName, teamCommonName, conferenceName } = team;
-
+      const teamID = teamAbbrev.default 
       activeTeams.push({
-        value: teamAbbrev?.default,
-        id: teamAbbrev?.default,
+        value: teamID,
+        id: teamID,
         label: teamName?.default,
         teamLogo: teamLogo,
         teamCommonName: teamCommonName.default,
         conferenceName,
         divisionName,
       });
+
+       const {data} = await axios.get(`https://api-web.nhle.com/v1/club-schedule-season/${teamID}/now`);
+      allGames[teamID] =data.games
+       
+      
     });
-  // fs.writeFileSync('nhlData.json', JSON.stringify(activeTeams));
 } catch (error) {
-  activeTeams.push(lastSave);
+  if (activeTeams.length === 0){
+    activeTeams.push(lastSave);
+  }
 }
 ---
 

@@ -3,13 +3,14 @@ import Team from '../Team/Team.astro';
 import { teamsSelectedId } from '../../store/store';
 
 let { activeTeams } = Astro.props;
-const teamsSelectedIds = activeTeams
-  .map((team, id) => {
-    if (id < 5) {
-      return team.id;
-    }
-  })
-  .filter((t) => t);
+// const teamsSelectedIds = activeTeams
+//   .map((team, id) => {
+//     if (id < 5) {
+//       return team.id;
+//     }
+//   })
+//   .filter((t) => t);
+const teamsSelectedIds =['DAL','NYR','FLA', 'EDM']
 teamsSelectedId.set(teamsSelectedIds);
 ---
 
@@ -18,10 +19,10 @@ teamsSelectedId.set(teamsSelectedIds);
     <tr>
 {
   teamsSelectedIds.length &&
-    teamsSelectedIds.map((team, i) => (
+    teamsSelectedIds.map((teamSelectedId: string, i:number) => (
       <>
               <td>
-        <Team {teamsSelectedIds} {activeTeams} {i} />
+        <Team {teamsSelectedIds} {teamSelectedId} {activeTeams} {i} />
               </td>
       </>
     ))
