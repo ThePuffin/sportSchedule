@@ -7,17 +7,21 @@ import Body from '../components/Body/Body.astro';
 import lastSave from '../../nhlData.json';
 const title = 'Sport Schedule USA';
 
+const allGames = {};
 const activeTeams = [];
-const allGames = {}
+let dataTeams;
 try {
-  const fetchTeams = await axios.get('https://api-web.nhle.com/v1/standings/now');
- 
-  const dataTeams = await fetchTeams.data.standings;
+  // const fetchTeams = await axios.get('https://api-web.nhle.com/v1/standings/now');
+  const fetchTeams = await fetch('https://api-web.nhle.com/v1/standings/now');
+  const data = await fetchTeams.json();
+
+  dataTeams = await data.standings;
   dataTeams
     .sort((a, b) => (a.placeName?.default > b.placeName?.default ? 1 : -1))
     .forEach(async (team) => {
       const { teamAbbrev, teamName, teamLogo, divisionName, teamCommonName, conferenceName } = team;
-      const teamID = teamAbbrev.default 
+      const teamID = teamAbbrev.default;
+
       activeTeams.push({
         value: teamID,
         id: teamID,
@@ -27,17 +31,24 @@ try {
         conferenceName,
         divisionName,
       });
-
-       const {data} = await axios.get(`https://api-web.nhle.com/v1/club-schedule-season/${teamID}/now`);
-      allGames[teamID] =data.games
-       
-      
     });
 } catch (error) {
-  if (activeTeams.length === 0){
+  if (activeTeams.length === 0) {
     activeTeams.push(lastSave);
   }
 }
+
+// try {
+//   activeTeams.forEach(async (team, i) => {
+//     const res = await fetch(`https://api-web.nhle.com/v1/club-schedule-season/${team.id}/now`);
+//     const data = await res.json();
+//     const allGames = data.games;
+//     allGames[team.id] = allGames;
+//     console.log(allGames[0]);
+//   });
+// } catch (error) {
+//   console.error(error);
+// }
 ---
 
 <Layout {title}>

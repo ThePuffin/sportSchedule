@@ -1,7 +1,7 @@
 ---
 import Team from './Team/Team.astro';
 import { teamsSelectedId } from '../../store/store.js';
-import DateSelector from './DateSelector/DateSelector';
+import DateSelector from './DateSelector/DateSelector.astro';
 
 let { activeTeams } = Astro.props;
 // const teamsSelectedIds = activeTeams
@@ -11,23 +11,24 @@ let { activeTeams } = Astro.props;
 //     }
 //   })
 //   .filter((t) => t);
-const teamsSelectedIds =['DAL','NYR','FLA', 'EDM']
+const teamsSelectedIds = ['DAL', 'NYR', 'FLA', 'EDM'];
 teamsSelectedId.set(teamsSelectedIds);
 ---
-<DateSelector/>
+
+<DateSelector />
 <table>
   <tbody>
     <tr>
-{
-  teamsSelectedIds.length &&
-    teamsSelectedIds.map((teamSelectedId: string, i:number) => (
-      <>
+      {
+        teamsSelectedIds.length &&
+          teamsSelectedIds.map((teamSelectedId: string, i: number) => (
+            <>
               <td>
-        <Team {teamsSelectedIds} {teamSelectedId} {activeTeams} {i} />
+                <Team {teamsSelectedIds} {teamSelectedId} {activeTeams} {i} />
               </td>
-      </>
-    ))
-}
+            </>
+          ))
+      }
     </tr>
   </tbody>
 </table>

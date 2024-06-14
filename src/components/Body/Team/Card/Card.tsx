@@ -13,10 +13,12 @@ export default class TeamCard extends Component<any, any> {
     this.state = {
       team,
       i: props.i,
+      allGames: props.allGames,
       activeTeams: props.activeTeams,
       id: team.id,
       showAway: false,
       showHome: true,
+      //TO REMOVE ?
       gamesData: [],
     };
   }

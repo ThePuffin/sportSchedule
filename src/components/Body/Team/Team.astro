@@ -1,10 +1,25 @@
 ---
 import Selector from './Selector/Selector.tsx';
 import TeamCard from './Card/Card.tsx';
+import axios from 'axios';
 
 const { i, activeTeams, teamsSelectedIds, teamSelectedId } = Astro.props;
-const props = { i, activeTeams, teamsSelectedIds, teamSelectedId };
+
+const allGames = {};
+// try {
+//   activeTeams.forEach(async (team, i) => {
+//     const { data } = await axios.get(`https://api-web.nhle.com/v1/club-schedule-season/${team.id}/now`);
+
+//     const allGames = data.games;
+//     allGames[team.id] = allGames;
+//   });
+// } catch (error) {
+//   console.error(error);
+// }
+const props = { i, activeTeams, teamsSelectedIds, teamSelectedId, allGames };
 ---
 
-<Selector {...props} client:load />
-<TeamCard {...props} client:load />
+<div>
+  <Selector {...props} client:load />
+  <TeamCard {...props} client:load />
+</div>
