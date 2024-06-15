@@ -58,7 +58,8 @@ export default class TeamCard extends Component<any, any> {
   }
   getGames(teamSelectedId) {
     try {
-      const { games } = currentSeason[teamSelectedId]
+      const games = currentSeason[teamSelectedId]
+      console.log(currentSeason[teamSelectedId])
 
       const newGamesData = games.map((game) => {
         return {
