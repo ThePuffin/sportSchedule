@@ -1,22 +1,22 @@
 ---
-import lastSave from '../../../nhlData.json'
-import type { TeamNHL } from '../../interface/types'
-import DateSelector from './DateSelector/DateSelector.astro'
-import Team from './Team/Team'
+import lastSave from '../../../nhlData.json';
+import type { TeamNHL } from '../../interface/types';
+import DateSelector from './DateSelector/DateSelector.astro';
+import Team from './Team/Team';
 
-let activeTeams = []
-const allGames = {}
-let teamsSelectedIds = ['DAL', 'NYR', 'FLA', 'EDM']
+let activeTeams = [];
+const allGames = {};
+let teamsSelectedIds = ['DAL', 'NYR', 'FLA', 'EDM'];
 try {
-  const response = await fetch('https://api-web.nhle.com/v1/standings/now')
-  const fetchTeams = await response.json()
-  const dataTeams = await fetchTeams.standings
+  const response = await fetch('https://api-web.nhle.com/v1/standings/now');
+  const fetchTeams = await response.json();
+  const dataTeams = await fetchTeams.standings;
 
   dataTeams
     .sort((a: TeamNHL, b: TeamNHL) => (a.placeName?.default > b.placeName?.default ? 1 : -1))
-    .forEach(async (team) => {
-      const { teamAbbrev, teamName, teamLogo, divisionName, teamCommonName, conferenceName } = team
-      const teamID = teamAbbrev.default
+    .forEach(async (team: TeamNHL) => {
+      const { teamAbbrev, teamName, teamLogo, divisionName, teamCommonName, conferenceName } = team;
+      const teamID = teamAbbrev.default;
       activeTeams.push({
         value: teamID,
         id: teamID,
@@ -25,30 +25,30 @@ try {
         teamCommonName: teamCommonName.default,
         conferenceName,
         divisionName,
-      })
-    })
+      });
+    });
   dataTeams.forEach(async (team: TeamNHL) => {
-    const { teamAbbrev } = team
-    const id = teamAbbrev.default
-    const response = await fetch(`https://api-web.nhle.com/v1/club-schedule-season/${id}/now`)
-    const fetchGames = await response.json()
-    const games = await fetchGames.games
-    allGames[id] = games
-  })
+    const { teamAbbrev } = team;
+    const id = teamAbbrev.default;
+    const response = await fetch(`https://api-web.nhle.com/v1/club-schedule-season/${id}/now`);
+    const fetchGames = await response.json();
+    const games = await fetchGames.games;
+    allGames[id] = games;
+  });
 } catch (error) {
-  console.log('Error fetching data =>', error)
+  console.log('Error fetching data =>', error);
 
   if (activeTeams.length === 0) {
-    activeTeams = [...lastSave]
+    activeTeams = [...lastSave];
   }
 }
 teamsSelectedIds = activeTeams
   .map((team, id) => {
     if (id < 4) {
-      return team.id
+      return team.id;
     }
   })
-  .filter((t) => t)
+  .filter((t) => t);
 ---
 
 <DateSelector />

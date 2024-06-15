@@ -1,36 +1,36 @@
-import { useState } from 'react'
-import Select, { ActionMeta, OptionTypeBase } from 'react-select'
-import type { TeamType } from '../../../../interface/types.js'
-import { teamSelected } from '../../../../store/store.js'
+import { useState } from 'react';
+import Select from 'react-select';
+import type { TeamType } from '../../../../interface/types.js';
+import { teamSelected } from '../../../../store/store.js';
 
 export default function Selector({ teamsSelectedIds, activeTeams, i, teamSelectedId }) {
-  let teamsId = teamSelected.get()
+  let teamsId = teamSelected.get();
   if (teamSelected.get().includes(undefined)) {
-    teamSelected.set(teamsSelectedIds)
+    teamSelected.set(teamsSelectedIds);
   }
 
-  const teamId = teamSelectedId
+  const teamId = teamSelectedId;
 
-  const selectedTeams = teamsSelectedIds.filter((team: string) => team !== teamId)
-  let selectableTeams = activeTeams.filter((team: TeamType) => !selectedTeams.includes(team.id))
+  const selectedTeams = teamsSelectedIds.filter((team: string) => team !== teamId);
+  let selectableTeams = activeTeams.filter((team: TeamType) => !selectedTeams.includes(team.id));
 
-  const teamData = activeTeams.find((team) => team.value === teamId)
-  const { label = '' } = teamData
-  const [availableTeams, setAvailableTeams] = useState(selectableTeams)
+  const teamData = activeTeams.find((team) => team.value === teamId);
+  const { label = '' } = teamData;
+  const [availableTeams, setAvailableTeams] = useState(selectableTeams);
 
-  const changeTeam = async (event: OptionTypeBase & ActionMeta<TeamType>) => {
-    teamsId = [...teamSelected.get()]
-    teamsId[i] = event.value
+  const changeTeam = async (event: { value: string }) => {
+    teamsId = [...teamSelected.get()];
+    teamsId[i] = event.value;
 
-    teamSelected.set(teamsId)
-    const selectedTeams = teamsId.filter((team: string) => team !== teamId)
-    const newAvailableTeams = activeTeams.filter((team: TeamType) => !selectedTeams.includes(team.id))
-    setAvailableTeams(newAvailableTeams) // Update the state
-  }
+    teamSelected.set(teamsId);
+    const selectedTeams = teamsId.filter((team: string) => team !== teamId);
+    const newAvailableTeams = activeTeams.filter((team: TeamType) => !selectedTeams.includes(team.id));
+    setAvailableTeams(newAvailableTeams); // Update the state
+  };
 
   return (
     <div className="App">
       <Select defaultValue={teamId} placeholder={label} onChange={changeTeam} isSearchable options={availableTeams} />
     </div>
-  )
+  );
 }
