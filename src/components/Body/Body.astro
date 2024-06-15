@@ -1,9 +1,10 @@
 ---
 import lastSave from '../../../nhlData.json'
+import type { TeamNHL } from '../../interface/types'
 import DateSelector from './DateSelector/DateSelector.astro'
 import Team from './Team/Team'
 
-const activeTeams = []
+let activeTeams = []
 const allGames = {}
 let teamsSelectedIds = ['DAL', 'NYR', 'FLA', 'EDM']
 try {
@@ -12,7 +13,7 @@ try {
   const dataTeams = await fetchTeams.standings
 
   dataTeams
-    .sort((a, b) => (a.placeName?.default > b.placeName?.default ? 1 : -1))
+    .sort((a: TeamNHL, b: TeamNHL) => (a.placeName?.default > b.placeName?.default ? 1 : -1))
     .forEach(async (team) => {
       const { teamAbbrev, teamName, teamLogo, divisionName, teamCommonName, conferenceName } = team
       const teamID = teamAbbrev.default
@@ -26,7 +27,7 @@ try {
         divisionName,
       })
     })
-  dataTeams.forEach(async (team) => {
+  dataTeams.forEach(async (team: TeamNHL) => {
     const { teamAbbrev } = team
     const id = teamAbbrev.default
     const response = await fetch(`https://api-web.nhle.com/v1/club-schedule-season/${id}/now`)
@@ -38,7 +39,7 @@ try {
   console.log('Error fetching data =>', error)
 
   if (activeTeams.length === 0) {
-    activeTeams.push(lastSave)
+    activeTeams = [...lastSave]
   }
 }
 teamsSelectedIds = activeTeams

@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import Select from 'react-select'
+import Select, { ActionMeta, OptionTypeBase } from 'react-select'
+import type { TeamType } from '../../../../interface/types.js'
 import { teamSelected } from '../../../../store/store.js'
 
 export default function Selector({ teamsSelectedIds, activeTeams, i, teamSelectedId }) {
@@ -10,20 +11,20 @@ export default function Selector({ teamsSelectedIds, activeTeams, i, teamSelecte
 
   const teamId = teamSelectedId
 
-  const selectedTeams = teamsSelectedIds.filter((team) => team !== teamId)
-  let selectableTeams = activeTeams.filter((team) => !selectedTeams.includes(team.id))
+  const selectedTeams = teamsSelectedIds.filter((team: string) => team !== teamId)
+  let selectableTeams = activeTeams.filter((team: TeamType) => !selectedTeams.includes(team.id))
 
   const teamData = activeTeams.find((team) => team.value === teamId)
   const { label = '' } = teamData
   const [availableTeams, setAvailableTeams] = useState(selectableTeams)
 
-  const changeTeam = async (event) => {
+  const changeTeam = async (event: OptionTypeBase & ActionMeta<TeamType>) => {
     teamsId = [...teamSelected.get()]
     teamsId[i] = event.value
 
     teamSelected.set(teamsId)
-    const selectedTeams = teamsId.filter((team) => team !== teamId)
-    const newAvailableTeams = activeTeams.filter((team) => !selectedTeams.includes(team.id))
+    const selectedTeams = teamsId.filter((team: string) => team !== teamId)
+    const newAvailableTeams = activeTeams.filter((team: TeamType) => !selectedTeams.includes(team.id))
     setAvailableTeams(newAvailableTeams) // Update the state
   }
 

@@ -1,7 +1,7 @@
 import React from 'react'
+import type { TeamType } from '../../../interface/types.ts'
 import TeamCard from './Card/Card.tsx'
 import Selector from './Selector/Selector.tsx'
-import type { TeamType } from './interface/team.ts'
 
 interface BodyProps {
   teamsSelectedIds: string[]

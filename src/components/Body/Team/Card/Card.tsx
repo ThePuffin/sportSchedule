@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import currentSeason from '../../../../../temporaryData/currentSeason.json'
+import type { TeamType } from '../../../../interface/types.js'
 import { teamSelected } from '../../../../store/store.js'
 import { readableDate } from '../../../../utils/date.js'
 import './Card.css'
@@ -31,9 +32,9 @@ export default class TeamCard extends Component<any, any> {
       const newSelectionId = newSelections[i]
 
       if (newSelectionId && this.state.id !== newSelectionId) {
-        const newTeam = this.state.activeTeams.find((activeTeam) => activeTeam.id === newSelectionId)
+        const newTeam = this.state.activeTeams.find((activeTeam: TeamType) => activeTeam.id === newSelectionId)
         this.getGames(newSelectionId)
-        this.setState((prevState) => ({
+        this.setState((_) => ({
           team: newTeam,
           id: newTeam.id,
         }))
