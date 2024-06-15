@@ -1,25 +1,34 @@
-import React from 'react';
-import { readableDate } from '../../../../utils/date.js';
-import { dateSelected } from '../../../../store/store.js';
+import { useState } from 'react'
+import { dateSelected } from '../../../../store/store.js'
+import { readableDate } from '../../../../utils/date.js'
 
 export default function DatePickerSelector() {
-  let { beginingDate, finishingDate, endSeason } = dateSelected.get();
+  let { beginingDate, finishingDate, endSeason } = dateSelected.get()
+  const [startDate, setStartDate] = useState(beginingDate)
+  const [endDate, setEndDate] = useState(finishingDate)
 
-  const changeDate = (target) => {
-    // console.log('target.value', target.value);
+  const changeDate = ({ id, value }) => {
+    let newStartDate = startDate
+    let newEndDate = endDate
 
-    if (target.id === 'startDatePicker') {
-      beginingDate = new Date(target.value);
+    if (id === 'startDatePicker') {
+      newStartDate = new Date(value)
     } else {
-      finishingDate = new Date(target.value);
+      newEndDate = new Date(value)
     }
-    if (beginingDate > finishingDate) {
-      finishingDate = new Date(beginingDate);
-      finishingDate.setDate(finishingDate.getDate() + 7);
+
+    if (newStartDate > newEndDate) {
+      newEndDate = new Date(newStartDate)
+      newEndDate.setDate(newEndDate.getDate() + 7)
     }
-    finishingDate = finishingDate <= endSeason ? finishingDate : endSeason;
-    dateSelected.set(endSeason, beginingDate, finishingDate);
-  };
+
+    newEndDate = newEndDate <= endSeason ? newEndDate : endSeason
+
+    setStartDate(newStartDate)
+    setEndDate(newEndDate)
+
+    dateSelected.set({ endSeason, beginingDate: newStartDate, finishingDate: newEndDate })
+  }
 
   return (
     <div>
@@ -30,7 +39,7 @@ export default function DatePickerSelector() {
         min={readableDate(new Date())}
         max={readableDate(endSeason)}
         name="trip-start"
-        placeholder={readableDate(beginingDate)}
+        value={readableDate(startDate)}
       />
       <input
         type="date"
@@ -41,7 +50,6 @@ export default function DatePickerSelector() {
         value={readableDate(finishingDate)}
         name="trip-end"
       />
-      <input type="submit" value="Ok" onClick={() => console.log(beginingDate, '<', finishingDate)} />
     </div>
-  );
+  )
 }

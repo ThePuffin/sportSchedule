@@ -20,4 +20,4 @@ export const dateSelected = atom(dateEmpty);
 
 export const teamSelected = atom(teamsEmpty);
 
-export const teamsSelectedId = atom([]);
+export const teamsGames = atom({});

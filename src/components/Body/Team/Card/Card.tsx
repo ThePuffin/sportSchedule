@@ -1,15 +1,14 @@
-import './Card.css';
-import './colorsTeam.css';
-import React, { Component, useEffect } from 'react';
-import { teamSelected } from '../../../../store/store.js';
-import currentSeason from '../../../../../temporaryData/currentSeason.json';
-import axios from 'axios';
-import { readableDate } from '../../../../utils/date.js';
+import { Component } from 'react'
+import currentSeason from '../../../../../temporaryData/currentSeason.json'
+import { teamSelected } from '../../../../store/store.js'
+import { readableDate } from '../../../../utils/date.js'
+import './Card.css'
+import './colorsTeam.css'
 
 export default class TeamCard extends Component<any, any> {
   constructor(props) {
-    super(props);
-    const team = props.activeTeams[props.i];
+    super(props)
+    const team = props.activeTeams[props.i]
     this.state = {
       team,
       i: props.i,
@@ -20,42 +19,45 @@ export default class TeamCard extends Component<any, any> {
       showHome: true,
       //TO REMOVE ?
       gamesData: [],
-    };
+    }
   }
 
-  subscription = undefined;
+  subscription = undefined
 
   subscribeToTeamSelected() {
     // Call the subscribe method on teamSelected
     const subscription = teamSelected.subscribe((newSelections) => {
-      const i = this.state.i;
-      const newSelectionId = newSelections[i];
+      const i = this.state.i
+      const newSelectionId = newSelections[i]
 
       if (newSelectionId && this.state.id !== newSelectionId) {
-        const newTeam = this.state.activeTeams.find((activeTeam) => activeTeam.id === newSelectionId);
-        this.getGames(newSelectionId);
-        this.setState({ team: newTeam, id: newTeam.id });
+        const newTeam = this.state.activeTeams.find((activeTeam) => activeTeam.id === newSelectionId)
+        this.getGames(newSelectionId)
+        this.setState((prevState) => ({
+          team: newTeam,
+          id: newTeam.id,
+        }))
       }
-    });
+    })
 
     // Store the subscription for later cleanup
-    this.subscription = subscription;
+    this.subscription = subscription
   }
 
   async componentDidMount() {
-    this.getGames(this.state.id);
-    this.subscribeToTeamSelected();
+    this.getGames(this.state.id)
+    this.subscribeToTeamSelected()
   }
 
   componentWillUnmount() {
     // Unsubscribe when the component unmounts to avoid memory leaks
     if (this.subscription) {
-      this.subscription.unsubscribe();
+      this.subscription.unsubscribe()
     }
   }
   getGames(teamSelectedId) {
     try {
-      const { games } = currentSeason[teamSelectedId];
+      const { games } = currentSeason[teamSelectedId]
 
       const newGamesData = games.map((game) => {
         return {
@@ -67,24 +69,19 @@ export default class TeamCard extends Component<any, any> {
           gameDate: readableDate(game.gameDate),
           teamSelectedId,
           timestampDate: new Date(game.gameDate).getTime(),
-          show:
-            (game.homeTeam.abbrev === teamSelectedId && this.state.showHome) ||
-            (game.awayTeam.abbrev === teamSelectedId && this.state.showAway),
+          show: (game.homeTeam.abbrev === teamSelectedId && this.state.showHome) || (game.awayTeam.abbrev === teamSelectedId && this.state.showAway),
           selectedTeam: game.homeTeam.abbrev === teamSelectedId,
-        };
-      });
-      this.setState({ gamesData: newGamesData });
+        }
+      })
+      this.setState({ gamesData: newGamesData })
     } catch (error) {
-      console.log('error', error);
+      console.log('Error fetching game data =>', error)
     }
   }
 
   render() {
-    const hideDate = false;
-    const dateSelected = new Date();
-
     if (this.state.team.id && this.state.gamesData.length) {
-      const lastGame = this.state.gamesData.length - 1;
+      const lastGame = this.state.gamesData.length - 1
       return (
         <div id={this.state.team.id} className="App">
           <h2>
@@ -100,35 +97,35 @@ export default class TeamCard extends Component<any, any> {
         // TODO: uncomment when columns are ok
         // this.state.gamesData &&
         // this.state.gamesData.map((data) => {
+        //           const hideDate = false
+        // const dateSelected = new Date()
+        //   const { arenaName, show, selectedTeam, homeTeamId, gameDate, awayTeamShort, homeTeamShort } = data
+        //   const { team } = this.state
+        //   const cardClass = arenaName && show ? (selectedTeam ? `card t${homeTeamId}` : `card awayGame`) : 'card unclickable'
+        //   const extBoxClass = show ? 'ext-box' : 'whiteCard'
+        //   const dateClass = hideDate ? 'cardText hideDate' : 'cardText'
+
         //   return (
-        //     <div
-        //       className={
-        //         data.arenaName && data.show
-        //           ? data.selectedTeam
-        //             ? `card t${data.homeTeamId}`
-        //             : `card awayGame`
-        //           : 'card unclickable'
-        //       }
-        //     >
+        //     <div className={cardClass}>
         //       <div className={dateSelected >= 0 ? 'selected' : ''}>
-        //         <div className={data.show ? 'ext-box' : 'whiteCard'}>
+        //         <div className={extBoxClass}>
         //           <div>
-        //             <p className={hideDate ? 'cardText hideDate' : 'cardText'}>{data.gameDate}</p>
+        //             <p className={dateClass}>{gameDate}</p>
         //           </div>
-        //           <h4 className="cardText">{data.awayTeamShort}</h4>
-        //           {!data.show ? <img src={this.state.team.teamLogo} alt={this.state.team.value} /> : ''}
+        //           <h4 className="cardText">{awayTeamShort}</h4>
+        //           {!show && <img src={team.teamLogo} alt={team.value} />}
         //           <p className="cardText vs">vs</p>
-        //           <h4 className="cardText">{data.homeTeamShort}</h4>
-        //           {data.show ? <img src={this.state.team.teamLogo} alt={this.state.team.value} /> : ''}
-        //           <p className="cardText arena"> {data.arenaName}</p>
+        //           <h4 className="cardText">{homeTeamShort}</h4>
+        //           {show && <img src={team.teamLogo} alt={team.value} />}
+        //           <p className="cardText arena"> {arenaName}</p>
         //         </div>
         //       </div>
         //     </div>
-        //   );
+        //   )
         // })
-      );
+      )
     } else {
-      return <p>wait for it...</p>;
+      return <p>wait for it...</p>
     }
   }
 }
