@@ -109,7 +109,7 @@ export default class TeamCard extends Component<any, any> {
           const dateClass = hideDate ? 'cardText hideDate' : 'cardText';
           return (
             <div className={cardClass}>
-              <div className={dataSelected ? 'selected' : ''}>
+              <div>
                 <div className={extBoxClass}>
                   <div>
                     <p className={dateClass}>{gameDate}</p>
