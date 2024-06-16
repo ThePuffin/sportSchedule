@@ -1,24 +1,24 @@
 ---
-import { writeJsonFile } from 'write-json-file'
-import lastAllTeams from '../../../temporaryData/allTeams.json'
-import lastAllGames from '../../../temporaryData/currentSeason.json'
-import type { TeamNHL } from '../../interface/types'
-import DateSelector from './DateSelector/DateSelector.astro'
-import Team from './Team/Team'
+import { writeJsonFile } from 'write-json-file';
+import lastAllTeams from '../../../temporaryData/allTeams.json';
+import lastAllGames from '../../../temporaryData/currentSeason.json';
+import type { TeamNHL } from '../../interface/types';
+import DateSelector from './DateSelector/DateSelector.astro';
+import Team from './Team/Team';
 
-let activeTeams = []
-let allGames = {}
-let teamsSelectedIds = ['DAL', 'NYR', 'FLA', 'EDM']
+let activeTeams = [];
+let allGames = {};
+let teamsSelectedIds = ['DAL', 'NYR', 'FLA', 'EDM'];
 try {
-  const fetchedTeams = await fetch('https://api-web.nhle.com/v1/standings/now')
-  const fetchTeams = await fetchedTeams.json()
-  const allTeams = await fetchTeams.standings
+  const fetchedTeams = await fetch('https://api-web.nhle.com/v1/standings/now');
+  const fetchTeams = await fetchedTeams.json();
+  const allTeams = await fetchTeams.standings;
 
   activeTeams = allTeams
     .sort((a: TeamNHL, b: TeamNHL) => (a.placeName?.default > b.placeName?.default ? 1 : -1))
     .map((team: TeamNHL) => {
-      const { teamAbbrev, teamName, teamLogo, divisionName, teamCommonName, conferenceName } = team
-      const teamID = teamAbbrev.default
+      const { teamAbbrev, teamName, teamLogo, divisionName, teamCommonName, conferenceName } = team;
+      const teamID = teamAbbrev.default;
       return {
         value: teamID,
         id: teamID,
@@ -27,35 +27,36 @@ try {
         teamCommonName: teamCommonName.default,
         conferenceName,
         divisionName,
-      }
-    })
-  await writeJsonFile('./temporaryData/allTeams.json', { activeTeams })
+      };
+    });
+  await writeJsonFile('./temporaryData/allTeams.json', { activeTeams });
   await Promise.all(
     allTeams.map(async (team: TeamNHL) => {
-      const { teamAbbrev } = team
-      const id = teamAbbrev.default
-      const fetchedGames = await fetch(`https://api-web.nhle.com/v1/club-schedule-season/${id}/now`)
-      const fetchGames = await fetchedGames.json()
-      const games = await fetchGames.games
-      allGames[id] = games
+      const { teamAbbrev } = team;
+      const id = teamAbbrev.default;
+      const fetchedGames = await fetch(`https://api-web.nhle.com/v1/club-schedule-season/${id}/now`);
+      const fetchGames = await fetchedGames.json();
+      const games = await fetchGames.games;
+      allGames[id] = games;
     })
-  )
-  await writeJsonFile('./temporaryData/currentSeason.json', allGames)
+  );
+  await writeJsonFile('./temporaryData/currentSeason.json', allGames);
 } catch (error) {
-  console.log('Error fetching data =>', error)
+  console.log('Error fetching data =>', error);
 
   if (activeTeams.length === 0) {
-    activeTeams = lastAllTeams.activeTeams
-    allGames = lastAllGames
+    activeTeams = lastAllTeams.activeTeams;
+    allGames = lastAllGames;
   }
 }
 teamsSelectedIds = activeTeams
   .map((team, id) => {
     if (id < 4) {
-      return team.id
+      return team.id;
     }
   })
-  .filter((t) => t)
+  .filter((t) => t);
+teamsSelectedIds = ['DAL', 'NYR', 'FLA', 'EDM'];
 ---
 
 <DateSelector />
