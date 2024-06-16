@@ -107,10 +107,9 @@ export default class TeamCard extends Component<any, any> {
             arenaName && show ? (selectedTeam ? `card t${homeTeamId}` : `card awayGame`) : 'card unclickable';
           const extBoxClass = show ? 'ext-box' : 'whiteCard';
           const dateClass = hideDate ? 'cardText hideDate' : 'cardText';
-
           return (
             <div className={cardClass}>
-              <div className={dateSelected >= 0 ? 'selected' : ''}>
+              <div className={dataSelected ? 'selected' : ''}>
                 <div className={extBoxClass}>
                   <div>
                     <p className={dateClass}>{gameDate}</p>
