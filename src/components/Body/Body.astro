@@ -10,7 +10,7 @@ let activeTeams = lastAllTeams.activeTeams;
 let allGames = lastAllGames;
 let teamsSelectedIds = ['DAL', 'NYR', 'FLA', 'EDM'];
 try {
-  const fetchedTeams = await fetch('https://api-web.nhle.com/v1/xxxstandings/now');
+  const fetchedTeams = await fetch('https://api-web.nhle.com/v1/standings/now');
   const fetchTeams = await fetchedTeams.json();
   const allTeams = await fetchTeams.standings;
 
@@ -29,6 +29,7 @@ try {
         divisionName,
       };
     });
+  // TODO: find a way to get data somewhere online
   await writeJsonFile('./temporaryData/allTeams.json', { activeTeams });
   await Promise.all(
     allTeams.map(async (team: TeamNHL) => {
