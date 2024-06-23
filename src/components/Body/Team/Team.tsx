@@ -9,7 +9,7 @@ interface BodyProps {
 }
 
 const Team: React.FC<BodyProps> = ({ teamsSelectedIds, activeTeams }) => (
-  <table>
+  <table style={{ tableLayout: "fixed", width: "100%" }}>
     <tbody>
       <tr>
         {teamsSelectedIds?.length === 0 || activeTeams?.length === 0 ? (
@@ -17,9 +17,12 @@ const Team: React.FC<BodyProps> = ({ teamsSelectedIds, activeTeams }) => (
         ) : (
           teamsSelectedIds.map((teamSelectedId, i) => {
             const props = { i, activeTeams, teamsSelectedIds, teamSelectedId };
-
+            const width = 100 / teamsSelectedIds.length;
             return (
-              <td key={teamSelectedId}>
+              <td
+                key={teamSelectedId}
+                style={{ width: `${width}%`, height: "100%" }}
+              >
                 <div>
                   <Selector {...props} />
                   <TeamCard id={i} {...props} />
