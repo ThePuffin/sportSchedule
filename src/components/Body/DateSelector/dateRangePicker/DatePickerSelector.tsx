@@ -40,7 +40,7 @@ export default function DatePickerSelector() {
         type="date"
         onChange={(e) => changeDate(e.target)}
         id="startDatePicker"
-        min={readableDate(new Date())}
+        min={readableDate(new Date("2024-03-01"))}
         max={readableDate(endSeason)}
         name="trip-start"
         value={readableDate(startDate)}

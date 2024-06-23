@@ -5,8 +5,7 @@ import { teamSelected, dateSelected } from "../../../../store/store.js";
 import { readableDate } from "../../../../utils/date.js";
 import "./Card.css";
 import "./colorsTeam.css";
-import type { GameAPI } from "../interface/game.ts";
-import type { GameFormatted } from "../interface/game.ts";
+import type { GameAPI, GameFormatted } from "../interface/game.ts";
 import type { PropsCard } from "../interface/card.ts";
 export default class TeamCard extends Component<any, any> {
   constructor(props: PropsCard) {
@@ -83,8 +82,26 @@ export default class TeamCard extends Component<any, any> {
       this.subscriptionDate.unsubscribe();
     }
   }
+
+  getDatesBetween(startDate, endDate) {
+    const dates = [];
+    const maxDate = new Date(endDate);
+    let currentDate = new Date(startDate);
+
+    while (currentDate <= maxDate) {
+      dates.push(readableDate(currentDate));
+      currentDate.setDate(currentDate.getDate() + 1);
+    }
+
+    return dates;
+  }
+
   getGames(teamSelectedId: string) {
     try {
+      const allDates = this.getDatesBetween(
+        this.state.beginingDate,
+        this.state.finishingDate,
+      );
       const games = currentSeason[teamSelectedId];
       let newGamesData = [];
       if (games) {
@@ -114,7 +131,12 @@ export default class TeamCard extends Component<any, any> {
             };
           });
       }
-      this.setState({ gamesData: newGamesData });
+      const allNewGamesData = allDates.map((date) => {
+        const game = newGamesData.filter((data) => data.gameDate === date);
+
+        return game.length ? game[0] : { gameDate: date };
+      });
+      this.setState({ gamesData: allNewGamesData });
     } catch (error) {
       console.log("Error fetching game data =>", error);
     }
@@ -159,6 +181,8 @@ export default class TeamCard extends Component<any, any> {
               : "card unclickable";
           const extBoxClass = show ? "ext-box" : "whiteCard";
           const dateClass = hideDate ? "cardText hideDate" : "cardText";
+          const { teamLogo, value } = team;
+
           return (
             <div className={cardClass}>
               <div>
@@ -166,11 +190,19 @@ export default class TeamCard extends Component<any, any> {
                   <div>
                     <p className={dateClass}>{gameDate}</p>
                   </div>
-                  <h4 className="cardText">{awayTeamShort}</h4>
-                  {!show && <img src={team.teamLogo} alt={team.value} />}
-                  <p className="cardText vs">vs</p>
-                  <h4 className="cardText">{homeTeamShort}</h4>
-                  {show && <img src={team.teamLogo} alt={team.value} />}
+                  <h4 className="cardText">
+                    {awayTeamShort}
+                    {!show && awayTeamShort && (
+                      <img src={teamLogo} alt={value} />
+                    )}
+                  </h4>
+                  {awayTeamShort && <p className="cardText vs">vs</p>}
+                  <h4 className="cardText">
+                    {homeTeamShort}
+                    {show && homeTeamShort && (
+                      <img src={teamLogo} alt={value} />
+                    )}
+                  </h4>
                   <p className="cardText arena"> {arenaName}</p>
                 </div>
               </div>

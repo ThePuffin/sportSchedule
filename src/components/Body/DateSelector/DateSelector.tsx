@@ -4,7 +4,7 @@ interface InputChangeEvent extends React.ChangeEvent<HTMLInputElement> {}
 
 export default function DateSelector() {
   const dateNow = new Date("2024-03-01");
-  let startDate = new Date();
+  let startDate = new Date("2024-03-01");
   let endDate = new Date(startDate);
   endDate.setMonth(endDate.getMonth() + 1);
 
