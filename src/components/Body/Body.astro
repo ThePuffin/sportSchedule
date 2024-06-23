@@ -10,7 +10,7 @@ let activeTeams = lastAllTeams.activeTeams;
 let allGames = lastAllGames;
 let teamsSelectedIds = ['DAL', 'NYR', 'FLA', 'EDM'];
 try {
-  const fetchedTeams = await fetch('https://api-web.nhle.com/v1/standings/now');
+  const fetchedTeams = await fetch('https://api-web.nhle.com/v1/xxxstandings/now');
   const fetchTeams = await fetchedTeams.json();
   const allTeams = await fetchTeams.standings;
 
