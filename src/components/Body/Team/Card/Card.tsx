@@ -11,6 +11,7 @@ export default class TeamCard extends Component<any, any> {
     super(props);
     const team = props.activeTeams[props.i];
     const dateSelection = dateSelected.get();
+
     this.state = {
       team,
       i: props.i,

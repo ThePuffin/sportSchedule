@@ -6,8 +6,8 @@ import type { TeamNHL } from '../../interface/types';
 import DateSelector from './DateSelector/DateSelector.astro';
 import Team from './Team/Team';
 
-let activeTeams = [];
-let allGames = {};
+let activeTeams = lastAllTeams.activeTeams;
+let allGames = lastAllGames;
 let teamsSelectedIds = ['DAL', 'NYR', 'FLA', 'EDM'];
 try {
   const fetchedTeams = await fetch('https://api-web.nhle.com/v1/standings/now');
@@ -43,10 +43,8 @@ try {
   await writeJsonFile('./temporaryData/currentSeason.json', allGames);
 } catch (error) {
   console.log('Error fetching data =>', error);
-
   if (activeTeams.length === 0) {
     activeTeams = lastAllTeams.activeTeams;
-    allGames = lastAllGames;
   }
 }
 teamsSelectedIds = activeTeams

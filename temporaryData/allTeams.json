@@ -13,7 +13,7 @@
 			"value": "ARI",
 			"id": "ARI",
 			"label": "Arizona Coyotes",
-			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/ARI_20212022-20232024_light.svg",
+			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/ARI_20202021-20232024_light.svg",
 			"teamCommonName": "Coyotes",
 			"conferenceName": "Western",
 			"divisionName": "Central"
@@ -121,7 +121,7 @@
 			"value": "LAK",
 			"id": "LAK",
 			"label": "Los Angeles Kings",
-			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/LAK_light.svg",
+			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/LAK_20192020-20232024_light.svg",
 			"teamCommonName": "Kings",
 			"conferenceName": "Western",
 			"divisionName": "Pacific"
