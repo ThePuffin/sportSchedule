@@ -1,9 +1,9 @@
-import { atom } from 'nanostores';
+import { atom } from "nanostores";
 
 let size = 5;
 const year = new Date().getFullYear();
 const now = new Date();
-let startDate = new Date('2024-03-01');
+let startDate = new Date("2024-03-01");
 let endDate = new Date(startDate);
 endDate.setMonth(endDate.getMonth() + 1);
 

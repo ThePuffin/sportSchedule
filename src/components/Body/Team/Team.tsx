@@ -1,11 +1,11 @@
-import React from 'react'
-import type { TeamType } from '../../../interface/types.ts'
-import TeamCard from './Card/Card.tsx'
-import Selector from './Selector/Selector.tsx'
+import React from "react";
+import type { TeamType } from "../../../interface/types.ts";
+import TeamCard from "./Card/Card.tsx";
+import Selector from "./Selector/Selector.tsx";
 
 interface BodyProps {
-  teamsSelectedIds: string[]
-  activeTeams: TeamType[]
+  teamsSelectedIds: string[];
+  activeTeams: TeamType[];
 }
 
 const Team: React.FC<BodyProps> = ({ teamsSelectedIds, activeTeams }) => (
@@ -16,21 +16,21 @@ const Team: React.FC<BodyProps> = ({ teamsSelectedIds, activeTeams }) => (
           <p>Wait for it... Please</p>
         ) : (
           teamsSelectedIds.map((teamSelectedId, i) => {
-            const props = { i, activeTeams, teamsSelectedIds, teamSelectedId }
+            const props = { i, activeTeams, teamsSelectedIds, teamSelectedId };
 
             return (
               <td key={teamSelectedId}>
                 <div>
                   <Selector {...props} />
-                  <TeamCard {...props} />
+                  <TeamCard id={i} {...props} />
                 </div>
               </td>
-            )
+            );
           })
         )}
       </tr>
     </tbody>
   </table>
-)
+);
 
-export default Team
+export default Team;
