@@ -16,8 +16,6 @@ const Team: React.FC<BodyProps> = ({ teamsSelectedIds, activeTeams }) => (
           <p>Wait for it... Please</p>
         ) : (
           teamsSelectedIds.map((teamSelectedId, i) => {
-            console.log({ teamSelectedId });
-
             const props = { i, activeTeams, teamsSelectedIds, teamSelectedId };
             const width = 100 / teamsSelectedIds.length;
             return (

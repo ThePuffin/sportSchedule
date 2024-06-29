@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import currentSeason from '../../../../../temporaryData/currentSeason.json';
+import currentSeason from '../../../../../temporaryData/updatecurrentSeason.json';
 import type { PropsCard } from '../../../../interface/card.ts';
 import type { GameAPI, GameFormatted } from '../../../../interface/game.ts';
 import type { TeamType } from '../../../../interface/team.ts';
@@ -97,22 +97,10 @@ export default class TeamCard extends Component<any, any> {
       const allDates = this.getDatesBetween(this.state.beginingDate, this.state.finishingDate);
       const games = currentSeason[teamSelectedId];
       if (games) {
-        const gamesLookup = games.reduce((acc, game: GameAPI) => {
-          if (game.gameDate > this.state.beginingDate && game.gameDate < this.state.finishingDate) {
-            const gameData = {
-              awayTeamId: game.awayTeam.abbrev,
-              awayTeamShort: game.awayTeam.abbrev,
-              homeTeamId: game.homeTeam.abbrev,
-              homeTeamShort: game.homeTeam.abbrev,
-              arenaName: game.venue?.default || '',
-              gameDate: readableDate(game.gameDate),
-              teamSelectedId,
-              timestampDate: new Date(game.gameDate).getTime(),
-              show:
-                (game.homeTeam.abbrev === teamSelectedId && this.state.showHome) ||
-                (game.awayTeam.abbrev === teamSelectedId && this.state.showAway),
-              selectedTeam: game.homeTeam.abbrev === teamSelectedId,
-            };
+        const gamesLookup = games.reduce((acc, gameData: GameAPI) => {
+          console.log(gameData.gameDate, this.state.beginingDate);
+
+          if (gameData.gameDate > this.state.beginingDate && gameData.gameDate < this.state.finishingDate) {
             acc[gameData.gameDate] = gameData;
           }
           return acc;
@@ -129,23 +117,6 @@ export default class TeamCard extends Component<any, any> {
 
   render() {
     if (this.state.gamesData?.length) {
-      // const lastGame = this.state.gamesData?.length - 1;
-      // return (
-      // <div id={this.state.team.id} className="App">
-      //   <h2>
-      //     <img src={this.state.team.teamLogo} alt={this.state.team.value} />
-      //     {this.state.team.label}
-      //   </h2>
-      //   <p> {this.state?.beginingDate}</p>
-      //   <p> {this.state?.finishingDate}</p>
-      //   <h5>Last game: {this.state.gamesData?.[lastGame]?.gameDate} </h5>
-      //   <p>{this.state.gamesData?.[lastGame]?.homeTeamId}</p>
-      //   vs
-      //   <p>{this.state.gamesData?.[lastGame]?.awayTeamId}</p>
-      // </div>
-
-      // TODO: uncomment when columns are ok
-
       return this.state.gamesData.map((data: GameFormatted) => {
         const hideDate = false;
         const { arenaName, show, selectedTeam, homeTeamId, gameDate, awayTeamShort, homeTeamShort } = data;

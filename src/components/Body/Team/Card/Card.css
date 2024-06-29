@@ -5,3 +5,9 @@ img {
 .card {
   height: 13rem;
 }
+
+.arena {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
