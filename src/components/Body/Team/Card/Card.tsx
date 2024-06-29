@@ -10,6 +10,7 @@ import './colorsTeam.css';
 export default class TeamCard extends Component<any, any> {
   constructor(props: PropsCard) {
     super(props);
+
     const team = props.activeTeams.find((team) => team.id === props.teamSelectedId);
     const dateSelection = dateSelected.get();
 
@@ -79,7 +80,7 @@ export default class TeamCard extends Component<any, any> {
     }
   }
 
-  getDatesBetween(startDate, endDate) {
+  getDatesBetween(startDate: string, endDate: string) {
     const dates = [];
     const maxDate = new Date(endDate);
     let currentDate = new Date(startDate);

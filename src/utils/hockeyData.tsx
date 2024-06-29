@@ -2,7 +2,7 @@ import { db, Teams } from 'astro:db';
 import { writeJsonFile } from 'write-json-file';
 import type { TeamNHL, TeamType } from '../interface/team';
 const league = 'NHL';
-import { readableDate } from './date';
+import type { GameAPI } from '../interface/game.ts';
 
 export const getNhlTeams = async () => {
   try {
@@ -66,7 +66,7 @@ const getNhlTeamSchedule = async (id: string) => {
     const fetchedGames = await fetch(`https://api-web.nhle.com/v1/club-schedule-season/${id}/now`);
     const fetchGames = await fetchedGames.json();
     const games = await fetchGames.games;
-    const gamesData = games.map((game) => {
+    const gamesData = games.map((game: GameAPI) => {
       return {
         awayTeamId: game.awayTeam.abbrev,
         awayTeamShort: game.awayTeam.abbrev,
