@@ -56,8 +56,8 @@ export const getNhlSchedule = async () => {
             allGames[id] = await getNhlTeamSchedule(id)
         })
     )
-    await writeJsonFile('./temporaryData/currentSeason.json', allGames)
-    console.log('updated')
+    // await writeJsonFile('./temporaryData/currentSeason.json', allGames)
+    // console.log('updated')
     return allGames
 }
 
