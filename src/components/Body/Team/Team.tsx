@@ -1,5 +1,5 @@
 import React from "react";
-import type { TeamType } from "../../../interface/types.ts";
+import type { TeamType } from "../../../interface/team.ts";
 import TeamCard from "./Card/Card.tsx";
 import Selector from "./Selector/Selector.tsx";
 

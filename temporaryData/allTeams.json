@@ -1,292 +1,356 @@
 {
 	"activeTeams": [
 		{
+			"uniqueId": "NHL-ANA",
 			"value": "ANA",
 			"id": "ANA",
 			"label": "Anaheim Ducks",
-			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/ANA_20132014-20232024_light.svg",
 			"teamCommonName": "Ducks",
 			"conferenceName": "Western",
-			"divisionName": "Pacific"
+			"divisionName": "Pacific",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-ARI",
 			"value": "ARI",
 			"id": "ARI",
 			"label": "Arizona Coyotes",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/ARI_20202021-20232024_light.svg",
 			"teamCommonName": "Coyotes",
 			"conferenceName": "Western",
-			"divisionName": "Central"
+			"divisionName": "Central",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-BOS",
 			"value": "BOS",
 			"id": "BOS",
 			"label": "Boston Bruins",
-			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg",
+			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/BOS_20232024_light.svg",
 			"teamCommonName": "Bruins",
 			"conferenceName": "Eastern",
-			"divisionName": "Atlantic"
+			"divisionName": "Atlantic",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-BUF",
 			"value": "BUF",
 			"id": "BUF",
 			"label": "Buffalo Sabres",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg",
 			"teamCommonName": "Sabres",
 			"conferenceName": "Eastern",
-			"divisionName": "Atlantic"
+			"divisionName": "Atlantic",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-CGY",
 			"value": "CGY",
 			"id": "CGY",
 			"label": "Calgary Flames",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/CGY_light.svg",
 			"teamCommonName": "Flames",
 			"conferenceName": "Western",
-			"divisionName": "Pacific"
+			"divisionName": "Pacific",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-CAR",
 			"value": "CAR",
 			"id": "CAR",
 			"label": "Carolina Hurricanes",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
 			"teamCommonName": "Hurricanes",
 			"conferenceName": "Eastern",
-			"divisionName": "Metropolitan"
+			"divisionName": "Metropolitan",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-CHI",
 			"value": "CHI",
 			"id": "CHI",
 			"label": "Chicago Blackhawks",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
 			"teamCommonName": "Blackhawks",
 			"conferenceName": "Western",
-			"divisionName": "Central"
+			"divisionName": "Central",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-COL",
 			"value": "COL",
 			"id": "COL",
 			"label": "Colorado Avalanche",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
 			"teamCommonName": "Avalanche",
 			"conferenceName": "Western",
-			"divisionName": "Central"
+			"divisionName": "Central",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-CBJ",
 			"value": "CBJ",
 			"id": "CBJ",
 			"label": "Columbus Blue Jackets",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
 			"teamCommonName": "Blue Jackets",
 			"conferenceName": "Eastern",
-			"divisionName": "Metropolitan"
+			"divisionName": "Metropolitan",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-DAL",
 			"value": "DAL",
 			"id": "DAL",
 			"label": "Dallas Stars",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg",
 			"teamCommonName": "Stars",
 			"conferenceName": "Western",
-			"divisionName": "Central"
+			"divisionName": "Central",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-DET",
 			"value": "DET",
 			"id": "DET",
 			"label": "Detroit Red Wings",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
 			"teamCommonName": "Red Wings",
 			"conferenceName": "Eastern",
-			"divisionName": "Atlantic"
+			"divisionName": "Atlantic",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-EDM",
 			"value": "EDM",
 			"id": "EDM",
 			"label": "Edmonton Oilers",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg",
 			"teamCommonName": "Oilers",
 			"conferenceName": "Western",
-			"divisionName": "Pacific"
+			"divisionName": "Pacific",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-FLA",
 			"value": "FLA",
 			"id": "FLA",
 			"label": "Florida Panthers",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg",
 			"teamCommonName": "Panthers",
 			"conferenceName": "Eastern",
-			"divisionName": "Atlantic"
+			"divisionName": "Atlantic",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-LAK",
 			"value": "LAK",
 			"id": "LAK",
 			"label": "Los Angeles Kings",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/LAK_20192020-20232024_light.svg",
 			"teamCommonName": "Kings",
 			"conferenceName": "Western",
-			"divisionName": "Pacific"
+			"divisionName": "Pacific",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-MIN",
 			"value": "MIN",
 			"id": "MIN",
 			"label": "Minnesota Wild",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/MIN_light.svg",
 			"teamCommonName": "Wild",
 			"conferenceName": "Western",
-			"divisionName": "Central"
+			"divisionName": "Central",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-MTL",
 			"value": "MTL",
 			"id": "MTL",
 			"label": "Montréal Canadiens",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg",
 			"teamCommonName": "Canadiens",
 			"conferenceName": "Eastern",
-			"divisionName": "Atlantic"
+			"divisionName": "Atlantic",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-NYI",
 			"value": "NYI",
 			"id": "NYI",
 			"label": "New York Islanders",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/NYI_light.svg",
 			"teamCommonName": "Islanders",
 			"conferenceName": "Eastern",
-			"divisionName": "Metropolitan"
+			"divisionName": "Metropolitan",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-NYR",
 			"value": "NYR",
 			"id": "NYR",
 			"label": "New York Rangers",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg",
 			"teamCommonName": "Rangers",
 			"conferenceName": "Eastern",
-			"divisionName": "Metropolitan"
+			"divisionName": "Metropolitan",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-NSH",
 			"value": "NSH",
 			"id": "NSH",
 			"label": "Nashville Predators",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/NSH_light.svg",
 			"teamCommonName": "Predators",
 			"conferenceName": "Western",
-			"divisionName": "Central"
+			"divisionName": "Central",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-NJD",
 			"value": "NJD",
 			"id": "NJD",
 			"label": "New Jersey Devils",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/NJD_light.svg",
 			"teamCommonName": "Devils",
 			"conferenceName": "Eastern",
-			"divisionName": "Metropolitan"
+			"divisionName": "Metropolitan",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-OTT",
 			"value": "OTT",
 			"id": "OTT",
 			"label": "Ottawa Senators",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
 			"teamCommonName": "Senators",
 			"conferenceName": "Eastern",
-			"divisionName": "Atlantic"
+			"divisionName": "Atlantic",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-PHI",
 			"value": "PHI",
 			"id": "PHI",
 			"label": "Philadelphia Flyers",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/PHI_light.svg",
 			"teamCommonName": "Flyers",
 			"conferenceName": "Eastern",
-			"divisionName": "Metropolitan"
+			"divisionName": "Metropolitan",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-PIT",
 			"value": "PIT",
 			"id": "PIT",
 			"label": "Pittsburgh Penguins",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
 			"teamCommonName": "Penguins",
 			"conferenceName": "Eastern",
-			"divisionName": "Metropolitan"
+			"divisionName": "Metropolitan",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-SJS",
 			"value": "SJS",
 			"id": "SJS",
 			"label": "San Jose Sharks",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/SJS_light.svg",
 			"teamCommonName": "Sharks",
 			"conferenceName": "Western",
-			"divisionName": "Pacific"
+			"divisionName": "Pacific",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-SEA",
 			"value": "SEA",
 			"id": "SEA",
 			"label": "Seattle Kraken",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
 			"teamCommonName": "Kraken",
 			"conferenceName": "Western",
-			"divisionName": "Pacific"
+			"divisionName": "Pacific",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-STL",
 			"value": "STL",
 			"id": "STL",
 			"label": "St. Louis Blues",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/STL_light.svg",
 			"teamCommonName": "Blues",
 			"conferenceName": "Western",
-			"divisionName": "Central"
+			"divisionName": "Central",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-TBL",
 			"value": "TBL",
 			"id": "TBL",
 			"label": "Tampa Bay Lightning",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
 			"teamCommonName": "Lightning",
 			"conferenceName": "Eastern",
-			"divisionName": "Atlantic"
+			"divisionName": "Atlantic",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-TOR",
 			"value": "TOR",
 			"id": "TOR",
 			"label": "Toronto Maple Leafs",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg",
 			"teamCommonName": "Maple Leafs",
 			"conferenceName": "Eastern",
-			"divisionName": "Atlantic"
+			"divisionName": "Atlantic",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-VAN",
 			"value": "VAN",
 			"id": "VAN",
 			"label": "Vancouver Canucks",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
 			"teamCommonName": "Canucks",
 			"conferenceName": "Western",
-			"divisionName": "Pacific"
+			"divisionName": "Pacific",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-VGK",
 			"value": "VGK",
 			"id": "VGK",
 			"label": "Vegas Golden Knights",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg",
 			"teamCommonName": "Golden Knights",
 			"conferenceName": "Western",
-			"divisionName": "Pacific"
+			"divisionName": "Pacific",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-WSH",
 			"value": "WSH",
 			"id": "WSH",
 			"label": "Washington Capitals",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/WSH_light.svg",
 			"teamCommonName": "Capitals",
 			"conferenceName": "Eastern",
-			"divisionName": "Metropolitan"
+			"divisionName": "Metropolitan",
+			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-WPG",
 			"value": "WPG",
 			"id": "WPG",
 			"label": "Winnipeg Jets",
 			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
 			"teamCommonName": "Jets",
 			"conferenceName": "Western",
-			"divisionName": "Central"
+			"divisionName": "Central",
+			"league": "NHL"
 		}
 	]
 }

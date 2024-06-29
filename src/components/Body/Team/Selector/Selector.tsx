@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Select from "react-select";
-import type { TeamType } from "../../../../interface/types.js";
+import type { TeamType } from "../../../../interface/team.ts";
 import { teamSelected } from "../../../../store/store.js";
 
 export default function Selector({
