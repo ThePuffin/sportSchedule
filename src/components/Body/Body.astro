@@ -1,12 +1,12 @@
 ---
 // TODO: //youtu.be/adVbsvUf3jA
-
+import { db, Teams } from 'astro:db';
 import { getNhlTeams } from '../../utils/hockeyData';
 import DateSelector from './DateSelector/DateSelector.astro';
 import Team from './Team/Team';
 
-// let activeTeams = await db.select().from(Teams);
-let activeTeams = await getNhlTeams();
+let activeTeams = await db.select().from(Teams);
+activeTeams = await getNhlTeams();
 
 let teamsSelectedIds = [];
 
