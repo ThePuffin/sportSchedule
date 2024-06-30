@@ -1,14 +1,14 @@
 ---
 // TODO: //youtu.be/adVbsvUf3jA
 import { db, Teams } from 'astro:db';
-import { getNhlTeams } from '../../utils/hockeyData';
+import { getNhlTeams } from '../../utils/hockeyData.ts';
 import DateSelector from './DateSelector/DateSelector.astro';
 import Team from './Team/Team';
 
 let activeTeams = await db.select().from(Teams);
 activeTeams = await getNhlTeams();
 
-let teamsSelectedIds = [];
+let teamsSelectedIds: string[] = [];
 
 while (teamsSelectedIds.length < 5) {
   const randomTeam = activeTeams[Math.floor(Math.random() * activeTeams.length)].id;

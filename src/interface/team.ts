@@ -8,6 +8,7 @@ export interface TeamType {
   conferenceName: string
   divisionName: string
   league: string
+  updateDate: string
 }
 
 export interface Props {

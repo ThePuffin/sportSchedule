@@ -9,7 +9,8 @@
 			"teamCommonName": "Ducks",
 			"conferenceName": "Western",
 			"divisionName": "Pacific",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.329Z"
 		},
 		{
 			"uniqueId": "NHL-ARI",
@@ -20,7 +21,8 @@
 			"teamCommonName": "Coyotes",
 			"conferenceName": "Western",
 			"divisionName": "Central",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.329Z"
 		},
 		{
 			"uniqueId": "NHL-BOS",
@@ -31,7 +33,8 @@
 			"teamCommonName": "Bruins",
 			"conferenceName": "Eastern",
 			"divisionName": "Atlantic",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.329Z"
 		},
 		{
 			"uniqueId": "NHL-BUF",
@@ -42,7 +45,8 @@
 			"teamCommonName": "Sabres",
 			"conferenceName": "Eastern",
 			"divisionName": "Atlantic",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.329Z"
 		},
 		{
 			"uniqueId": "NHL-CGY",
@@ -53,7 +57,8 @@
 			"teamCommonName": "Flames",
 			"conferenceName": "Western",
 			"divisionName": "Pacific",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.329Z"
 		},
 		{
 			"uniqueId": "NHL-CAR",
@@ -64,7 +69,8 @@
 			"teamCommonName": "Hurricanes",
 			"conferenceName": "Eastern",
 			"divisionName": "Metropolitan",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.329Z"
 		},
 		{
 			"uniqueId": "NHL-CHI",
@@ -75,7 +81,8 @@
 			"teamCommonName": "Blackhawks",
 			"conferenceName": "Western",
 			"divisionName": "Central",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.329Z"
 		},
 		{
 			"uniqueId": "NHL-COL",
@@ -86,7 +93,8 @@
 			"teamCommonName": "Avalanche",
 			"conferenceName": "Western",
 			"divisionName": "Central",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.329Z"
 		},
 		{
 			"uniqueId": "NHL-CBJ",
@@ -97,7 +105,8 @@
 			"teamCommonName": "Blue Jackets",
 			"conferenceName": "Eastern",
 			"divisionName": "Metropolitan",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.329Z"
 		},
 		{
 			"uniqueId": "NHL-DAL",
@@ -108,7 +117,8 @@
 			"teamCommonName": "Stars",
 			"conferenceName": "Western",
 			"divisionName": "Central",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.329Z"
 		},
 		{
 			"uniqueId": "NHL-DET",
@@ -119,7 +129,8 @@
 			"teamCommonName": "Red Wings",
 			"conferenceName": "Eastern",
 			"divisionName": "Atlantic",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-EDM",
@@ -130,7 +141,8 @@
 			"teamCommonName": "Oilers",
 			"conferenceName": "Western",
 			"divisionName": "Pacific",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-FLA",
@@ -141,7 +153,8 @@
 			"teamCommonName": "Panthers",
 			"conferenceName": "Eastern",
 			"divisionName": "Atlantic",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-LAK",
@@ -152,7 +165,8 @@
 			"teamCommonName": "Kings",
 			"conferenceName": "Western",
 			"divisionName": "Pacific",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-MIN",
@@ -163,7 +177,8 @@
 			"teamCommonName": "Wild",
 			"conferenceName": "Western",
 			"divisionName": "Central",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-MTL",
@@ -174,7 +189,8 @@
 			"teamCommonName": "Canadiens",
 			"conferenceName": "Eastern",
 			"divisionName": "Atlantic",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-NYI",
@@ -185,7 +201,8 @@
 			"teamCommonName": "Islanders",
 			"conferenceName": "Eastern",
 			"divisionName": "Metropolitan",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-NYR",
@@ -196,7 +213,8 @@
 			"teamCommonName": "Rangers",
 			"conferenceName": "Eastern",
 			"divisionName": "Metropolitan",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-NSH",
@@ -207,7 +225,8 @@
 			"teamCommonName": "Predators",
 			"conferenceName": "Western",
 			"divisionName": "Central",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-NJD",
@@ -218,7 +237,8 @@
 			"teamCommonName": "Devils",
 			"conferenceName": "Eastern",
 			"divisionName": "Metropolitan",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-OTT",
@@ -229,7 +249,8 @@
 			"teamCommonName": "Senators",
 			"conferenceName": "Eastern",
 			"divisionName": "Atlantic",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-PHI",
@@ -240,7 +261,8 @@
 			"teamCommonName": "Flyers",
 			"conferenceName": "Eastern",
 			"divisionName": "Metropolitan",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-PIT",
@@ -251,7 +273,8 @@
 			"teamCommonName": "Penguins",
 			"conferenceName": "Eastern",
 			"divisionName": "Metropolitan",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-SJS",
@@ -262,7 +285,8 @@
 			"teamCommonName": "Sharks",
 			"conferenceName": "Western",
 			"divisionName": "Pacific",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-SEA",
@@ -273,7 +297,8 @@
 			"teamCommonName": "Kraken",
 			"conferenceName": "Western",
 			"divisionName": "Pacific",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-STL",
@@ -284,7 +309,8 @@
 			"teamCommonName": "Blues",
 			"conferenceName": "Western",
 			"divisionName": "Central",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-TBL",
@@ -295,7 +321,8 @@
 			"teamCommonName": "Lightning",
 			"conferenceName": "Eastern",
 			"divisionName": "Atlantic",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-TOR",
@@ -306,7 +333,8 @@
 			"teamCommonName": "Maple Leafs",
 			"conferenceName": "Eastern",
 			"divisionName": "Atlantic",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-VAN",
@@ -317,7 +345,8 @@
 			"teamCommonName": "Canucks",
 			"conferenceName": "Western",
 			"divisionName": "Pacific",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-VGK",
@@ -328,7 +357,8 @@
 			"teamCommonName": "Golden Knights",
 			"conferenceName": "Western",
 			"divisionName": "Pacific",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-WSH",
@@ -339,7 +369,8 @@
 			"teamCommonName": "Capitals",
 			"conferenceName": "Eastern",
 			"divisionName": "Metropolitan",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		},
 		{
 			"uniqueId": "NHL-WPG",
@@ -350,7 +381,8 @@
 			"teamCommonName": "Jets",
 			"conferenceName": "Western",
 			"divisionName": "Central",
-			"league": "NHL"
+			"league": "NHL",
+			"updateDate": "2024-06-30T09:56:21.330Z"
 		}
 	]
 }

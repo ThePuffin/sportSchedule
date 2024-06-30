@@ -1,11 +1,20 @@
-import { db, Teams } from 'astro:db';
+import { isExpiredData } from '../utils/date.js';
+import { db, Teams, Games, eq } from 'astro:db';
 import { writeJsonFile } from 'write-json-file';
-import type { TeamNHL, TeamType } from '../interface/team';
-const league = 'NHL';
+import allTeamsFile from '../../temporaryData/allTeams.json';
 import type { GameAPI } from '../interface/game.ts';
+import type { TeamNHL, TeamType } from '../interface/team.ts';
+import { League } from './enum.ts';
+const leagueName = League.NHL;
+const { NODE_ENV } = process.env;
 
 export const getNhlTeams = async () => {
   try {
+    const nhlTeams = await db.select().from(Teams).where(eq(Teams.league, leagueName));
+    if (nhlTeams[0] && !isExpiredData(nhlTeams[0].updateDate)) {
+      getNhlSchedule();
+      return nhlTeams;
+    }
     const fetchedTeams = await fetch('https://api-web.nhle.com/v1/standings/now');
     const fetchTeams = await fetchedTeams.json();
     const allTeams = await fetchTeams.standings;
@@ -16,7 +25,7 @@ export const getNhlTeams = async () => {
         const { teamAbbrev, teamName, teamLogo, divisionName, teamCommonName, conferenceName } = team;
         const teamID = teamAbbrev.default;
         return {
-          uniqueId: `${league}-${teamID}`,
+          uniqueId: `${leagueName}-${teamID}`,
           value: teamID,
           id: teamID,
           label: teamName?.default,
@@ -24,11 +33,13 @@ export const getNhlTeams = async () => {
           teamCommonName: teamCommonName.default,
           conferenceName,
           divisionName,
-          league: league,
+          league: leagueName,
+          updateDate: new Date().toISOString(),
         };
       });
-    // TODO: find a way to get data somewhere online
-    await writeJsonFile('./temporaryData/allTeams.json', { activeTeams });
+    if (NODE_ENV === 'development') {
+      await writeJsonFile('./temporaryData/allTeams.json', { activeTeams });
+    }
     activeTeams.forEach(async (team: TeamType) => {
       const { uniqueId, ...teamData } = team;
       await db
@@ -45,6 +56,7 @@ export const getNhlTeams = async () => {
     return activeTeams;
   } catch (error) {
     console.log('Error fetching data =>', error);
+    return allTeamsFile.activeTeams;
   }
 };
 
@@ -56,18 +68,28 @@ export const getNhlSchedule = async () => {
       allGames[id] = await getNhlTeamSchedule(id);
     })
   );
-  //   await writeJsonFile('./temporaryData/updatecurrentSeason.json', allGames);
+  if (NODE_ENV === 'development') {
+    await writeJsonFile('./temporaryData/updatecurrentSeason.json', allGames);
+  }
   console.log('updated');
   return allGames;
 };
 
 const getNhlTeamSchedule = async (id: string) => {
   try {
+    // try {
+    //   const datessss = await db.select().from(Games);
+    //   console.log({ datessss });
+    // } catch (error) {
+    //   console.log('lllllllllllllllll', error);
+    // }
+
     const fetchedGames = await fetch(`https://api-web.nhle.com/v1/club-schedule-season/${id}/now`);
     const fetchGames = await fetchedGames.json();
     const games = await fetchGames.games;
-    const gamesData = games.map((game: GameAPI) => {
-      return {
+    const gamesData = games.forEach(async (game: GameAPI) => {
+      let gameTeam = {
+        uniqueId: `${leagueName}${game.homeTeam.abbrev}${game.gameDate}`,
         awayTeamId: game.awayTeam.abbrev,
         awayTeamShort: game.awayTeam.abbrev,
         homeTeamId: game.homeTeam.abbrev,
@@ -78,7 +100,20 @@ const getNhlTeamSchedule = async (id: string) => {
         timestampDate: new Date(game.gameDate).getTime(),
         show: game.homeTeam.abbrev === id,
         selectedTeam: game.homeTeam.abbrev === id,
+        league: leagueName,
       };
+      const { uniqueId, ...gameData } = gameTeam;
+      // console.log(uniqueId, gameData);
+      // await db
+      //   .insert(Games)
+      //   .values({ ...gameTeam })
+      //   .onConflictDoUpdate({
+      //     target: Games.uniqueId,
+      //     set: {
+      //       ...gameData,
+      //     },
+      //   });
+      return gameTeam;
     });
     return gamesData;
   } catch (error) {

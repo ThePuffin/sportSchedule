@@ -68,6 +68,8 @@ export default class TeamCard extends Component<any, any> {
     this.getGames(this.state.id);
     this.subscribeToTeamSelected();
     this.subscribeToDateSelected();
+    // const comments = await db.select().from(Teams).where(eq(Teams.value, this.state.id));
+    // console.log('++++++++', comments);
   }
 
   componentWillUnmount() {
@@ -99,7 +101,7 @@ export default class TeamCard extends Component<any, any> {
       const games = currentSeason[teamSelectedId];
       if (games) {
         const gamesLookup = games.reduce((acc, gameData: GameAPI) => {
-          console.log(gameData.gameDate, this.state.beginingDate);
+          // console.log(gameData.gameDate, this.state.beginingDate);
 
           if (gameData.gameDate > this.state.beginingDate && gameData.gameDate < this.state.finishingDate) {
             acc[gameData.gameDate] = gameData;
@@ -122,6 +124,7 @@ export default class TeamCard extends Component<any, any> {
         const hideDate = false;
         const { arenaName, show, selectedTeam, homeTeamId, gameDate, awayTeamShort, homeTeamShort } = data;
         const { team } = this.state;
+
         const cardClass =
           arenaName && show ? (selectedTeam ? `card t${homeTeamId}` : `card awayGame`) : 'card unclickable';
         const extBoxClass = show ? 'ext-box' : 'whiteCard';
