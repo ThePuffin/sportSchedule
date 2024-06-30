@@ -2,7 +2,7 @@ import { isExpiredData } from '../utils/date.js';
 import { db, Teams, Games, eq } from 'astro:db';
 import { writeJsonFile } from 'write-json-file';
 import allTeamsFile from '../../temporaryData/allTeams.json';
-import type { GameAPI } from '../interface/game.ts';
+import type { GameAPI, GameFormatted } from '../interface/game.ts';
 import type { TeamNHL, TeamType } from '../interface/team.ts';
 import { League } from './enum.ts';
 const leagueName = League.NHL;
@@ -68,27 +68,30 @@ export const getNhlSchedule = async () => {
       allGames[id] = await getNhlTeamSchedule(id);
     })
   );
-  if (NODE_ENV === 'development') {
-    await writeJsonFile('./temporaryData/updatecurrentSeason.json', allGames);
-  }
+  // if (NODE_ENV === 'development') {
+  //   const firstKey = Object.keys(allGames)[0];
+  //   if (isExpiredData(allGames[firstKey].updateDate)) {
+  //     await writeJsonFile('./temporaryData/updatecurrentSeason.json', allGames);
+  //   }
+  // }
   console.log('updated');
   return allGames;
 };
 
 const getNhlTeamSchedule = async (id: string) => {
   try {
-    // try {
-    //   const datessss = await db.select().from(Games);
-    //   console.log({ datessss });
-    // } catch (error) {
-    //   console.log('lllllllllllllllll', error);
-    // }
+    const NHLgames = await db.select().from(Games).where(eq(Games.selectedTeam, id));
+    console.log(' NHLgames ', NHLgames[0], id);
+
+    if (NHLgames[0]?.updateDate && !isExpiredData(NHLgames[0]?.updateDate)) {
+      return NHLgames;
+    }
 
     const fetchedGames = await fetch(`https://api-web.nhle.com/v1/club-schedule-season/${id}/now`);
     const fetchGames = await fetchedGames.json();
     const games = await fetchGames.games;
-    const gamesData = games.forEach(async (game: GameAPI) => {
-      let gameTeam = {
+    let gamesData: GameFormatted[] = games.map((game: GameAPI) => {
+      return {
         uniqueId: `${leagueName}${game.homeTeam.abbrev}${game.gameDate}`,
         awayTeamId: game.awayTeam.abbrev,
         awayTeamShort: game.awayTeam.abbrev,
@@ -97,24 +100,30 @@ const getNhlTeamSchedule = async (id: string) => {
         arenaName: game.venue?.default || '',
         gameDate: game.gameDate,
         teamSelectedId: id,
-        timestampDate: new Date(game.gameDate).getTime(),
+        updateDate: new Date(game.gameDate).getTime(),
         show: game.homeTeam.abbrev === id,
         selectedTeam: game.homeTeam.abbrev === id,
         league: leagueName,
       };
-      const { uniqueId, ...gameData } = gameTeam;
-      // console.log(uniqueId, gameData);
-      // await db
-      //   .insert(Games)
-      //   .values({ ...gameTeam })
-      //   .onConflictDoUpdate({
-      //     target: Games.uniqueId,
-      //     set: {
-      //       ...gameData,
-      //     },
-      //   });
-      return gameTeam;
     });
+
+    gamesData = [...new Set(gamesData.map((obj) => obj.uniqueId))].map((uniqueId) =>
+      gamesData.find((obj) => obj.uniqueId === uniqueId)
+    );
+
+    gamesData.forEach(async (gameTeam: GameFormatted) => {
+      const { uniqueId, ...gameData } = gameTeam;
+      await db
+        .insert(Games)
+        .values({ ...gameTeam })
+        .onConflictDoUpdate({
+          target: Games.uniqueId,
+          set: {
+            ...gameData,
+          },
+        });
+    });
+
     return gamesData;
   } catch (error) {
     console.log('Error fetching data', error);

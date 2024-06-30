@@ -93,11 +93,16 @@ export interface LastName2 {
 }
 
 export interface GameFormatted {
+  uniqueId: string;
+  awayTeamId: string;
+  awayTeamShort: string;
+  homeTeamId: string;
+  homeTeamShort: string;
   arenaName: string;
+  gameDate: string;
+  teamSelectedId: string;
+  updateDate: string;
   show: boolean;
   selectedTeam: string;
-  homeTeamId: string;
-  gameDate: string;
-  awayTeamShort: string;
-  homeTeamShort: string;
+  league: string;
 }
