@@ -39,7 +39,6 @@ export const getNhlTeams = async () => {
           conferenceName,
           divisionName,
           league: leagueName,
-          updateDate: new Date(),
         };
       });
     if (NODE_ENV === 'development') {
