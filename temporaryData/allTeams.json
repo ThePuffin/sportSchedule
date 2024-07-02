@@ -10,19 +10,7 @@
 			"conferenceName": "Western",
 			"divisionName": "Pacific",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.329Z"
-		},
-		{
-			"uniqueId": "NHL-ARI",
-			"value": "ARI",
-			"id": "ARI",
-			"label": "Arizona Coyotes",
-			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/ARI_20202021-20232024_light.svg",
-			"teamCommonName": "Coyotes",
-			"conferenceName": "Western",
-			"divisionName": "Central",
-			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.329Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-BOS",
@@ -34,7 +22,7 @@
 			"conferenceName": "Eastern",
 			"divisionName": "Atlantic",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.329Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-BUF",
@@ -46,7 +34,7 @@
 			"conferenceName": "Eastern",
 			"divisionName": "Atlantic",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.329Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-CGY",
@@ -58,7 +46,7 @@
 			"conferenceName": "Western",
 			"divisionName": "Pacific",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.329Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-CAR",
@@ -70,7 +58,7 @@
 			"conferenceName": "Eastern",
 			"divisionName": "Metropolitan",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.329Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-CHI",
@@ -82,7 +70,7 @@
 			"conferenceName": "Western",
 			"divisionName": "Central",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.329Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-COL",
@@ -94,7 +82,7 @@
 			"conferenceName": "Western",
 			"divisionName": "Central",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.329Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-CBJ",
@@ -106,7 +94,7 @@
 			"conferenceName": "Eastern",
 			"divisionName": "Metropolitan",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.329Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-DAL",
@@ -118,7 +106,7 @@
 			"conferenceName": "Western",
 			"divisionName": "Central",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.329Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-DET",
@@ -130,7 +118,7 @@
 			"conferenceName": "Eastern",
 			"divisionName": "Atlantic",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-EDM",
@@ -142,7 +130,7 @@
 			"conferenceName": "Western",
 			"divisionName": "Pacific",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-FLA",
@@ -154,7 +142,7 @@
 			"conferenceName": "Eastern",
 			"divisionName": "Atlantic",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-LAK",
@@ -166,7 +154,7 @@
 			"conferenceName": "Western",
 			"divisionName": "Pacific",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-MIN",
@@ -178,7 +166,7 @@
 			"conferenceName": "Western",
 			"divisionName": "Central",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-MTL",
@@ -190,7 +178,7 @@
 			"conferenceName": "Eastern",
 			"divisionName": "Atlantic",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-NYI",
@@ -202,7 +190,7 @@
 			"conferenceName": "Eastern",
 			"divisionName": "Metropolitan",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-NYR",
@@ -214,7 +202,7 @@
 			"conferenceName": "Eastern",
 			"divisionName": "Metropolitan",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-NSH",
@@ -226,7 +214,7 @@
 			"conferenceName": "Western",
 			"divisionName": "Central",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-NJD",
@@ -238,7 +226,7 @@
 			"conferenceName": "Eastern",
 			"divisionName": "Metropolitan",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-OTT",
@@ -250,7 +238,7 @@
 			"conferenceName": "Eastern",
 			"divisionName": "Atlantic",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-PHI",
@@ -262,7 +250,7 @@
 			"conferenceName": "Eastern",
 			"divisionName": "Metropolitan",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-PIT",
@@ -274,7 +262,7 @@
 			"conferenceName": "Eastern",
 			"divisionName": "Metropolitan",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-SJS",
@@ -286,7 +274,7 @@
 			"conferenceName": "Western",
 			"divisionName": "Pacific",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-SEA",
@@ -298,7 +286,7 @@
 			"conferenceName": "Western",
 			"divisionName": "Pacific",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-STL",
@@ -310,7 +298,7 @@
 			"conferenceName": "Western",
 			"divisionName": "Central",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-TBL",
@@ -322,7 +310,7 @@
 			"conferenceName": "Eastern",
 			"divisionName": "Atlantic",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-TOR",
@@ -334,7 +322,7 @@
 			"conferenceName": "Eastern",
 			"divisionName": "Atlantic",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-VAN",
@@ -346,7 +334,7 @@
 			"conferenceName": "Western",
 			"divisionName": "Pacific",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-VGK",
@@ -358,7 +346,7 @@
 			"conferenceName": "Western",
 			"divisionName": "Pacific",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-WSH",
@@ -370,7 +358,7 @@
 			"conferenceName": "Eastern",
 			"divisionName": "Metropolitan",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		},
 		{
 			"uniqueId": "NHL-WPG",
@@ -382,7 +370,7 @@
 			"conferenceName": "Western",
 			"divisionName": "Central",
 			"league": "NHL",
-			"updateDate": "2024-06-30T09:56:21.330Z"
+			"updateDate": "2024-07-02T19:30:31.875Z"
 		}
 	]
 }

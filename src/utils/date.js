@@ -7,6 +7,5 @@ export const isExpiredData = (date) => {
   const now = new Date();
   const differenceInMilliseconds = now.getTime() - new Date(date).getTime();
   const differenceInDays = differenceInMilliseconds / (1000 * 60 * 60 * 24);
-  console.log({ differenceInDays });
   return differenceInDays >= expirationDay;
 };

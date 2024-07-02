@@ -1,10 +1,10 @@
-import { useState } from "react";
-import { readableDate } from "../../../utils/date.js";
+import { useState } from 'react';
+import { readableDate } from '../../../utils/date.js';
 interface InputChangeEvent extends React.ChangeEvent<HTMLInputElement> {}
 
 export default function DateSelector() {
-  const dateNow = new Date("2024-03-01");
-  let startDate = new Date("2024-03-01");
+  const dateNow = new Date('2024-10-01');
+  let startDate = new Date('2024-10-01');
   let endDate = new Date(startDate);
   endDate.setMonth(endDate.getMonth() + 1);
 
@@ -29,14 +29,7 @@ export default function DateSelector() {
         min={readableDate(dateNow)}
         onChange={handleStartChange}
       />
-      <input
-        type="date"
-        id="end"
-        name="trip-end"
-        value={end}
-        min={readableDate(dateNow)}
-        onChange={handleEndChange}
-      />
+      <input type="date" id="end" name="trip-end" value={end} min={readableDate(dateNow)} onChange={handleEndChange} />
     </div>
   );
 }

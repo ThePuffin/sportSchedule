@@ -1,4 +1,7 @@
-import { column, defineDb, defineTable } from 'astro:db';
+import { column, defineDb, defineTable } from 'astro:db'
+const now = new Date()
+
+
 
 export const Teams = defineTable({
   columns: {
@@ -11,9 +14,9 @@ export const Teams = defineTable({
     conferenceName: column.text(),
     divisionName: column.text(),
     league: column.text(),
-    updateDate: column.text({ default: new Date().toISOString() }),
+    updateDate: column.date({ default: now }),
   },
-});
+})
 
 export const Games = defineTable({
   columns: {
@@ -25,15 +28,14 @@ export const Games = defineTable({
     arenaName: column.text(),
     gameDate: column.text(),
     teamSelectedId: column.text(),
-    timestampDate: column.text(),
     show: column.boolean(),
-    selectedTeam: column.text(),
+    selectedTeam: column.boolean({ default: false }),
     league: column.text(),
-    updateDate: column.text({ default: new Date().toISOString() }),
+    updateDate: column.date({ default: now }),
   },
-});
+})
 
 // https://astro.build/db/config
 export default defineDb({
   tables: { Teams, Games },
-});
+})
