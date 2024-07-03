@@ -3,8 +3,8 @@ import { readableDate } from '../../../utils/date.js';
 interface InputChangeEvent extends React.ChangeEvent<HTMLInputElement> {}
 
 export default function DateSelector() {
-  const dateNow = new Date('2024-10-01');
-  let startDate = new Date('2024-10-01');
+  const dateNow = new Date('2024-10-09');
+  let startDate = new Date('2024-10-09');
   let endDate = new Date(startDate);
   endDate.setMonth(endDate.getMonth() + 1);
 

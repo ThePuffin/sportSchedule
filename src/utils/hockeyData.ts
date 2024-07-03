@@ -77,16 +77,18 @@ export const getNhlSchedule = async () => {
     })
   );
 
-  // if (NODE_ENV === 'development') {
-  //     const firstKey = activeTeams[0]?.id
-  //     const updateDate = firstKey && allGames[firstKey][0]?.updateDate || new Date('2020-02-20')
-  //     const expiredData = isExpiredData(updateDate)
+  if (NODE_ENV === 'development') {
+    const firstKey = activeTeams[0]?.id;
+    console.log(allGames[firstKey][0]);
 
-  //     if (expiredData) {
-  //         await writeJsonFile('./temporaryData/updatecurrentSeason.json', allGames)
-  //         console.log('updated updatecurrentSeason.json')
-  //     }
-  // }
+    const updateDate = (firstKey && allGames[firstKey][0]?.updateDate) || new Date('2020-02-20');
+    const expiredData = isExpiredData(updateDate);
+
+    if (expiredData) {
+      await writeJsonFile('./temporaryData/updatecurrentSeason.json', allGames);
+      console.log('updated updatecurrentSeason.json');
+    }
+  }
   console.log('updated');
   return allGames;
 };
@@ -104,7 +106,6 @@ const getNhlTeamSchedule = async (id: string) => {
       const fetchedGames = await fetch(`https://api-web.nhle.com/v1/club-schedule-season/${id}/now`);
       const fetchGames = await fetchedGames.json();
       games = await fetchGames.games;
-      console.log({ games });
     } catch (error) {
       games = currentGames[id];
     }
@@ -120,7 +121,7 @@ const getNhlTeamSchedule = async (id: string) => {
         gameDate: game.gameDate,
         teamSelectedId: id,
         show: game.homeTeam.abbrev === id,
-        selectedTeam: false,
+        selectedTeam: game.homeTeam.abbrev === id,
         league: leagueName,
       };
     });

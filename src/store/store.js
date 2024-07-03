@@ -3,7 +3,7 @@ import { atom } from 'nanostores';
 let size = 5;
 const year = new Date().getFullYear();
 const now = new Date();
-let startDate = new Date('2024-10-01');
+let startDate = new Date('2024-10-09');
 let endDate = new Date(startDate);
 endDate.setMonth(endDate.getMonth() + 1);
 
