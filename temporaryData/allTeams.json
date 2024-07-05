@@ -12,6 +12,17 @@
 			"league": "NHL"
 		},
 		{
+			"uniqueId": "NHL-UTA",
+			"value": "UTA",
+			"id": "UTA",
+			"label": "Utah",
+			"teamLogo": "https://assets.nhle.com/logos/nhl/svg/ARI_20202021-20232024_light.svg",
+			"teamCommonName": "Coyotes",
+			"conferenceName": "Western",
+			"divisionName": "Central",
+			"league": "NHL"
+		},
+		{
 			"uniqueId": "NHL-BOS",
 			"value": "BOS",
 			"id": "BOS",

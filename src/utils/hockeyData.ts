@@ -22,7 +22,13 @@ export const getNhlTeams = async () => {
     const fetchTeams = await fetchedTeams.json();
     allTeams = await fetchTeams.standings;
 
-    allTeams = allTeams.filter((team: TeamNHL) => team.teamAbbrev.default !== 'ARI');
+    allTeams = allTeams.map((team: TeamNHL) => {
+      if (team.teamAbbrev.default === 'ARI') {
+        team.teamAbbrev.default = 'UTA';
+        team.teamCommonName.default = 'Utah';
+      }
+      return team;
+    });
     const activeTeams = allTeams
       .sort((a: TeamNHL, b: TeamNHL) => (a.placeName?.default > b.placeName?.default ? 1 : -1))
       .map((team: TeamNHL) => {
@@ -79,9 +85,9 @@ export const getNhlSchedule = async () => {
 
   if (NODE_ENV === 'development') {
     const firstKey = activeTeams[0]?.id;
-    console.log(allGames[firstKey][0]);
+    const NHLgames = await db.select().from(Games).where(eq(Games.homeTeamShort, firstKey)).limit(1);
 
-    const updateDate = (firstKey && allGames[firstKey][0]?.updateDate) || new Date('2020-02-20');
+    const updateDate = (firstKey && NHLgames[0]?.updateDate) || new Date('2020-02-20');
     const expiredData = isExpiredData(updateDate);
 
     if (expiredData) {

@@ -52,12 +52,14 @@ export default class TeamCard extends Component<any, any> {
   subscribeToDateSelected() {
     // Call the subscribe method on teamSelected
     const newSubscriptionDate = dateSelected.subscribe(({ beginingDate, finishingDate }) => {
+      const dateBegining = readableDate(beginingDate);
+      const dateFinishing = readableDate(finishingDate);
       this.setState(() => ({
-        beginingDate: readableDate(beginingDate),
-        finishingDate: readableDate(finishingDate),
+        beginingDate: dateBegining,
+        finishingDate: dateFinishing,
       }));
 
-      this.getGames(this.state.id);
+      this.getGames(this.state.id, { beginingDate: dateBegining, finishingDate: dateFinishing });
     });
 
     // Store the subscriptionTeam for later cleanup
@@ -68,8 +70,6 @@ export default class TeamCard extends Component<any, any> {
     this.getGames(this.state.id);
     this.subscribeToTeamSelected();
     this.subscribeToDateSelected();
-    // const comments = await db.select().from(Teams).where(eq(Teams.value, this.state.id));
-    // console.log('++++++++', comments);
   }
 
   componentWillUnmount() {
@@ -95,15 +95,13 @@ export default class TeamCard extends Component<any, any> {
     return dates;
   }
 
-  getGames(teamSelectedId: string) {
+  getGames(teamSelectedId: string, { beginingDate, finishingDate } = this.state) {
     try {
-      const allDates = this.getDatesBetween(this.state.beginingDate, this.state.finishingDate);
+      const allDates = this.getDatesBetween(beginingDate, finishingDate);
       const games = currentSeason[teamSelectedId];
       if (games) {
         const gamesLookup = games.reduce((acc, gameData: GameAPI) => {
-          // console.log(gameData.gameDate, this.state.beginingDate);
-
-          if (gameData.gameDate > this.state.beginingDate && gameData.gameDate < this.state.finishingDate) {
+          if (gameData.gameDate > beginingDate && gameData.gameDate < finishingDate) {
             acc[gameData.gameDate] = gameData;
           }
           return acc;
