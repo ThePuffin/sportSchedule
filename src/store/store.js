@@ -15,9 +15,12 @@ endDate = endDate <= endSeason ? endDate : endSeason;
 
 let teamsEmpty = [...Array(size)].fill(undefined);
 let dateEmpty = { endSeason, beginingDate: startDate, finishingDate: endDate };
+let gamesSelectedEmpty = [];
 
 export const dateSelected = atom(dateEmpty);
 
 export const teamSelected = atom(teamsEmpty);
 
 export const teamsGames = atom({});
+
+export const gamesSelected = atom(gamesSelectedEmpty);

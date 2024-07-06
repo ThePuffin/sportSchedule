@@ -3,7 +3,7 @@ import currentSeason from '../../../../../temporaryData/updatecurrentSeason.json
 import type { PropsCard } from '../../../../interface/card.ts';
 import type { GameAPI, GameFormatted } from '../../../../interface/game.ts';
 import type { TeamType } from '../../../../interface/team.ts';
-import { dateSelected, teamSelected } from '../../../../store/store.js';
+import { dateSelected, teamSelected, gamesSelected } from '../../../../store/store.js';
 import { readableDate } from '../../../../utils/date.js';
 import './Card.css';
 import './colorsTeam.css';
@@ -23,11 +23,13 @@ export default class TeamCard extends Component<any, any> {
       showHome: true,
       beginingDate: readableDate(dateSelection.beginingDate),
       finishingDate: readableDate(dateSelection.finishingDate),
+      selectedGames: [],
     };
   }
 
   subscriptionTeam = undefined;
   subscriptionDate = undefined;
+  subcriptionGames = undefined;
 
   subscribeToTeamSelected() {
     // Call the subscribe method on teamSelected
@@ -66,10 +68,22 @@ export default class TeamCard extends Component<any, any> {
     this.subscriptionDate = newSubscriptionDate;
   }
 
+  subscribeTogamesSelected() {
+    const newSubscriptionGames = gamesSelected.subscribe((games) => {
+      this.setState(() => ({
+        selectedGames: games,
+      }));
+    });
+
+    // Store the subscriptionTeam for later cleanup
+    this.subcriptionGames = newSubscriptionGames;
+  }
+
   async componentDidMount() {
     this.getGames(this.state.id);
     this.subscribeToTeamSelected();
     this.subscribeToDateSelected();
+    this.subscribeTogamesSelected();
   }
 
   componentWillUnmount() {
@@ -79,6 +93,10 @@ export default class TeamCard extends Component<any, any> {
     }
     if (this.subscriptionDate) {
       this.subscriptionDate.unsubscribe();
+    }
+
+    if (tyhis.subscriptionDate) {
+      this.subcriptionGames.unsubscribe();
     }
   }
 
@@ -115,38 +133,47 @@ export default class TeamCard extends Component<any, any> {
       console.log('Error fetching game data =>', error);
     }
   }
+  onClick = (card) => {
+    let { selectedGames } = this.state;
+    const alreadySelected = selectedGames.find((selectedGame) => selectedGame.uniqueId === card.uniqueId);
+    selectedGames = selectedGames.filter(
+      (selectedGame) => selectedGame.gameDate !== card.gameDate && selectedGame.teamSelectedId !== card.teamSelectedId
+    );
+    if (!alreadySelected) {
+      selectedGames.push(card);
+    }
+    gamesSelected.set(selectedGames);
+  };
 
   render() {
     if (this.state.gamesData?.length) {
       return this.state.gamesData.map((data: GameFormatted) => {
         const hideDate = false;
-        const { arenaName, show, selectedTeam, homeTeamId, gameDate, awayTeamShort, homeTeamShort } = data;
+        const { arenaName, show, selectedTeam, homeTeamId, gameDate, awayTeamShort, homeTeamShort, uniqueId } = data;
         const { team } = this.state;
 
-        const cardClass =
-          arenaName && show ? (selectedTeam ? `card t${homeTeamId}` : `card awayGame`) : 'card unclickable';
+        const homeOrAway = selectedTeam ? `card t${homeTeamId}` : `card awayGame`;
+        const cardClass = !!homeTeamId && show ? homeOrAway : 'card unclickable';
         const extBoxClass = show ? 'ext-box' : 'whiteCard';
         const dateClass = hideDate ? 'cardText hideDate' : 'cardText';
         const { teamLogo, value } = team;
 
         return (
-          <div className={cardClass}>
-            <div>
-              <div className={extBoxClass}>
-                <div>
-                  <p className={dateClass}>{gameDate}</p>
-                </div>
-                <h4 className="cardText">
-                  {awayTeamShort}
-                  {!show && awayTeamShort && <img src={teamLogo} alt={value} />}
-                </h4>
-                {awayTeamShort && <p className="cardText vs">vs</p>}
-                <h4 className="cardText">
-                  {homeTeamShort}
-                  {show && homeTeamShort && <img src={teamLogo} alt={value} />}
-                </h4>
-                <p className="cardText arena"> {arenaName}</p>
+          <div key={uniqueId} className={cardClass} onClick={() => this.onClick(data)}>
+            <div className={extBoxClass}>
+              <div>
+                <p className={dateClass}>{gameDate}</p>
               </div>
+              <h4 className="cardText">
+                {awayTeamShort}
+                {!show && awayTeamShort && <img src={teamLogo} alt={value} />}
+              </h4>
+              {awayTeamShort && <p className="cardText vs">vs</p>}
+              <h4 className="cardText">
+                {homeTeamShort}
+                {show && homeTeamShort && <img src={teamLogo} alt={value} />}
+              </h4>
+              <p className="cardText arena"> {arenaName}</p>
             </div>
           </div>
         );

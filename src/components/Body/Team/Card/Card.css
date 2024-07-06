@@ -11,3 +11,8 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.unclickable {
+  cursor: none;
+  pointer-events: none;
+}
