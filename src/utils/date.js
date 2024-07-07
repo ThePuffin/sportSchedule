@@ -1,5 +1,5 @@
 export const readableDate = (date) => {
-  return new Date(date).toISOString().split('T')[0];
+  return new Date(date).toISOString().split("T")[0];
 };
 
 export const isExpiredData = (date) => {

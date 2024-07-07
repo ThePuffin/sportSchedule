@@ -1,8 +1,8 @@
 import { Component } from 'react';
 import currentSeason from '../../../../../temporaryData/updatecurrentSeason.json';
-import type { PropsCard } from '../../../../interface/card.ts';
-import type { GameAPI, GameFormatted } from '../../../../interface/game.ts';
-import type { TeamType } from '../../../../interface/team.ts';
+import type { PropsCard } from '../../../../interface/card';
+import type { GameAPI, GameFormatted } from '../../../../interface/game';
+import type { TeamType } from '../../../../interface/team';
 import { dateSelected, teamSelected, gamesSelected } from '../../../../store/store.js';
 import { readableDate } from '../../../../utils/date.js';
 import './Card.css';
@@ -61,7 +61,10 @@ export default class TeamCard extends Component<any, any> {
         finishingDate: dateFinishing,
       }));
 
-      this.getGames(this.state.id, { beginingDate: dateBegining, finishingDate: dateFinishing });
+      this.getGames(this.state.id, {
+        beginingDate: dateBegining,
+        finishingDate: dateFinishing,
+      });
     });
 
     // Store the subscriptionTeam for later cleanup
@@ -95,7 +98,7 @@ export default class TeamCard extends Component<any, any> {
       this.subscriptionDate.unsubscribe();
     }
 
-    if (tyhis.subscriptionDate) {
+    if (this.subcriptionGames) {
       this.subcriptionGames.unsubscribe();
     }
   }
@@ -142,6 +145,8 @@ export default class TeamCard extends Component<any, any> {
     if (!alreadySelected) {
       selectedGames.push(card);
     }
+    console.log({ selectedGames });
+
     gamesSelected.set(selectedGames);
   };
 
@@ -179,7 +184,11 @@ export default class TeamCard extends Component<any, any> {
         );
       });
     } else {
-      return <p>wait for it...</p>;
+      return (
+        <div key={this.state.i}>
+          <p>wait for it...</p>
+        </div>
+      );
     }
   }
 }

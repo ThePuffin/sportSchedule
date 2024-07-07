@@ -1,6 +1,6 @@
-import { Games, Teams, db } from 'astro:db';
-import lastAllTeams from '../temporaryData/allTeams.json';
-import lastGames from '../temporaryData/updatecurrentSeason.json';
+import { Games, Teams, db } from "astro:db";
+import lastAllTeams from "../temporaryData/allTeams.json";
+import lastGames from "../temporaryData/updatecurrentSeason.json";
 
 // https://astro.build/db/seed
 export default async function insertTeams() {
@@ -9,7 +9,7 @@ export default async function insertTeams() {
     if (games.length) {
       await db.insert(Games).values(games);
     } else {
-      console.log('No games found for', team);
+      console.log("No games found for", team);
     }
   }
 }

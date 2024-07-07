@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { dateSelected } from '../../../../store/store.js';
-import { readableDate } from '../../../../utils/date.js';
+import { useState } from "react";
+import { dateSelected } from "../../../../store/store.js";
+import { readableDate } from "../../../../utils/date.js";
 
 export default function DatePickerSelector() {
   let { beginingDate, finishingDate, endSeason } = dateSelected.get();
@@ -11,7 +11,7 @@ export default function DatePickerSelector() {
     let newStartDate = startDate;
     let newEndDate = endDate;
 
-    if (id === 'startDatePicker') {
+    if (id === "startDatePicker") {
       newStartDate = new Date(value);
     } else {
       newEndDate = new Date(value);
@@ -40,7 +40,7 @@ export default function DatePickerSelector() {
         type="date"
         onChange={(e) => changeDate(e.target)}
         id="startDatePicker"
-        min={readableDate(new Date('2024-10-09'))}
+        min={readableDate(new Date("2024-10-09"))}
         max={readableDate(endSeason)}
         name="trip-start"
         value={readableDate(startDate)}
