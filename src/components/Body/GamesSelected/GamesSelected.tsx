@@ -2,8 +2,8 @@ import { Component } from 'react';
 import { gamesSelected } from '../../../store/store.js';
 
 export default class GamesSelected extends Component<any, any> {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       gamesSelected: [],

@@ -5,7 +5,7 @@ import { Component } from 'react';
 
 export default class Selector extends Component<any, any> {
   constructor(props) {
-    super();
+    super(props);
 
     this.state = {
       availableTeams: [],
