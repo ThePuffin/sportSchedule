@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { gamesSelected } from '../../../store/store.js';
 import TeamCard from '../TeamCard/TeamCard.tsx';
-import Type {GameFormatted} from '../../../interface/game.ts'
+import type { GameFormatted } from '../../../interface/game.ts';
 
 const GamesSelected = (props) => {
   const [games, setGames] = useState([]);
 
   useEffect(() => {
-    const subscription = gamesSelected.subscribe((newGames: GameFormatted) => {
+    gamesSelected.subscribe((newGames: GameFormatted) => {
       setGames(newGames);
     });
 
