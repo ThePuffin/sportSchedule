@@ -1,55 +1,44 @@
-import { Component } from 'react';
-import { gamesSelected } from '../../../store/store.js';
+import React, { useEffect, useState } from 'react'
+import { gamesSelected } from '../../../store/store.js'
+import TeamCard from '../TeamCard/TeamCard.tsx'
 
-export default class GamesSelected extends Component<any, any> {
-  constructor(props) {
-    super(props);
+const GamesSelected = (props) => {
+  const [games, setGames] = useState([])
 
-    this.state = {
-      gamesSelected: [],
-    };
-  }
-  subcriptionGames = undefined;
-  subscribeTogamesSelected() {
-    const newSubscriptionGames = gamesSelected.subscribe((games) => {
-      this.setState(() => ({
-        gamesSelected: games,
-      }));
-    });
+  useEffect(() => {
+    const subscription = gamesSelected.subscribe((newGames) => {
+      setGames(newGames)
+    })
 
-    // Store the subscriptionTeam for later cleanup
-    this.subcriptionGames = newSubscriptionGames;
-  }
-
-  async componentDidMount() {
-    this.subscribeTogamesSelected();
-  }
-
-  componentWillUnmount() {
-    if (this.subcriptionGames) {
-      this.subcriptionGames.unsubscribe();
+    // Cleanup function
+    return () => {
+      if (subscription) {
+        subscription.unsubscribe()
+      }
     }
-  }
+  }, [])
 
-  render() {
-    if (this.state.gamesSelected.length) {
-      return (
-        <div>
-          <table style={{ tableLayout: 'fixed', width: '100%' }}>
-            <tbody>
-              {this.state.gamesSelected.map(({ uniqueId }) => {
-                return <tr key={uniqueId}>{uniqueId}</tr>;
+  if (games.length) {
+    return (
+      <div>
+        <table style={{ tableLayout: 'fixed', width: '100%' }}>
+          <tbody>
+            <tr>
+              {games.map((game) => {
+                return (
+                  <td key={game.uniqueId}>
+                    <TeamCard game={game} />
+                  </td>
+                )
               })}
-            </tbody>
-          </table>
-        </div>
-      );
-    } else {
-      return (
-        <div>
-          <p>select some games</p>
-        </div>
-      );
-    }
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    )
+  } else {
+    return <div></div>
   }
 }
+
+export default GamesSelected
