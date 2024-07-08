@@ -7,7 +7,7 @@ const GamesSelected = (props) => {
   const [games, setGames] = useState([]);
 
   useEffect(() => {
-    gamesSelected.subscribe((newGames: GameFormatted) => {
+    gamesSelected.subscribe((newGames: GameFormatted[]) => {
       setGames(newGames);
     });
 
