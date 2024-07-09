@@ -3,7 +3,7 @@ import type { GameFormatted } from '../../../interface/game.ts';
 import { gamesSelected } from '../../../store/store.js';
 import TeamCard from '../TeamCard/TeamCard.tsx';
 
-const GamesSelected = (props) => {
+const GamesSelected = () => {
   const [games, setGames] = useState([]);
 
   useEffect(() => {
