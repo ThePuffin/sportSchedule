@@ -1,5 +1,5 @@
 ---
-import { db, Teams } from 'astro:db'
+import { db, Teams, Games } from 'astro:db'
 import { getNhlTeams } from '../../utils/hockeyData.ts'
 import DateSelector from './DateSelector/DateSelector.astro'
 import GamesSelected from './GamesSelected/GamesSelected.tsx'
@@ -7,6 +7,7 @@ import Team from './Team/Team'
 
 let activeTeams = await db.select().from(Teams)
 activeTeams = await getNhlTeams()
+const teamsGames = await db.select().from(Games)
 
 let teamsSelectedIds: string[] = ['WPG', 'EDM', 'CGY', 'VAN', 'SEA']
 
@@ -20,4 +21,4 @@ while (teamsSelectedIds.length < 5) {
 
 <GamesSelected client:visible />
 <DateSelector />
-<Team {activeTeams} {teamsSelectedIds} client:visible />
+<Team {activeTeams} {teamsSelectedIds} {teamsGames} client:visible />

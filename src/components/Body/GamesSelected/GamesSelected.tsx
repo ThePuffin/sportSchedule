@@ -1,23 +1,23 @@
-import React, { useEffect, useState } from 'react'
-import type { GameFormatted } from '../../../interface/game.ts'
-import { gamesSelected } from '../../../store/store.js'
-import TeamCard from '../TeamCard/TeamCard.tsx'
+import React, { useEffect, useState } from 'react';
+import type { GameFormatted } from '../../../interface/game.ts';
+import { gamesSelected } from '../../../store/store.js';
+import TeamCard from '../TeamCard/TeamCard.tsx';
 
 const GamesSelected = (props) => {
-  const [games, setGames] = useState([])
+  const [games, setGames] = useState([]);
 
   useEffect(() => {
     gamesSelected.subscribe((newGames: GameFormatted[]) => {
-      setGames(newGames)
-    })
+      setGames(newGames);
+    });
 
     // Cleanup function
     return () => {
       // if (subscription) {
       //   subscription.unsubscribe()
       // }
-    }
-  }, [])
+    };
+  }, []);
 
   if (games.length) {
     return (
@@ -30,16 +30,16 @@ const GamesSelected = (props) => {
                   <td key={game.uniqueId}>
                     <TeamCard game={game} isSelected={false} />
                   </td>
-                )
+                );
               })}
             </tr>
           </tbody>
         </table>
       </div>
-    )
+    );
   } else {
-    return <div></div>
+    return <div></div>;
   }
-}
+};
 
-export default GamesSelected
+export default GamesSelected;
