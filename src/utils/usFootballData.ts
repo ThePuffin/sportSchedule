@@ -23,7 +23,7 @@ export const getNFLTeams = async () => {
     const fetchTeams = await fetchedTeams.json();
     const { sports } = await fetchTeams;
     const { leagues } = sports[0];
-    allTeams: TeamNFL = leagues[0].teams;
+    allTeams = leagues[0].teams;
 
     const activeTeams = allTeams
       .filter(({ team }) => team.isActive)
