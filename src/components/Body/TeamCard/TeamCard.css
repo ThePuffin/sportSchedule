@@ -1,0 +1,43 @@
+img {
+  height: 25px;
+}
+
+.card {
+  border-radius: 10px;
+  height: 13rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-align: center;
+  opacity: 0.98;
+  max-width: 50vw;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.arena {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.unclickable {
+  display: flex;
+  cursor: none;
+  pointer-events: none;
+  align-items: start;
+  & .cardText {
+    margin-top: 0;
+  }
+}
+
+.selected {
+  opacity: 1;
+  filter: brightness(135%);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.952);
+  transform: scale(1.01);
+  border-radius: 100vw;
+}

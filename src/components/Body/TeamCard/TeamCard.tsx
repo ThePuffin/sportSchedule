@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import TeamData from '../../../../temporaryData/allTeams.json'
+import TeamData from '../../../../temporaryData/allTeamsNHL.json'
 import type { PropsCard } from '../../../interface/card.js'
 import type { GameFormatted } from '../../../interface/game.js'
 import { gamesSelected } from '../../../store/store.js'
-import './Card.css'
+import './TeamCard.css'
 import './colorsTeam.css'
 
 const TeamCard = (props: PropsCard) => {
@@ -27,7 +27,7 @@ const TeamCard = (props: PropsCard) => {
     setGame(card)
   }
 
-  const { arenaName, league, awayTeamId, show, selectedTeam, homeTeamId, gameDate, awayTeamShort, homeTeamShort } = game
+  const { arenaName, league, awayTeamId, show, selectedTeam, homeTeamId, gameDate, awayTeamShort, homeTeamShort, awayTeam, homeTeam } = game
   let homeTeamLogo
   let awayTeamLogo
   if (homeTeamId) {
@@ -57,12 +57,12 @@ const TeamCard = (props: PropsCard) => {
           <p className={dateClass}>{gameDate}</p>
         </div>
         <h4 className="cardText">
-          {show && awayTeamShort && <img src={awayTeamLogo} alt={awayTeamShort} />}
+          {show && awayTeamShort && <img src={awayTeamLogo} alt={awayTeam} />}
           {awayTeamShort}
         </h4>
         {awayTeamShort && <p className="cardText vs">vs</p>}
         <h4 className="cardText">
-          {show && homeTeamShort && <img src={homeTeamLogo} alt={homeTeamShort} />}
+          {show && homeTeamShort && <img src={homeTeamLogo} alt={homeTeam} />}
           {homeTeamShort}
         </h4>
         <p className="cardText arena"> {arenaName}</p>
