@@ -21,9 +21,9 @@ export const getNFLTeams = async () => {
 
     const fetchedTeams = await fetch('https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams');
     const fetchTeams = await fetchedTeams.json();
-    const { sports }: TeamNFL = await fetchTeams;
+    const { sports } = await fetchTeams;
     const { leagues } = sports[0];
-    allTeams = leagues[0].teams;
+    allTeams: TeamNFL = leagues[0].teams;
 
     const activeTeams = allTeams
       .filter(({ team }) => team.isActive)
