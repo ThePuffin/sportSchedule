@@ -1,20 +1,19 @@
 ---
-// TODO: //youtu.be/adVbsvUf3jA
-import { db, Teams } from 'astro:db';
-import { getNhlTeams } from '../../utils/hockeyData.ts';
-import DateSelector from './DateSelector/DateSelector.astro';
-import GamesSelected from './GamesSelected/GamesSelected.tsx';
-import Team from './Team/Team';
+import { db, Teams } from 'astro:db'
+import { getNhlTeams } from '../../utils/hockeyData.ts'
+import DateSelector from './DateSelector/DateSelector.astro'
+import GamesSelected from './GamesSelected/GamesSelected.tsx'
+import Team from './Team/Team'
 
-let activeTeams = await db.select().from(Teams);
-activeTeams = await getNhlTeams();
+let activeTeams = await db.select().from(Teams)
+activeTeams = await getNhlTeams()
 
-let teamsSelectedIds: string[] = ['WPG', 'EDM', 'CGY', 'VAN', 'SEA'];
+let teamsSelectedIds: string[] = ['WPG', 'EDM', 'CGY', 'VAN', 'SEA']
 
 while (teamsSelectedIds.length < 5) {
-  const randomTeam = activeTeams[Math.floor(Math.random() * activeTeams.length)].id;
+  const randomTeam = activeTeams[Math.floor(Math.random() * activeTeams.length)].id
   if (!teamsSelectedIds.includes(randomTeam)) {
-    teamsSelectedIds.push(randomTeam);
+    teamsSelectedIds.push(randomTeam)
   }
 }
 ---

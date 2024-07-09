@@ -12,4 +12,5 @@ export interface PropsCards {
 
 export interface PropsCard {
   game: GameFormatted
+  isSelected: boolean
 }

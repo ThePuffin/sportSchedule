@@ -9,7 +9,7 @@ import './colorsTeam.css'
 const TeamCard = (props: PropsCard) => {
   const [game, setGame] = useState(props.game)
 
-  const onClick = (card) => {
+  const onClick = async (card) => {
     let selectedGamesCopy: GameFormatted[] = []
     selectedGamesCopy = gamesSelected.get()
 
@@ -17,10 +17,12 @@ const TeamCard = (props: PropsCard) => {
     selectedGamesCopy = selectedGamesCopy.filter(
       (selectedGame) => selectedGame.gameDate !== card.gameDate && selectedGame.teamSelectedId !== card.teamSelectedId
     )
+
     if (!alreadySelected) {
       selectedGamesCopy.push(card)
       selectedGamesCopy.sort((a, b) => new Date(a.gameDate).getTime() - new Date(b.gameDate).getTime())
     }
+
     gamesSelected.set(selectedGamesCopy)
     setGame(card)
   }
@@ -41,8 +43,10 @@ const TeamCard = (props: PropsCard) => {
 
   const homeOrAway = selectedTeam ? `card t${homeTeamId}` : `card awayGame`
 
-  const cardClass = !!homeTeamId && show ? homeOrAway : 'card unclickable'
-  //TODO: fix the unclickable class
+  let cardClass = !!homeTeamId && show ? homeOrAway : 'card unclickable'
+  if (props.isSelected) {
+    cardClass += ' selected'
+  }
 
   const extBoxClass = show ? 'ext-box' : 'whiteCard'
   const dateClass = hideDate ? 'cardText hideDate' : 'cardText'

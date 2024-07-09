@@ -3,7 +3,7 @@ import currentSeason from '../../../../../temporaryData/updatecurrentSeason.json
 import type { PropsCards } from '../../../../interface/card'
 import type { GameAPI, GameFormatted } from '../../../../interface/game'
 import type { TeamType } from '../../../../interface/team'
-import { dateSelected, teamSelected } from '../../../../store/store.js'
+import { dateSelected, gamesSelected, teamSelected } from '../../../../store/store.js'
 import { readableDate } from '../../../../utils/date.js'
 import TeamCard from '../../TeamCard/TeamCard.tsx'
 
@@ -23,11 +23,13 @@ export default class Cards extends Component<any, any> {
       showHome: true,
       beginingDate: readableDate(dateSelection.beginingDate),
       finishingDate: readableDate(dateSelection.finishingDate),
+      selectedGames: gamesSelected.get(),
     }
   }
 
   subscriptionTeam = undefined
   subscriptionDate = undefined
+  subcriptionGames = undefined
 
   subscribeToTeamSelected() {
     // Call the subscribe method on teamSelected
@@ -69,10 +71,25 @@ export default class Cards extends Component<any, any> {
     this.subscriptionDate = newSubscriptionDate
   }
 
+  subscribeToGamesSelected() {
+    // Call the subscribe method on teamSelected
+    const newGames = gamesSelected.subscribe((games) => {
+      console.log(games)
+
+      this.setState(() => ({
+        selectedGames: games,
+      }))
+    })
+
+    // Store the GamesTeam for later cleanup
+    this.subcriptionGames = newGames
+  }
+
   async componentDidMount() {
     this.getGames(this.state.id)
     this.subscribeToTeamSelected()
     this.subscribeToDateSelected()
+    this.subscribeToGamesSelected()
   }
 
   componentWillUnmount() {
@@ -82,6 +99,9 @@ export default class Cards extends Component<any, any> {
     }
     if (this.subscriptionDate) {
       this.subscriptionDate.unsubscribe()
+    }
+    if (this.subcriptionGames) {
+      this.subcriptionGames.unsubscribe()
     }
   }
 
@@ -122,7 +142,9 @@ export default class Cards extends Component<any, any> {
   render() {
     if (this.state.gamesData?.length) {
       return this.state.gamesData.map((data: GameFormatted) => {
-        return <TeamCard key={data.uniqueId} game={data} />
+        const isSelected = this.state.selectedGames.find((selectedGame: GameFormatted) => selectedGame.uniqueId === data.uniqueId)
+
+        return <TeamCard key={data.uniqueId} game={data} isSelected={!!isSelected} />
       })
     } else {
       return (
