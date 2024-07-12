@@ -44,7 +44,8 @@ export const getNFLTeams = async () => {
         return {
           uniqueId: `${leagueName}-${teamID}`,
           value: id,
-          id: teamID,
+          id: id,
+          abbrev: teamID,
           label: displayName,
           teamLogo: logos[0].href,
           teamCommonName: nickname,

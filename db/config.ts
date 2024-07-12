@@ -1,5 +1,5 @@
-import { column, defineDb, defineTable } from "astro:db"
-const now = new Date()
+import { column, defineDb, defineTable } from 'astro:db';
+const now = new Date();
 
 export const Teams = defineTable({
   columns: {
@@ -12,9 +12,10 @@ export const Teams = defineTable({
     conferenceName: column.text(),
     divisionName: column.text(),
     league: column.text(),
+    abbrev: column.text({ default: '' }),
     updateDate: column.date({ default: now }),
   },
-})
+});
 
 export const Games = defineTable({
   columns: {
@@ -33,9 +34,9 @@ export const Games = defineTable({
     league: column.text(),
     updateDate: column.date({ default: now }),
   },
-})
+});
 
 // https://astro.build/db/config
 export default defineDb({
   tables: { Teams, Games },
-})
+});

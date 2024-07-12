@@ -3,7 +3,7 @@
 		{
 			"uniqueId": "NFL-ARI",
 			"value": "22",
-			"id": "ARI",
+			"id": "22",
 			"label": "Arizona Cardinals",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ari.png",
 			"teamCommonName": "Cardinals",
@@ -14,7 +14,7 @@
 		{
 			"uniqueId": "NFL-ATL",
 			"value": "1",
-			"id": "ATL",
+			"id": "1",
 			"label": "Atlanta Falcons",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/atl.png",
 			"teamCommonName": "Falcons",
@@ -25,7 +25,7 @@
 		{
 			"uniqueId": "NFL-BAL",
 			"value": "33",
-			"id": "BAL",
+			"id": "33",
 			"label": "Baltimore Ravens",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/bal.png",
 			"teamCommonName": "Ravens",
@@ -36,7 +36,7 @@
 		{
 			"uniqueId": "NFL-BUF",
 			"value": "2",
-			"id": "BUF",
+			"id": "2",
 			"label": "Buffalo Bills",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
 			"teamCommonName": "Bills",
@@ -47,7 +47,7 @@
 		{
 			"uniqueId": "NFL-CAR",
 			"value": "29",
-			"id": "CAR",
+			"id": "29",
 			"label": "Carolina Panthers",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/car.png",
 			"teamCommonName": "Panthers",
@@ -58,7 +58,7 @@
 		{
 			"uniqueId": "NFL-CHI",
 			"value": "3",
-			"id": "CHI",
+			"id": "3",
 			"label": "Chicago Bears",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
 			"teamCommonName": "Bears",
@@ -69,7 +69,7 @@
 		{
 			"uniqueId": "NFL-CIN",
 			"value": "4",
-			"id": "CIN",
+			"id": "4",
 			"label": "Cincinnati Bengals",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
 			"teamCommonName": "Bengals",
@@ -80,7 +80,7 @@
 		{
 			"uniqueId": "NFL-CLE",
 			"value": "5",
-			"id": "CLE",
+			"id": "5",
 			"label": "Cleveland Browns",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/cle.png",
 			"teamCommonName": "Browns",
@@ -91,7 +91,7 @@
 		{
 			"uniqueId": "NFL-DAL",
 			"value": "6",
-			"id": "DAL",
+			"id": "6",
 			"label": "Dallas Cowboys",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
 			"teamCommonName": "Cowboys",
@@ -102,7 +102,7 @@
 		{
 			"uniqueId": "NFL-DEN",
 			"value": "7",
-			"id": "DEN",
+			"id": "7",
 			"label": "Denver Broncos",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
 			"teamCommonName": "Broncos",
@@ -113,7 +113,7 @@
 		{
 			"uniqueId": "NFL-DET",
 			"value": "8",
-			"id": "DET",
+			"id": "8",
 			"label": "Detroit Lions",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
 			"teamCommonName": "Lions",
@@ -124,7 +124,7 @@
 		{
 			"uniqueId": "NFL-GB",
 			"value": "9",
-			"id": "GB",
+			"id": "9",
 			"label": "Green Bay Packers",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
 			"teamCommonName": "Packers",
@@ -135,7 +135,7 @@
 		{
 			"uniqueId": "NFL-HOU",
 			"value": "34",
-			"id": "HOU",
+			"id": "34",
 			"label": "Houston Texans",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png",
 			"teamCommonName": "Texans",
@@ -146,7 +146,7 @@
 		{
 			"uniqueId": "NFL-IND",
 			"value": "11",
-			"id": "IND",
+			"id": "11",
 			"label": "Indianapolis Colts",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ind.png",
 			"teamCommonName": "Colts",
@@ -157,7 +157,7 @@
 		{
 			"uniqueId": "NFL-JAX",
 			"value": "30",
-			"id": "JAX",
+			"id": "30",
 			"label": "Jacksonville Jaguars",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
 			"teamCommonName": "Jaguars",
@@ -168,7 +168,7 @@
 		{
 			"uniqueId": "NFL-KC",
 			"value": "12",
-			"id": "KC",
+			"id": "12",
 			"label": "Kansas City Chiefs",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
 			"teamCommonName": "Chiefs",
@@ -179,7 +179,7 @@
 		{
 			"uniqueId": "NFL-LV",
 			"value": "13",
-			"id": "LV",
+			"id": "13",
 			"label": "Las Vegas Raiders",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
 			"teamCommonName": "Raiders",
@@ -190,7 +190,7 @@
 		{
 			"uniqueId": "NFL-LAC",
 			"value": "24",
-			"id": "LAC",
+			"id": "24",
 			"label": "Los Angeles Chargers",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
 			"teamCommonName": "Chargers",
@@ -201,7 +201,7 @@
 		{
 			"uniqueId": "NFL-LAR",
 			"value": "14",
-			"id": "LAR",
+			"id": "14",
 			"label": "Los Angeles Rams",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png",
 			"teamCommonName": "Rams",
@@ -212,7 +212,7 @@
 		{
 			"uniqueId": "NFL-MIA",
 			"value": "15",
-			"id": "MIA",
+			"id": "15",
 			"label": "Miami Dolphins",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/mia.png",
 			"teamCommonName": "Dolphins",
@@ -223,7 +223,7 @@
 		{
 			"uniqueId": "NFL-MIN",
 			"value": "16",
-			"id": "MIN",
+			"id": "16",
 			"label": "Minnesota Vikings",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
 			"teamCommonName": "Vikings",
@@ -234,7 +234,7 @@
 		{
 			"uniqueId": "NFL-NE",
 			"value": "17",
-			"id": "NE",
+			"id": "17",
 			"label": "New England Patriots",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ne.png",
 			"teamCommonName": "Patriots",
@@ -245,7 +245,7 @@
 		{
 			"uniqueId": "NFL-NO",
 			"value": "18",
-			"id": "NO",
+			"id": "18",
 			"label": "New Orleans Saints",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/no.png",
 			"teamCommonName": "Saints",
@@ -256,7 +256,7 @@
 		{
 			"uniqueId": "NFL-NYG",
 			"value": "19",
-			"id": "NYG",
+			"id": "19",
 			"label": "New York Giants",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
 			"teamCommonName": "Giants",
@@ -267,7 +267,7 @@
 		{
 			"uniqueId": "NFL-NYJ",
 			"value": "20",
-			"id": "NYJ",
+			"id": "20",
 			"label": "New York Jets",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png",
 			"teamCommonName": "Jets",
@@ -278,7 +278,7 @@
 		{
 			"uniqueId": "NFL-PHI",
 			"value": "21",
-			"id": "PHI",
+			"id": "21",
 			"label": "Philadelphia Eagles",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
 			"teamCommonName": "Eagles",
@@ -289,7 +289,7 @@
 		{
 			"uniqueId": "NFL-PIT",
 			"value": "23",
-			"id": "PIT",
+			"id": "23",
 			"label": "Pittsburgh Steelers",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/pit.png",
 			"teamCommonName": "Steelers",
@@ -300,7 +300,7 @@
 		{
 			"uniqueId": "NFL-SF",
 			"value": "25",
-			"id": "SF",
+			"id": "25",
 			"label": "San Francisco 49ers",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
 			"teamCommonName": "49ers",
@@ -311,7 +311,7 @@
 		{
 			"uniqueId": "NFL-SEA",
 			"value": "26",
-			"id": "SEA",
+			"id": "26",
 			"label": "Seattle Seahawks",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/sea.png",
 			"teamCommonName": "Seahawks",
@@ -322,7 +322,7 @@
 		{
 			"uniqueId": "NFL-TB",
 			"value": "27",
-			"id": "TB",
+			"id": "27",
 			"label": "Tampa Bay Buccaneers",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/tb.png",
 			"teamCommonName": "Buccaneers",
@@ -333,7 +333,7 @@
 		{
 			"uniqueId": "NFL-TEN",
 			"value": "10",
-			"id": "TEN",
+			"id": "10",
 			"label": "Tennessee Titans",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ten.png",
 			"teamCommonName": "Titans",
@@ -344,7 +344,7 @@
 		{
 			"uniqueId": "NFL-WSH",
 			"value": "28",
-			"id": "WSH",
+			"id": "28",
 			"label": "Washington Commanders",
 			"teamLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
 			"teamCommonName": "Commanders",
