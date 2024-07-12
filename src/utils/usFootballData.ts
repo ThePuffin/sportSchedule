@@ -13,10 +13,10 @@ const { NODE_ENV } = process.env;
 export const getNFLTeams = async () => {
   try {
     const NFLTeams = await db.select().from(Teams).where(eq(Teams.league, leagueName));
-    if (NFLTeams[0] && !isExpiredData(NFLTeams[0].updateDate)) {
-      getNFLSchedule();
-      return NFLTeams;
-    }
+    // if (NFLTeams[0] && !isExpiredData(NFLTeams[0].updateDate)) {
+    //   getNFLSchedule();
+    //   return NFLTeams;
+    // }
     let allTeams;
 
     const fetchedTeams = await fetch('https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams');
@@ -24,6 +24,15 @@ export const getNFLTeams = async () => {
     const { sports } = await fetchTeams;
     const { leagues } = sports[0];
     allTeams = leagues[0].teams;
+
+    // console.log(allTeams.map(({ team }) => {
+    //   const idd = `${leagueName}-${team.id}`
+    //   return {
+    //     team: idd,
+    //     'color': team.color,
+    //     'background-color': team.alternateColor
+    //   }
+    // }))
 
     const activeTeams = allTeams
       .filter(({ team }) => team.isActive)
@@ -34,8 +43,8 @@ export const getNFLTeams = async () => {
 
         return {
           uniqueId: `${leagueName}-${teamID}`,
-          value: teamID,
-          id,
+          value: id,
+          id: teamId,
           label: displayName,
           teamLogo: logos[0].href,
           teamCommonName: nickname,

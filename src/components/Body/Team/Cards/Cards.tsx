@@ -38,8 +38,8 @@ export default class Cards extends Component<any, any> {
       const i = this.state.i
       const newSelectionId = newSelections[i]
 
-      if (newSelectionId && this.state.id !== newSelectionId) {
-        const newTeam = this.state.activeTeams.find((activeTeam: TeamType) => activeTeam.id === newSelectionId)
+      if (newSelectionId && this.state?.id !== newSelectionId) {
+        const newTeam = this.state.activeTeams.find((activeTeam: TeamType) => activeTeam?.id === newSelectionId)
         this.getGames(newSelectionId)
         this.setState(() => ({
           team: newTeam,
@@ -120,7 +120,6 @@ export default class Cards extends Component<any, any> {
   getGames(teamSelectedId: string, { beginingDate, finishingDate } = this.state) {
     try {
       const allDates = this.getDatesBetween(beginingDate, finishingDate)
-
       const games = this.state.teamsGames.filter((game) => game.teamSelectedId === teamSelectedId)
       if (games) {
         const gamesLookup = games.reduce((acc, gameData: NHLGameAPI) => {

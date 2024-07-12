@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import TeamData from '../../../../temporaryData/allTeamsNHL.json'
+import TeamDataNFL from '../../../../temporaryData/allTeamsNFL.json'
+import TeamDataNHL from '../../../../temporaryData/allTeamsNHL.json'
 import type { PropsCard } from '../../../interface/card.js'
 import type { GameFormatted } from '../../../interface/game.js'
 import { gamesSelected } from '../../../store/store.js'
@@ -31,23 +32,23 @@ const TeamCard = (props: PropsCard) => {
   let homeTeamLogo
   let awayTeamLogo
   if (homeTeamId) {
-    const { activeTeams } = TeamData
+    const activeTeams = [...TeamDataNHL.activeTeams, ...TeamDataNFL.activeTeams]
     const homeTeamUniqueId = league + '-' + homeTeamId
-    homeTeamLogo = activeTeams.find((team) => team.uniqueId === homeTeamUniqueId).teamLogo
+    homeTeamLogo = activeTeams.find((team) => team.uniqueId === homeTeamUniqueId)?.teamLogo
 
     const awayTeamUniqueId = league + '-' + awayTeamId
-    awayTeamLogo = activeTeams.find((team) => team.uniqueId === awayTeamUniqueId).teamLogo
+    awayTeamLogo = activeTeams.find((team) => team.uniqueId === awayTeamUniqueId)?.teamLogo
   }
 
   const hideDate = false
 
-  const homeOrAway = selectedTeam ? `card t${homeTeamId}` : `card awayGame`
+  const homeOrAway = selectedTeam ? `card t${league}-${homeTeamId}` : `card awayGame`
 
   let cardClass = !!homeTeamId && show ? homeOrAway : 'card unclickable'
   if (props.isSelected) {
     cardClass += ' selected'
   }
-
+  // update show for nfl !!!
   const extBoxClass = show ? 'ext-box' : 'whiteCard'
   const dateClass = hideDate ? 'cardText hideDate' : 'cardText'
   return (

@@ -1,287 +1,288 @@
-.t1 {
-  color: #000000;
-  background-color: #ce1126;
-}
-.t2 {
-  color: #00539b;
-  background-color: #f47d30;
-}
-.t3 {
-  color: #0033a0;
-  background-color: #c8102e;
-}
-.t4 {
-  color: #000000;
-  background-color: #f74902;
-}
-.t5 {
-  color: #000000;
-  background-color: #fcb514;
-}
-.t6 {
-  color: #000000;
-  background-color: #ffb81c;
-}
-.t7 {
-  color: #ffb81c;
-  background-color: #003087;
-}
-.t8 {
-  color: #af1e2d;
-  background-color: #192168;
-}
-.t9 {
-  color: #b79257;
-  background-color: #da1a32;
-}
-.t10 {
-  color: #ffffff;
-  background-color: #00205b;
-}
-.t12 {
-  color: #ffffff;
-  background-color: #ce1126;
-}
-.t13 {
-  color: #041e42;
-  background-color: #c8102e;
-}
-.t14 {
-  color: #ffffff;
-  background-color: #002868;
-}
-.t15 {
-  color: #c8102e;
-  background-color: #041e42;
-}
-.t16 {
-  color: #000000;
-  background-color: #cf0a2c;
-}
-.t17 {
-  color: #ffffff;
-  background-color: #ce1126;
-}
-.t18 {
-  color: #ffb81c;
-  background-color: #041e42;
-}
-.t19 {
-  color: #fcb514;
-  background-color: #0000ff;
-}
-.t20 {
-  color: #faaf19;
-  background-color: #d2001c;
-}
-.t21 {
-  color: #a2aaad;
-  background-color: #6f263d;
-}
-.t22 {
-  color: #ff4c00;
-  background-color: #041e42;
-}
-.t23 {
-  color: #00843d;
-  background-color: #00205b;
-}
-.t24 {
-  color: #000000;
-  background-color: #f47a38;
-}
-.t25 {
-  color: #8f8f8c;
-  background-color: #006847;
-}
-.t26 {
-  color: #a2aaad;
-  background-color: #111111;
-}
-.t28 {
-  color: #ea7200;
-  background-color: #006d75;
-}
-.t29 {
-  color: #ce1126;
-  background-color: #002654;
-}
-.t30 {
-  color: #a6192e;
-  background-color: #154734;
-}
-.t52 {
-  color: #55565a;
-  background-color: #041e42;
-}
-.t53 {
-  color: #e2d6b5;
-  background-color: #8c2633;
-}
-.t54 {
-  color: #b4975a;
-  background-color: #333f42;
-}
-.t55 {
-  color: #99d9d9;
-  background-color: #001628;
-}
-.tNJD {
+.tNHL-NJD {
   color: #000000;
   background-color: #ce1126;
 }
 
-.tNYI {
+.tNHL-NYI {
   color: #00539b;
   background-color: #f47d30;
 }
 
-.tNYR {
+.tNHL-NYR {
   color: #0033a0;
   background-color: #c8102e;
 }
 
-.tPHI {
+.tNHL-PHI {
   color: #000000;
   background-color: #f74902;
 }
 
-.tPIT {
+.tNHL-PIT {
   color: #000000;
   background-color: #fcb514;
 }
 
-.tBOS {
+.tNHL-BOS {
   color: #000000;
   background-color: #ffb81c;
 }
 
-.tBUF {
+.tNHL-BUF {
   color: #ffb81c;
   background-color: #003087;
 }
 
-.tMTL {
+.tNHL-MTL {
   color: #af1e2d;
   background-color: #192168;
 }
 
-.tOTT {
+.tNHL-OTT {
   color: #b79257;
   background-color: #da1a32;
 }
 
-.tTOR {
+.tNHL-TOR {
   color: #ffffff;
   background-color: #00205b;
 }
 
-.tCAR {
+.tNHL-CAR {
   color: #ffffff;
   background-color: #ce1126;
 }
 
-.tFLA {
+.tNHL-FLA {
   color: #041e42;
   background-color: #c8102e;
 }
 
-.tTBL {
+.tNHL-TBL {
   color: #ffffff;
   background-color: #002868;
 }
 
-.tWSH {
+.tNHL-WSH {
   color: #c8102e;
   background-color: #041e42;
 }
 
-.tCHI {
+.tNHL-CHI {
   color: #000000;
   background-color: #cf0a2c;
 }
 
-.tDET {
+.tNHL-DET {
   color: #ffffff;
   background-color: #ce1126;
 }
 
-.tNSH {
+.tNHL-NSH {
   color: #ffb81c;
   background-color: #041e42;
 }
 
-.tSTL {
+.tNHL-STL {
   color: #fcb514;
   background-color: #0000ff;
 }
 
-.tCGY {
+.tNHL-CGY {
   color: #faaf19;
   background-color: #d2001c;
 }
 
-.tCOL {
+.tNHL-COL {
   color: #a2aaad;
   background-color: #6f263d;
 }
 
-.tEDM {
+.tNHL-EDM {
   color: #ff4c00;
   background-color: #041e42;
 }
 
-.tVAN {
+.tNHL-VAN {
   color: #00843d;
   background-color: #00205b;
 }
 
-.tANA {
+.tNHL-ANA {
   color: #000000;
   background-color: #f47a38;
 }
 
-.tDAL {
+.tNHL-DAL {
   color: #8f8f8c;
   background-color: #006847;
 }
 
-.tLAK {
+.tNHL-LAK {
   color: #a2aaad;
   background-color: #111111;
 }
 
-.tSJS {
+.tNHL-SJS {
   color: #ea7200;
   background-color: #006d75;
 }
 
-.tCBJ {
+.tNHL-CBJ {
   color: #ce1126;
   background-color: #002654;
 }
 
-.tMIN {
+.tNHL-MIN {
   color: #a6192e;
   background-color: #154734;
 }
 
-.tWPG {
+.tNHL-WPG {
   color: #55565a;
   background-color: #041e42;
 }
 
-.tARI {
+.tNHL-ARI {
   color: #e2d6b5;
   background-color: #8c2633;
 }
 
-.tVGK {
+.tNHL-VGK {
   color: #b4975a;
   background-color: #333f42;
 }
 
-.tSEA {
+.tNHL-SEA {
   color: #99d9d9;
   background-color: #001628;
+}
+
+.tNFL-22 {
+  color: 'a4113e';
+  background-color: 'ffffff';
+}
+.tNFL-1 {
+  color: 'a71930';
+  background-color: '000000';
+}
+.tNFL-33 {
+  color: '29126f';
+  background-color: '000000';
+}
+.tNFL-2 {
+  color: '00338d';
+  background-color: 'd50a0a';
+}
+.tNFL-29 {
+  color: '0085ca';
+  background-color: '000000';
+}
+.tNFL-3 {
+  color: '0b1c3a';
+  background-color: 'e64100';
+}
+.tNFL-4 {
+  color: 'fb4f14';
+  background-color: '000000';
+}
+.tNFL-5 {
+  color: '472a08';
+  background-color: 'ff3c00';
+}
+.tNFL-6 {
+  color: '002a5c';
+  background-color: 'b0b7bc';
+}
+.tNFL-7 {
+  color: '0a2343';
+  background-color: 'fc4c02';
+}
+.tNFL-8 {
+  color: '0076b6';
+  background-color: 'bbbbbb';
+}
+.tNFL-9 {
+  color: '204e32';
+  background-color: 'ffb612';
+}
+.tNFL-34 {
+  color: '00143f';
+  background-color: 'c41230';
+}
+.tNFL-11 {
+  color: '003b75';
+  background-color: 'ffffff';
+}
+.tNFL-30 {
+  color: '007487';
+  background-color: 'd7a22a';
+}
+.tNFL-12 {
+  color: 'e31837';
+  background-color: 'ffb612';
+}
+.tNFL-13 {
+  color: '000000';
+  background-color: 'a5acaf';
+}
+.tNFL-24 {
+  color: '0080c6';
+  background-color: 'ffc20e';
+}
+.tNFL-14 {
+  color: '003594';
+  background-color: 'ffd100';
+}
+.tNFL-15 {
+  color: '008e97';
+  background-color: 'fc4c02';
+}
+.tNFL-16 {
+  color: '4f2683';
+  background-color: 'ffc62f';
+}
+.tNFL-17 {
+  color: '002a5c';
+  background-color: 'c60c30';
+}
+.tNFL-18 {
+  color: 'd3bc8d';
+  background-color: '000000';
+}
+.tNFL-19 {
+  color: '003c7f';
+  background-color: 'c9243f';
+}
+.tNFL-20 {
+  color: '115740';
+  background-color: 'ffffff';
+}
+.tNFL-21 {
+  color: '06424d';
+  background-color: '000000';
+}
+.tNFL-23 {
+  color: '000000';
+  background-color: 'ffb612';
+}
+.tNFL-25 {
+  color: 'aa0000';
+  background-color: 'b3995d';
+}
+.tNFL-26 {
+  color: '002a5c';
+  background-color: '69be28';
+}
+.tNFL-27 {
+  color: 'bd1c36';
+  background-color: '3e3a35';
+}
+.tNFL-10 {
+  color: '4b92db';
+  background-color: '002a5c';
+}
+.tNFL-28 {
+  color: '5a1414';
+  background-color: 'ffb612';
 }

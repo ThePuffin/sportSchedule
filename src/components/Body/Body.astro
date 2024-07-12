@@ -7,7 +7,7 @@ import GamesSelected from './GamesSelected/GamesSelected.tsx'
 import Team from './Team/Team'
 
 let activeTeams = await db.select().from(Teams)
-activeTeams = await getNhlTeams()
+await getNhlTeams()
 await getNFLTeams()
 const teamsGames = await db.select().from(Games)
 
