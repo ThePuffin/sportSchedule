@@ -28,7 +28,20 @@ const TeamCard = (props: PropsCard) => {
     setGame(card)
   }
 
-  const { arenaName, league, awayTeamId, show, selectedTeam, homeTeamId, gameDate, awayTeamShort, homeTeamShort, awayTeam, homeTeam } = game
+  const {
+    arenaName,
+    league,
+    awayTeamId,
+    show,
+    selectedTeam,
+    homeTeamId,
+    gameDate,
+    awayTeamShort,
+    homeTeamShort,
+    awayTeam,
+    homeTeam,
+    teamSelectedId,
+  } = game
   let homeTeamLogo
   let awayTeamLogo
   if (homeTeamId) {
@@ -42,7 +55,7 @@ const TeamCard = (props: PropsCard) => {
 
   const hideDate = false
 
-  const homeOrAway = selectedTeam ? `card t${league}-${homeTeamId}` : `card awayGame`
+  const homeOrAway = selectedTeam ? `card t${league}-${teamSelectedId}` : `card awayGame`
 
   let cardClass = !!homeTeamId && show ? homeOrAway : 'card unclickable'
   if (props.isSelected) {
