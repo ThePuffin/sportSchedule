@@ -86,8 +86,8 @@ export const getNFLSchedule = async () => {
   const allGames = {};
   const activeTeams: TeamType[] = await db.select().from(Teams).where(eq(Teams.league, leagueName));
   await Promise.all(
-    activeTeams.map(async ({ id }) => {
-      allGames[id] = await getNFLTeamSchedule(id);
+    activeTeams.map(async ({ id, abbrev }) => {
+      allGames[id] = await getNFLTeamSchedule(id, abbrev);
     })
   );
 
@@ -108,7 +108,7 @@ export const getNFLSchedule = async () => {
   return allGames;
 };
 
-const getNFLTeamSchedule = async (id: string) => {
+const getNFLTeamSchedule = async (id: string, abbrev: string) => {
   try {
     const NFLgames = await db.select().from(Games).where(eq(Games.homeTeamShort, id));
 
@@ -148,8 +148,8 @@ const getNFLTeamSchedule = async (id: string) => {
         homeTeamShort: homeTeam.team.abbreviation,
         gameDate: gameDate,
         teamSelectedId: id,
-        show: homeTeam.id === id,
-        selectedTeam: homeTeam.id === id,
+        show: homeTeam.id === abbrev,
+        selectedTeam: homeTeam.id === abbrev,
         league: leagueName,
       };
     });
