@@ -10,7 +10,7 @@
 			"homeTeamId": "ATL",
 			"homeTeamShort": "ATL",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "1",
+			"teamSelectedId": "ATL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -25,7 +25,7 @@
 			"homeTeamId": "PHI",
 			"homeTeamShort": "PHI",
 			"gameDate": "2024-09-17",
-			"teamSelectedId": "1",
+			"teamSelectedId": "ATL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -40,7 +40,7 @@
 			"homeTeamId": "ATL",
 			"homeTeamShort": "ATL",
 			"gameDate": "2024-09-23",
-			"teamSelectedId": "1",
+			"teamSelectedId": "ATL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -55,7 +55,7 @@
 			"homeTeamId": "ATL",
 			"homeTeamShort": "ATL",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "1",
+			"teamSelectedId": "ATL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -70,7 +70,7 @@
 			"homeTeamId": "ATL",
 			"homeTeamShort": "ATL",
 			"gameDate": "2024-10-04",
-			"teamSelectedId": "1",
+			"teamSelectedId": "ATL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -85,7 +85,7 @@
 			"homeTeamId": "CAR",
 			"homeTeamShort": "CAR",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "1",
+			"teamSelectedId": "ATL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -100,7 +100,7 @@
 			"homeTeamId": "ATL",
 			"homeTeamShort": "ATL",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "1",
+			"teamSelectedId": "ATL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -115,7 +115,7 @@
 			"homeTeamId": "TB",
 			"homeTeamShort": "TB",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "1",
+			"teamSelectedId": "ATL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -130,7 +130,7 @@
 			"homeTeamId": "ATL",
 			"homeTeamShort": "ATL",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "1",
+			"teamSelectedId": "ATL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -145,7 +145,7 @@
 			"homeTeamId": "NO",
 			"homeTeamShort": "NO",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "1",
+			"teamSelectedId": "ATL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -160,7 +160,7 @@
 			"homeTeamId": "DEN",
 			"homeTeamShort": "DEN",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "1",
+			"teamSelectedId": "ATL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -175,7 +175,7 @@
 			"homeTeamId": "ATL",
 			"homeTeamShort": "ATL",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "1",
+			"teamSelectedId": "ATL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -190,7 +190,7 @@
 			"homeTeamId": "MIN",
 			"homeTeamShort": "MIN",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "1",
+			"teamSelectedId": "ATL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -205,7 +205,7 @@
 			"homeTeamId": "LV",
 			"homeTeamShort": "LV",
 			"gameDate": "2024-12-17",
-			"teamSelectedId": "1",
+			"teamSelectedId": "ATL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -220,7 +220,7 @@
 			"homeTeamId": "ATL",
 			"homeTeamShort": "ATL",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "1",
+			"teamSelectedId": "ATL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -235,7 +235,7 @@
 			"homeTeamId": "WSH",
 			"homeTeamShort": "WSH",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "1",
+			"teamSelectedId": "ATL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -250,7 +250,7 @@
 			"homeTeamId": "ATL",
 			"homeTeamShort": "ATL",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "1",
+			"teamSelectedId": "ATL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -267,7 +267,7 @@
 			"homeTeamId": "BUF",
 			"homeTeamShort": "BUF",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "2",
+			"teamSelectedId": "BUF",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -282,7 +282,7 @@
 			"homeTeamId": "MIA",
 			"homeTeamShort": "MIA",
 			"gameDate": "2024-09-13",
-			"teamSelectedId": "2",
+			"teamSelectedId": "BUF",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -297,7 +297,7 @@
 			"homeTeamId": "BUF",
 			"homeTeamShort": "BUF",
 			"gameDate": "2024-09-23",
-			"teamSelectedId": "2",
+			"teamSelectedId": "BUF",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -312,7 +312,7 @@
 			"homeTeamId": "BAL",
 			"homeTeamShort": "BAL",
 			"gameDate": "2024-09-30",
-			"teamSelectedId": "2",
+			"teamSelectedId": "BUF",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -327,7 +327,7 @@
 			"homeTeamId": "HOU",
 			"homeTeamShort": "HOU",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "2",
+			"teamSelectedId": "BUF",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -342,7 +342,7 @@
 			"homeTeamId": "NYJ",
 			"homeTeamShort": "NYJ",
 			"gameDate": "2024-10-15",
-			"teamSelectedId": "2",
+			"teamSelectedId": "BUF",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -357,7 +357,7 @@
 			"homeTeamId": "BUF",
 			"homeTeamShort": "BUF",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "2",
+			"teamSelectedId": "BUF",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -372,7 +372,7 @@
 			"homeTeamId": "SEA",
 			"homeTeamShort": "SEA",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "2",
+			"teamSelectedId": "BUF",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -387,7 +387,7 @@
 			"homeTeamId": "BUF",
 			"homeTeamShort": "BUF",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "2",
+			"teamSelectedId": "BUF",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -402,7 +402,7 @@
 			"homeTeamId": "IND",
 			"homeTeamShort": "IND",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "2",
+			"teamSelectedId": "BUF",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -417,7 +417,7 @@
 			"homeTeamId": "BUF",
 			"homeTeamShort": "BUF",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "2",
+			"teamSelectedId": "BUF",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -432,7 +432,7 @@
 			"homeTeamId": "BUF",
 			"homeTeamShort": "BUF",
 			"gameDate": "2024-12-02",
-			"teamSelectedId": "2",
+			"teamSelectedId": "BUF",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -447,7 +447,7 @@
 			"homeTeamId": "LAR",
 			"homeTeamShort": "LAR",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "2",
+			"teamSelectedId": "BUF",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -462,7 +462,7 @@
 			"homeTeamId": "DET",
 			"homeTeamShort": "DET",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "2",
+			"teamSelectedId": "BUF",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -477,7 +477,7 @@
 			"homeTeamId": "BUF",
 			"homeTeamShort": "BUF",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "2",
+			"teamSelectedId": "BUF",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -492,7 +492,7 @@
 			"homeTeamId": "BUF",
 			"homeTeamShort": "BUF",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "2",
+			"teamSelectedId": "BUF",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -507,7 +507,7 @@
 			"homeTeamId": "NE",
 			"homeTeamShort": "NE",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "2",
+			"teamSelectedId": "BUF",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -524,7 +524,7 @@
 			"homeTeamId": "CHI",
 			"homeTeamShort": "CHI",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "3",
+			"teamSelectedId": "CHI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -539,7 +539,7 @@
 			"homeTeamId": "HOU",
 			"homeTeamShort": "HOU",
 			"gameDate": "2024-09-16",
-			"teamSelectedId": "3",
+			"teamSelectedId": "CHI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -554,7 +554,7 @@
 			"homeTeamId": "IND",
 			"homeTeamShort": "IND",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "3",
+			"teamSelectedId": "CHI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -569,7 +569,7 @@
 			"homeTeamId": "CHI",
 			"homeTeamShort": "CHI",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "3",
+			"teamSelectedId": "CHI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -584,7 +584,7 @@
 			"homeTeamId": "CHI",
 			"homeTeamShort": "CHI",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "3",
+			"teamSelectedId": "CHI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -599,7 +599,7 @@
 			"homeTeamId": "CHI",
 			"homeTeamShort": "CHI",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "3",
+			"teamSelectedId": "CHI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -614,7 +614,7 @@
 			"homeTeamId": "WSH",
 			"homeTeamShort": "WSH",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "3",
+			"teamSelectedId": "CHI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -629,7 +629,7 @@
 			"homeTeamId": "ARI",
 			"homeTeamShort": "ARI",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "3",
+			"teamSelectedId": "CHI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -644,7 +644,7 @@
 			"homeTeamId": "CHI",
 			"homeTeamShort": "CHI",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "3",
+			"teamSelectedId": "CHI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -659,7 +659,7 @@
 			"homeTeamId": "CHI",
 			"homeTeamShort": "CHI",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "3",
+			"teamSelectedId": "CHI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -674,7 +674,7 @@
 			"homeTeamId": "CHI",
 			"homeTeamShort": "CHI",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "3",
+			"teamSelectedId": "CHI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -689,7 +689,7 @@
 			"homeTeamId": "DET",
 			"homeTeamShort": "DET",
 			"gameDate": "2024-11-28",
-			"teamSelectedId": "3",
+			"teamSelectedId": "CHI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -704,7 +704,7 @@
 			"homeTeamId": "SF",
 			"homeTeamShort": "SF",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "3",
+			"teamSelectedId": "CHI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -719,7 +719,7 @@
 			"homeTeamId": "MIN",
 			"homeTeamShort": "MIN",
 			"gameDate": "2024-12-17",
-			"teamSelectedId": "3",
+			"teamSelectedId": "CHI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -734,7 +734,7 @@
 			"homeTeamId": "CHI",
 			"homeTeamShort": "CHI",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "3",
+			"teamSelectedId": "CHI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -749,7 +749,7 @@
 			"homeTeamId": "CHI",
 			"homeTeamShort": "CHI",
 			"gameDate": "2024-12-27",
-			"teamSelectedId": "3",
+			"teamSelectedId": "CHI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -764,7 +764,7 @@
 			"homeTeamId": "GB",
 			"homeTeamShort": "GB",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "3",
+			"teamSelectedId": "CHI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -781,7 +781,7 @@
 			"homeTeamId": "CIN",
 			"homeTeamShort": "CIN",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "4",
+			"teamSelectedId": "CIN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -796,7 +796,7 @@
 			"homeTeamId": "KC",
 			"homeTeamShort": "KC",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "4",
+			"teamSelectedId": "CIN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -811,7 +811,7 @@
 			"homeTeamId": "CIN",
 			"homeTeamShort": "CIN",
 			"gameDate": "2024-09-24",
-			"teamSelectedId": "4",
+			"teamSelectedId": "CIN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -826,7 +826,7 @@
 			"homeTeamId": "CAR",
 			"homeTeamShort": "CAR",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "4",
+			"teamSelectedId": "CIN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -841,7 +841,7 @@
 			"homeTeamId": "CIN",
 			"homeTeamShort": "CIN",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "4",
+			"teamSelectedId": "CIN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -856,7 +856,7 @@
 			"homeTeamId": "NYG",
 			"homeTeamShort": "NYG",
 			"gameDate": "2024-10-14",
-			"teamSelectedId": "4",
+			"teamSelectedId": "CIN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -871,7 +871,7 @@
 			"homeTeamId": "CLE",
 			"homeTeamShort": "CLE",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "4",
+			"teamSelectedId": "CIN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -886,7 +886,7 @@
 			"homeTeamId": "CIN",
 			"homeTeamShort": "CIN",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "4",
+			"teamSelectedId": "CIN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -901,7 +901,7 @@
 			"homeTeamId": "CIN",
 			"homeTeamShort": "CIN",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "4",
+			"teamSelectedId": "CIN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -916,7 +916,7 @@
 			"homeTeamId": "BAL",
 			"homeTeamShort": "BAL",
 			"gameDate": "2024-11-08",
-			"teamSelectedId": "4",
+			"teamSelectedId": "CIN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -931,7 +931,7 @@
 			"homeTeamId": "LAC",
 			"homeTeamShort": "LAC",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "4",
+			"teamSelectedId": "CIN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -946,7 +946,7 @@
 			"homeTeamId": "CIN",
 			"homeTeamShort": "CIN",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "4",
+			"teamSelectedId": "CIN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -961,7 +961,7 @@
 			"homeTeamId": "DAL",
 			"homeTeamShort": "DAL",
 			"gameDate": "2024-12-10",
-			"teamSelectedId": "4",
+			"teamSelectedId": "CIN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -976,7 +976,7 @@
 			"homeTeamId": "TEN",
 			"homeTeamShort": "TEN",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "4",
+			"teamSelectedId": "CIN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -991,7 +991,7 @@
 			"homeTeamId": "CIN",
 			"homeTeamShort": "CIN",
 			"gameDate": "2024-12-20",
-			"teamSelectedId": "4",
+			"teamSelectedId": "CIN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1006,7 +1006,7 @@
 			"homeTeamId": "CIN",
 			"homeTeamShort": "CIN",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "4",
+			"teamSelectedId": "CIN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1021,7 +1021,7 @@
 			"homeTeamId": "PIT",
 			"homeTeamShort": "PIT",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "4",
+			"teamSelectedId": "CIN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1038,7 +1038,7 @@
 			"homeTeamId": "CLE",
 			"homeTeamShort": "CLE",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "5",
+			"teamSelectedId": "CLE",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1053,7 +1053,7 @@
 			"homeTeamId": "JAX",
 			"homeTeamShort": "JAX",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "5",
+			"teamSelectedId": "CLE",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1068,7 +1068,7 @@
 			"homeTeamId": "CLE",
 			"homeTeamShort": "CLE",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "5",
+			"teamSelectedId": "CLE",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1083,7 +1083,7 @@
 			"homeTeamId": "LV",
 			"homeTeamShort": "LV",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "5",
+			"teamSelectedId": "CLE",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1098,7 +1098,7 @@
 			"homeTeamId": "WSH",
 			"homeTeamShort": "WSH",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "5",
+			"teamSelectedId": "CLE",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1113,7 +1113,7 @@
 			"homeTeamId": "PHI",
 			"homeTeamShort": "PHI",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "5",
+			"teamSelectedId": "CLE",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1128,7 +1128,7 @@
 			"homeTeamId": "CLE",
 			"homeTeamShort": "CLE",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "5",
+			"teamSelectedId": "CLE",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1143,7 +1143,7 @@
 			"homeTeamId": "CLE",
 			"homeTeamShort": "CLE",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "5",
+			"teamSelectedId": "CLE",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1158,7 +1158,7 @@
 			"homeTeamId": "CLE",
 			"homeTeamShort": "CLE",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "5",
+			"teamSelectedId": "CLE",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1173,7 +1173,7 @@
 			"homeTeamId": "NO",
 			"homeTeamShort": "NO",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "5",
+			"teamSelectedId": "CLE",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1188,7 +1188,7 @@
 			"homeTeamId": "CLE",
 			"homeTeamShort": "CLE",
 			"gameDate": "2024-11-22",
-			"teamSelectedId": "5",
+			"teamSelectedId": "CLE",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1203,7 +1203,7 @@
 			"homeTeamId": "DEN",
 			"homeTeamShort": "DEN",
 			"gameDate": "2024-12-03",
-			"teamSelectedId": "5",
+			"teamSelectedId": "CLE",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1218,7 +1218,7 @@
 			"homeTeamId": "PIT",
 			"homeTeamShort": "PIT",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "5",
+			"teamSelectedId": "CLE",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1233,7 +1233,7 @@
 			"homeTeamId": "CLE",
 			"homeTeamShort": "CLE",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "5",
+			"teamSelectedId": "CLE",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1248,7 +1248,7 @@
 			"homeTeamId": "CIN",
 			"homeTeamShort": "CIN",
 			"gameDate": "2024-12-20",
-			"teamSelectedId": "5",
+			"teamSelectedId": "CLE",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1263,7 +1263,7 @@
 			"homeTeamId": "CLE",
 			"homeTeamShort": "CLE",
 			"gameDate": "2024-12-30",
-			"teamSelectedId": "5",
+			"teamSelectedId": "CLE",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1278,7 +1278,7 @@
 			"homeTeamId": "BAL",
 			"homeTeamShort": "BAL",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "5",
+			"teamSelectedId": "CLE",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1295,7 +1295,7 @@
 			"homeTeamId": "CLE",
 			"homeTeamShort": "CLE",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "6",
+			"teamSelectedId": "DAL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1310,7 +1310,7 @@
 			"homeTeamId": "DAL",
 			"homeTeamShort": "DAL",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "6",
+			"teamSelectedId": "DAL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1325,7 +1325,7 @@
 			"homeTeamId": "DAL",
 			"homeTeamShort": "DAL",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "6",
+			"teamSelectedId": "DAL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1340,7 +1340,7 @@
 			"homeTeamId": "NYG",
 			"homeTeamShort": "NYG",
 			"gameDate": "2024-09-27",
-			"teamSelectedId": "6",
+			"teamSelectedId": "DAL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1355,7 +1355,7 @@
 			"homeTeamId": "PIT",
 			"homeTeamShort": "PIT",
 			"gameDate": "2024-10-07",
-			"teamSelectedId": "6",
+			"teamSelectedId": "DAL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1370,7 +1370,7 @@
 			"homeTeamId": "DAL",
 			"homeTeamShort": "DAL",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "6",
+			"teamSelectedId": "DAL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1385,7 +1385,7 @@
 			"homeTeamId": "SF",
 			"homeTeamShort": "SF",
 			"gameDate": "2024-10-28",
-			"teamSelectedId": "6",
+			"teamSelectedId": "DAL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1400,7 +1400,7 @@
 			"homeTeamId": "ATL",
 			"homeTeamShort": "ATL",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "6",
+			"teamSelectedId": "DAL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1415,7 +1415,7 @@
 			"homeTeamId": "DAL",
 			"homeTeamShort": "DAL",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "6",
+			"teamSelectedId": "DAL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1430,7 +1430,7 @@
 			"homeTeamId": "DAL",
 			"homeTeamShort": "DAL",
 			"gameDate": "2024-11-19",
-			"teamSelectedId": "6",
+			"teamSelectedId": "DAL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1445,7 +1445,7 @@
 			"homeTeamId": "WSH",
 			"homeTeamShort": "WSH",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "6",
+			"teamSelectedId": "DAL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1460,7 +1460,7 @@
 			"homeTeamId": "DAL",
 			"homeTeamShort": "DAL",
 			"gameDate": "2024-11-28",
-			"teamSelectedId": "6",
+			"teamSelectedId": "DAL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1475,7 +1475,7 @@
 			"homeTeamId": "DAL",
 			"homeTeamShort": "DAL",
 			"gameDate": "2024-12-10",
-			"teamSelectedId": "6",
+			"teamSelectedId": "DAL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1490,7 +1490,7 @@
 			"homeTeamId": "CAR",
 			"homeTeamShort": "CAR",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "6",
+			"teamSelectedId": "DAL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1505,7 +1505,7 @@
 			"homeTeamId": "DAL",
 			"homeTeamShort": "DAL",
 			"gameDate": "2024-12-23",
-			"teamSelectedId": "6",
+			"teamSelectedId": "DAL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1520,7 +1520,7 @@
 			"homeTeamId": "PHI",
 			"homeTeamShort": "PHI",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "6",
+			"teamSelectedId": "DAL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1535,7 +1535,7 @@
 			"homeTeamId": "DAL",
 			"homeTeamShort": "DAL",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "6",
+			"teamSelectedId": "DAL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1552,7 +1552,7 @@
 			"homeTeamId": "SEA",
 			"homeTeamShort": "SEA",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "7",
+			"teamSelectedId": "DEN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1567,7 +1567,7 @@
 			"homeTeamId": "DEN",
 			"homeTeamShort": "DEN",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "7",
+			"teamSelectedId": "DEN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1582,7 +1582,7 @@
 			"homeTeamId": "TB",
 			"homeTeamShort": "TB",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "7",
+			"teamSelectedId": "DEN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1597,7 +1597,7 @@
 			"homeTeamId": "NYJ",
 			"homeTeamShort": "NYJ",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "7",
+			"teamSelectedId": "DEN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1612,7 +1612,7 @@
 			"homeTeamId": "DEN",
 			"homeTeamShort": "DEN",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "7",
+			"teamSelectedId": "DEN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1627,7 +1627,7 @@
 			"homeTeamId": "DEN",
 			"homeTeamShort": "DEN",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "7",
+			"teamSelectedId": "DEN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1642,7 +1642,7 @@
 			"homeTeamId": "NO",
 			"homeTeamShort": "NO",
 			"gameDate": "2024-10-18",
-			"teamSelectedId": "7",
+			"teamSelectedId": "DEN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1657,7 +1657,7 @@
 			"homeTeamId": "DEN",
 			"homeTeamShort": "DEN",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "7",
+			"teamSelectedId": "DEN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1672,7 +1672,7 @@
 			"homeTeamId": "BAL",
 			"homeTeamShort": "BAL",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "7",
+			"teamSelectedId": "DEN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1687,7 +1687,7 @@
 			"homeTeamId": "KC",
 			"homeTeamShort": "KC",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "7",
+			"teamSelectedId": "DEN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1702,7 +1702,7 @@
 			"homeTeamId": "DEN",
 			"homeTeamShort": "DEN",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "7",
+			"teamSelectedId": "DEN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1717,7 +1717,7 @@
 			"homeTeamId": "LV",
 			"homeTeamShort": "LV",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "7",
+			"teamSelectedId": "DEN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1732,7 +1732,7 @@
 			"homeTeamId": "DEN",
 			"homeTeamShort": "DEN",
 			"gameDate": "2024-12-03",
-			"teamSelectedId": "7",
+			"teamSelectedId": "DEN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1747,7 +1747,7 @@
 			"homeTeamId": "DEN",
 			"homeTeamShort": "DEN",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "7",
+			"teamSelectedId": "DEN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1762,7 +1762,7 @@
 			"homeTeamId": "LAC",
 			"homeTeamShort": "LAC",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "7",
+			"teamSelectedId": "DEN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1777,7 +1777,7 @@
 			"homeTeamId": "CIN",
 			"homeTeamShort": "CIN",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "7",
+			"teamSelectedId": "DEN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1792,7 +1792,7 @@
 			"homeTeamId": "DEN",
 			"homeTeamShort": "DEN",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "7",
+			"teamSelectedId": "DEN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1809,7 +1809,7 @@
 			"homeTeamId": "DET",
 			"homeTeamShort": "DET",
 			"gameDate": "2024-09-09",
-			"teamSelectedId": "8",
+			"teamSelectedId": "DET",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1824,7 +1824,7 @@
 			"homeTeamId": "DET",
 			"homeTeamShort": "DET",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "8",
+			"teamSelectedId": "DET",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1839,7 +1839,7 @@
 			"homeTeamId": "ARI",
 			"homeTeamShort": "ARI",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "8",
+			"teamSelectedId": "DET",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1854,7 +1854,7 @@
 			"homeTeamId": "DET",
 			"homeTeamShort": "DET",
 			"gameDate": "2024-10-01",
-			"teamSelectedId": "8",
+			"teamSelectedId": "DET",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1869,7 +1869,7 @@
 			"homeTeamId": "DAL",
 			"homeTeamShort": "DAL",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "8",
+			"teamSelectedId": "DET",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1884,7 +1884,7 @@
 			"homeTeamId": "MIN",
 			"homeTeamShort": "MIN",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "8",
+			"teamSelectedId": "DET",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1899,7 +1899,7 @@
 			"homeTeamId": "DET",
 			"homeTeamShort": "DET",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "8",
+			"teamSelectedId": "DET",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1914,7 +1914,7 @@
 			"homeTeamId": "GB",
 			"homeTeamShort": "GB",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "8",
+			"teamSelectedId": "DET",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1929,7 +1929,7 @@
 			"homeTeamId": "HOU",
 			"homeTeamShort": "HOU",
 			"gameDate": "2024-11-11",
-			"teamSelectedId": "8",
+			"teamSelectedId": "DET",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1944,7 +1944,7 @@
 			"homeTeamId": "DET",
 			"homeTeamShort": "DET",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "8",
+			"teamSelectedId": "DET",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1959,7 +1959,7 @@
 			"homeTeamId": "IND",
 			"homeTeamShort": "IND",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "8",
+			"teamSelectedId": "DET",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -1974,7 +1974,7 @@
 			"homeTeamId": "DET",
 			"homeTeamShort": "DET",
 			"gameDate": "2024-11-28",
-			"teamSelectedId": "8",
+			"teamSelectedId": "DET",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -1989,7 +1989,7 @@
 			"homeTeamId": "DET",
 			"homeTeamShort": "DET",
 			"gameDate": "2024-12-06",
-			"teamSelectedId": "8",
+			"teamSelectedId": "DET",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2004,7 +2004,7 @@
 			"homeTeamId": "DET",
 			"homeTeamShort": "DET",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "8",
+			"teamSelectedId": "DET",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2019,7 +2019,7 @@
 			"homeTeamId": "CHI",
 			"homeTeamShort": "CHI",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "8",
+			"teamSelectedId": "DET",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2034,7 +2034,7 @@
 			"homeTeamId": "SF",
 			"homeTeamShort": "SF",
 			"gameDate": "2024-12-31",
-			"teamSelectedId": "8",
+			"teamSelectedId": "DET",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2049,7 +2049,7 @@
 			"homeTeamId": "DET",
 			"homeTeamShort": "DET",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "8",
+			"teamSelectedId": "DET",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2066,7 +2066,7 @@
 			"homeTeamId": "PHI",
 			"homeTeamShort": "PHI",
 			"gameDate": "2024-09-07",
-			"teamSelectedId": "9",
+			"teamSelectedId": "GB",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2081,7 +2081,7 @@
 			"homeTeamId": "GB",
 			"homeTeamShort": "GB",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "9",
+			"teamSelectedId": "GB",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2096,7 +2096,7 @@
 			"homeTeamId": "TEN",
 			"homeTeamShort": "TEN",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "9",
+			"teamSelectedId": "GB",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2111,7 +2111,7 @@
 			"homeTeamId": "GB",
 			"homeTeamShort": "GB",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "9",
+			"teamSelectedId": "GB",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2126,7 +2126,7 @@
 			"homeTeamId": "LAR",
 			"homeTeamShort": "LAR",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "9",
+			"teamSelectedId": "GB",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2141,7 +2141,7 @@
 			"homeTeamId": "GB",
 			"homeTeamShort": "GB",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "9",
+			"teamSelectedId": "GB",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2156,7 +2156,7 @@
 			"homeTeamId": "GB",
 			"homeTeamShort": "GB",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "9",
+			"teamSelectedId": "GB",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2171,7 +2171,7 @@
 			"homeTeamId": "JAX",
 			"homeTeamShort": "JAX",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "9",
+			"teamSelectedId": "GB",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2186,7 +2186,7 @@
 			"homeTeamId": "GB",
 			"homeTeamShort": "GB",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "9",
+			"teamSelectedId": "GB",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2201,7 +2201,7 @@
 			"homeTeamId": "CHI",
 			"homeTeamShort": "CHI",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "9",
+			"teamSelectedId": "GB",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2216,7 +2216,7 @@
 			"homeTeamId": "GB",
 			"homeTeamShort": "GB",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "9",
+			"teamSelectedId": "GB",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2231,7 +2231,7 @@
 			"homeTeamId": "GB",
 			"homeTeamShort": "GB",
 			"gameDate": "2024-11-29",
-			"teamSelectedId": "9",
+			"teamSelectedId": "GB",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2246,7 +2246,7 @@
 			"homeTeamId": "DET",
 			"homeTeamShort": "DET",
 			"gameDate": "2024-12-06",
-			"teamSelectedId": "9",
+			"teamSelectedId": "GB",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2261,7 +2261,7 @@
 			"homeTeamId": "SEA",
 			"homeTeamShort": "SEA",
 			"gameDate": "2024-12-16",
-			"teamSelectedId": "9",
+			"teamSelectedId": "GB",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2276,7 +2276,7 @@
 			"homeTeamId": "GB",
 			"homeTeamShort": "GB",
 			"gameDate": "2024-12-24",
-			"teamSelectedId": "9",
+			"teamSelectedId": "GB",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2291,7 +2291,7 @@
 			"homeTeamId": "MIN",
 			"homeTeamShort": "MIN",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "9",
+			"teamSelectedId": "GB",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2306,7 +2306,7 @@
 			"homeTeamId": "GB",
 			"homeTeamShort": "GB",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "9",
+			"teamSelectedId": "GB",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2323,7 +2323,7 @@
 			"homeTeamId": "CHI",
 			"homeTeamShort": "CHI",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "10",
+			"teamSelectedId": "TEN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2338,7 +2338,7 @@
 			"homeTeamId": "TEN",
 			"homeTeamShort": "TEN",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "10",
+			"teamSelectedId": "TEN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2353,7 +2353,7 @@
 			"homeTeamId": "TEN",
 			"homeTeamShort": "TEN",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "10",
+			"teamSelectedId": "TEN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2368,7 +2368,7 @@
 			"homeTeamId": "MIA",
 			"homeTeamShort": "MIA",
 			"gameDate": "2024-09-30",
-			"teamSelectedId": "10",
+			"teamSelectedId": "TEN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2383,7 +2383,7 @@
 			"homeTeamId": "TEN",
 			"homeTeamShort": "TEN",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "10",
+			"teamSelectedId": "TEN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2398,7 +2398,7 @@
 			"homeTeamId": "BUF",
 			"homeTeamShort": "BUF",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "10",
+			"teamSelectedId": "TEN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2413,7 +2413,7 @@
 			"homeTeamId": "DET",
 			"homeTeamShort": "DET",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "10",
+			"teamSelectedId": "TEN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2428,7 +2428,7 @@
 			"homeTeamId": "TEN",
 			"homeTeamShort": "TEN",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "10",
+			"teamSelectedId": "TEN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2443,7 +2443,7 @@
 			"homeTeamId": "LAC",
 			"homeTeamShort": "LAC",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "10",
+			"teamSelectedId": "TEN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2458,7 +2458,7 @@
 			"homeTeamId": "TEN",
 			"homeTeamShort": "TEN",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "10",
+			"teamSelectedId": "TEN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2473,7 +2473,7 @@
 			"homeTeamId": "HOU",
 			"homeTeamShort": "HOU",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "10",
+			"teamSelectedId": "TEN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2488,7 +2488,7 @@
 			"homeTeamId": "WSH",
 			"homeTeamShort": "WSH",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "10",
+			"teamSelectedId": "TEN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2503,7 +2503,7 @@
 			"homeTeamId": "TEN",
 			"homeTeamShort": "TEN",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "10",
+			"teamSelectedId": "TEN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2518,7 +2518,7 @@
 			"homeTeamId": "TEN",
 			"homeTeamShort": "TEN",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "10",
+			"teamSelectedId": "TEN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2533,7 +2533,7 @@
 			"homeTeamId": "IND",
 			"homeTeamShort": "IND",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "10",
+			"teamSelectedId": "TEN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2548,7 +2548,7 @@
 			"homeTeamId": "JAX",
 			"homeTeamShort": "JAX",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "10",
+			"teamSelectedId": "TEN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2563,7 +2563,7 @@
 			"homeTeamId": "TEN",
 			"homeTeamShort": "TEN",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "10",
+			"teamSelectedId": "TEN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2580,7 +2580,7 @@
 			"homeTeamId": "IND",
 			"homeTeamShort": "IND",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "11",
+			"teamSelectedId": "IND",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2595,7 +2595,7 @@
 			"homeTeamId": "GB",
 			"homeTeamShort": "GB",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "11",
+			"teamSelectedId": "IND",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2610,7 +2610,7 @@
 			"homeTeamId": "IND",
 			"homeTeamShort": "IND",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "11",
+			"teamSelectedId": "IND",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2625,7 +2625,7 @@
 			"homeTeamId": "IND",
 			"homeTeamShort": "IND",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "11",
+			"teamSelectedId": "IND",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2640,7 +2640,7 @@
 			"homeTeamId": "JAX",
 			"homeTeamShort": "JAX",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "11",
+			"teamSelectedId": "IND",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2655,7 +2655,7 @@
 			"homeTeamId": "TEN",
 			"homeTeamShort": "TEN",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "11",
+			"teamSelectedId": "IND",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2670,7 +2670,7 @@
 			"homeTeamId": "IND",
 			"homeTeamShort": "IND",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "11",
+			"teamSelectedId": "IND",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2685,7 +2685,7 @@
 			"homeTeamId": "HOU",
 			"homeTeamShort": "HOU",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "11",
+			"teamSelectedId": "IND",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2700,7 +2700,7 @@
 			"homeTeamId": "MIN",
 			"homeTeamShort": "MIN",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "11",
+			"teamSelectedId": "IND",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2715,7 +2715,7 @@
 			"homeTeamId": "IND",
 			"homeTeamShort": "IND",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "11",
+			"teamSelectedId": "IND",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2730,7 +2730,7 @@
 			"homeTeamId": "NYJ",
 			"homeTeamShort": "NYJ",
 			"gameDate": "2024-11-18",
-			"teamSelectedId": "11",
+			"teamSelectedId": "IND",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2745,7 +2745,7 @@
 			"homeTeamId": "IND",
 			"homeTeamShort": "IND",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "11",
+			"teamSelectedId": "IND",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2760,7 +2760,7 @@
 			"homeTeamId": "NE",
 			"homeTeamShort": "NE",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "11",
+			"teamSelectedId": "IND",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2775,7 +2775,7 @@
 			"homeTeamId": "DEN",
 			"homeTeamShort": "DEN",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "11",
+			"teamSelectedId": "IND",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2790,7 +2790,7 @@
 			"homeTeamId": "IND",
 			"homeTeamShort": "IND",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "11",
+			"teamSelectedId": "IND",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2805,7 +2805,7 @@
 			"homeTeamId": "NYG",
 			"homeTeamShort": "NYG",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "11",
+			"teamSelectedId": "IND",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2820,7 +2820,7 @@
 			"homeTeamId": "IND",
 			"homeTeamShort": "IND",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "11",
+			"teamSelectedId": "IND",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2837,7 +2837,7 @@
 			"homeTeamId": "KC",
 			"homeTeamShort": "KC",
 			"gameDate": "2024-09-06",
-			"teamSelectedId": "12",
+			"teamSelectedId": "KC",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2852,7 +2852,7 @@
 			"homeTeamId": "KC",
 			"homeTeamShort": "KC",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "12",
+			"teamSelectedId": "KC",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2867,7 +2867,7 @@
 			"homeTeamId": "ATL",
 			"homeTeamShort": "ATL",
 			"gameDate": "2024-09-23",
-			"teamSelectedId": "12",
+			"teamSelectedId": "KC",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2882,7 +2882,7 @@
 			"homeTeamId": "LAC",
 			"homeTeamShort": "LAC",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "12",
+			"teamSelectedId": "KC",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2897,7 +2897,7 @@
 			"homeTeamId": "KC",
 			"homeTeamShort": "KC",
 			"gameDate": "2024-10-08",
-			"teamSelectedId": "12",
+			"teamSelectedId": "KC",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2912,7 +2912,7 @@
 			"homeTeamId": "SF",
 			"homeTeamShort": "SF",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "12",
+			"teamSelectedId": "KC",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2927,7 +2927,7 @@
 			"homeTeamId": "LV",
 			"homeTeamShort": "LV",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "12",
+			"teamSelectedId": "KC",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2942,7 +2942,7 @@
 			"homeTeamId": "KC",
 			"homeTeamShort": "KC",
 			"gameDate": "2024-11-05",
-			"teamSelectedId": "12",
+			"teamSelectedId": "KC",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2957,7 +2957,7 @@
 			"homeTeamId": "KC",
 			"homeTeamShort": "KC",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "12",
+			"teamSelectedId": "KC",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -2972,7 +2972,7 @@
 			"homeTeamId": "BUF",
 			"homeTeamShort": "BUF",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "12",
+			"teamSelectedId": "KC",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -2987,7 +2987,7 @@
 			"homeTeamId": "CAR",
 			"homeTeamShort": "CAR",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "12",
+			"teamSelectedId": "KC",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3002,7 +3002,7 @@
 			"homeTeamId": "KC",
 			"homeTeamShort": "KC",
 			"gameDate": "2024-11-29",
-			"teamSelectedId": "12",
+			"teamSelectedId": "KC",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3017,7 +3017,7 @@
 			"homeTeamId": "KC",
 			"homeTeamShort": "KC",
 			"gameDate": "2024-12-09",
-			"teamSelectedId": "12",
+			"teamSelectedId": "KC",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3032,7 +3032,7 @@
 			"homeTeamId": "CLE",
 			"homeTeamShort": "CLE",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "12",
+			"teamSelectedId": "KC",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3047,7 +3047,7 @@
 			"homeTeamId": "KC",
 			"homeTeamShort": "KC",
 			"gameDate": "2024-12-21",
-			"teamSelectedId": "12",
+			"teamSelectedId": "KC",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3062,7 +3062,7 @@
 			"homeTeamId": "PIT",
 			"homeTeamShort": "PIT",
 			"gameDate": "2024-12-25",
-			"teamSelectedId": "12",
+			"teamSelectedId": "KC",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3077,7 +3077,7 @@
 			"homeTeamId": "DEN",
 			"homeTeamShort": "DEN",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "12",
+			"teamSelectedId": "KC",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3094,7 +3094,7 @@
 			"homeTeamId": "LAC",
 			"homeTeamShort": "LAC",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "13",
+			"teamSelectedId": "LV",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3109,7 +3109,7 @@
 			"homeTeamId": "BAL",
 			"homeTeamShort": "BAL",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "13",
+			"teamSelectedId": "LV",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3124,7 +3124,7 @@
 			"homeTeamId": "LV",
 			"homeTeamShort": "LV",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "13",
+			"teamSelectedId": "LV",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3139,7 +3139,7 @@
 			"homeTeamId": "LV",
 			"homeTeamShort": "LV",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "13",
+			"teamSelectedId": "LV",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3154,7 +3154,7 @@
 			"homeTeamId": "DEN",
 			"homeTeamShort": "DEN",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "13",
+			"teamSelectedId": "LV",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3169,7 +3169,7 @@
 			"homeTeamId": "LV",
 			"homeTeamShort": "LV",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "13",
+			"teamSelectedId": "LV",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3184,7 +3184,7 @@
 			"homeTeamId": "LAR",
 			"homeTeamShort": "LAR",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "13",
+			"teamSelectedId": "LV",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3199,7 +3199,7 @@
 			"homeTeamId": "LV",
 			"homeTeamShort": "LV",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "13",
+			"teamSelectedId": "LV",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3214,7 +3214,7 @@
 			"homeTeamId": "CIN",
 			"homeTeamShort": "CIN",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "13",
+			"teamSelectedId": "LV",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3229,7 +3229,7 @@
 			"homeTeamId": "MIA",
 			"homeTeamShort": "MIA",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "13",
+			"teamSelectedId": "LV",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3244,7 +3244,7 @@
 			"homeTeamId": "LV",
 			"homeTeamShort": "LV",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "13",
+			"teamSelectedId": "LV",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3259,7 +3259,7 @@
 			"homeTeamId": "KC",
 			"homeTeamShort": "KC",
 			"gameDate": "2024-11-29",
-			"teamSelectedId": "13",
+			"teamSelectedId": "LV",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3274,7 +3274,7 @@
 			"homeTeamId": "TB",
 			"homeTeamShort": "TB",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "13",
+			"teamSelectedId": "LV",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3289,7 +3289,7 @@
 			"homeTeamId": "LV",
 			"homeTeamShort": "LV",
 			"gameDate": "2024-12-17",
-			"teamSelectedId": "13",
+			"teamSelectedId": "LV",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3304,7 +3304,7 @@
 			"homeTeamId": "LV",
 			"homeTeamShort": "LV",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "13",
+			"teamSelectedId": "LV",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3319,7 +3319,7 @@
 			"homeTeamId": "NO",
 			"homeTeamShort": "NO",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "13",
+			"teamSelectedId": "LV",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3334,7 +3334,7 @@
 			"homeTeamId": "LV",
 			"homeTeamShort": "LV",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "13",
+			"teamSelectedId": "LV",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3351,7 +3351,7 @@
 			"homeTeamId": "DET",
 			"homeTeamShort": "DET",
 			"gameDate": "2024-09-09",
-			"teamSelectedId": "14",
+			"teamSelectedId": "LAR",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3366,7 +3366,7 @@
 			"homeTeamId": "ARI",
 			"homeTeamShort": "ARI",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "14",
+			"teamSelectedId": "LAR",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3381,7 +3381,7 @@
 			"homeTeamId": "LAR",
 			"homeTeamShort": "LAR",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "14",
+			"teamSelectedId": "LAR",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3396,7 +3396,7 @@
 			"homeTeamId": "CHI",
 			"homeTeamShort": "CHI",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "14",
+			"teamSelectedId": "LAR",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3411,7 +3411,7 @@
 			"homeTeamId": "LAR",
 			"homeTeamShort": "LAR",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "14",
+			"teamSelectedId": "LAR",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3426,7 +3426,7 @@
 			"homeTeamId": "LAR",
 			"homeTeamShort": "LAR",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "14",
+			"teamSelectedId": "LAR",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3441,7 +3441,7 @@
 			"homeTeamId": "LAR",
 			"homeTeamShort": "LAR",
 			"gameDate": "2024-10-25",
-			"teamSelectedId": "14",
+			"teamSelectedId": "LAR",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3456,7 +3456,7 @@
 			"homeTeamId": "SEA",
 			"homeTeamShort": "SEA",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "14",
+			"teamSelectedId": "LAR",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3471,7 +3471,7 @@
 			"homeTeamId": "LAR",
 			"homeTeamShort": "LAR",
 			"gameDate": "2024-11-12",
-			"teamSelectedId": "14",
+			"teamSelectedId": "LAR",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3486,7 +3486,7 @@
 			"homeTeamId": "NE",
 			"homeTeamShort": "NE",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "14",
+			"teamSelectedId": "LAR",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3501,7 +3501,7 @@
 			"homeTeamId": "LAR",
 			"homeTeamShort": "LAR",
 			"gameDate": "2024-11-25",
-			"teamSelectedId": "14",
+			"teamSelectedId": "LAR",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3516,7 +3516,7 @@
 			"homeTeamId": "NO",
 			"homeTeamShort": "NO",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "14",
+			"teamSelectedId": "LAR",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3531,7 +3531,7 @@
 			"homeTeamId": "LAR",
 			"homeTeamShort": "LAR",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "14",
+			"teamSelectedId": "LAR",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3546,7 +3546,7 @@
 			"homeTeamId": "SF",
 			"homeTeamShort": "SF",
 			"gameDate": "2024-12-13",
-			"teamSelectedId": "14",
+			"teamSelectedId": "LAR",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3561,7 +3561,7 @@
 			"homeTeamId": "NYJ",
 			"homeTeamShort": "NYJ",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "14",
+			"teamSelectedId": "LAR",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3576,7 +3576,7 @@
 			"homeTeamId": "LAR",
 			"homeTeamShort": "LAR",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "14",
+			"teamSelectedId": "LAR",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3591,7 +3591,7 @@
 			"homeTeamId": "LAR",
 			"homeTeamShort": "LAR",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "14",
+			"teamSelectedId": "LAR",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3608,7 +3608,7 @@
 			"homeTeamId": "MIA",
 			"homeTeamShort": "MIA",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "15",
+			"teamSelectedId": "MIA",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3623,7 +3623,7 @@
 			"homeTeamId": "MIA",
 			"homeTeamShort": "MIA",
 			"gameDate": "2024-09-13",
-			"teamSelectedId": "15",
+			"teamSelectedId": "MIA",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3638,7 +3638,7 @@
 			"homeTeamId": "SEA",
 			"homeTeamShort": "SEA",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "15",
+			"teamSelectedId": "MIA",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3653,7 +3653,7 @@
 			"homeTeamId": "MIA",
 			"homeTeamShort": "MIA",
 			"gameDate": "2024-09-30",
-			"teamSelectedId": "15",
+			"teamSelectedId": "MIA",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3668,7 +3668,7 @@
 			"homeTeamId": "NE",
 			"homeTeamShort": "NE",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "15",
+			"teamSelectedId": "MIA",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3683,7 +3683,7 @@
 			"homeTeamId": "IND",
 			"homeTeamShort": "IND",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "15",
+			"teamSelectedId": "MIA",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3698,7 +3698,7 @@
 			"homeTeamId": "MIA",
 			"homeTeamShort": "MIA",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "15",
+			"teamSelectedId": "MIA",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3713,7 +3713,7 @@
 			"homeTeamId": "BUF",
 			"homeTeamShort": "BUF",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "15",
+			"teamSelectedId": "MIA",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3728,7 +3728,7 @@
 			"homeTeamId": "LAR",
 			"homeTeamShort": "LAR",
 			"gameDate": "2024-11-12",
-			"teamSelectedId": "15",
+			"teamSelectedId": "MIA",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3743,7 +3743,7 @@
 			"homeTeamId": "MIA",
 			"homeTeamShort": "MIA",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "15",
+			"teamSelectedId": "MIA",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3758,7 +3758,7 @@
 			"homeTeamId": "MIA",
 			"homeTeamShort": "MIA",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "15",
+			"teamSelectedId": "MIA",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3773,7 +3773,7 @@
 			"homeTeamId": "GB",
 			"homeTeamShort": "GB",
 			"gameDate": "2024-11-29",
-			"teamSelectedId": "15",
+			"teamSelectedId": "MIA",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3788,7 +3788,7 @@
 			"homeTeamId": "MIA",
 			"homeTeamShort": "MIA",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "15",
+			"teamSelectedId": "MIA",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3803,7 +3803,7 @@
 			"homeTeamId": "HOU",
 			"homeTeamShort": "HOU",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "15",
+			"teamSelectedId": "MIA",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3818,7 +3818,7 @@
 			"homeTeamId": "MIA",
 			"homeTeamShort": "MIA",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "15",
+			"teamSelectedId": "MIA",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3833,7 +3833,7 @@
 			"homeTeamId": "CLE",
 			"homeTeamShort": "CLE",
 			"gameDate": "2024-12-30",
-			"teamSelectedId": "15",
+			"teamSelectedId": "MIA",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3848,7 +3848,7 @@
 			"homeTeamId": "NYJ",
 			"homeTeamShort": "NYJ",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "15",
+			"teamSelectedId": "MIA",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3865,7 +3865,7 @@
 			"homeTeamId": "NYG",
 			"homeTeamShort": "NYG",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "16",
+			"teamSelectedId": "MIN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3880,7 +3880,7 @@
 			"homeTeamId": "MIN",
 			"homeTeamShort": "MIN",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "16",
+			"teamSelectedId": "MIN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3895,7 +3895,7 @@
 			"homeTeamId": "MIN",
 			"homeTeamShort": "MIN",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "16",
+			"teamSelectedId": "MIN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3910,7 +3910,7 @@
 			"homeTeamId": "GB",
 			"homeTeamShort": "GB",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "16",
+			"teamSelectedId": "MIN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3925,7 +3925,7 @@
 			"homeTeamId": "MIN",
 			"homeTeamShort": "MIN",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "16",
+			"teamSelectedId": "MIN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3940,7 +3940,7 @@
 			"homeTeamId": "MIN",
 			"homeTeamShort": "MIN",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "16",
+			"teamSelectedId": "MIN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3955,7 +3955,7 @@
 			"homeTeamId": "LAR",
 			"homeTeamShort": "LAR",
 			"gameDate": "2024-10-25",
-			"teamSelectedId": "16",
+			"teamSelectedId": "MIN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -3970,7 +3970,7 @@
 			"homeTeamId": "MIN",
 			"homeTeamShort": "MIN",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "16",
+			"teamSelectedId": "MIN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -3985,7 +3985,7 @@
 			"homeTeamId": "JAX",
 			"homeTeamShort": "JAX",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "16",
+			"teamSelectedId": "MIN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4000,7 +4000,7 @@
 			"homeTeamId": "TEN",
 			"homeTeamShort": "TEN",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "16",
+			"teamSelectedId": "MIN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4015,7 +4015,7 @@
 			"homeTeamId": "CHI",
 			"homeTeamShort": "CHI",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "16",
+			"teamSelectedId": "MIN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4030,7 +4030,7 @@
 			"homeTeamId": "MIN",
 			"homeTeamShort": "MIN",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "16",
+			"teamSelectedId": "MIN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4045,7 +4045,7 @@
 			"homeTeamId": "MIN",
 			"homeTeamShort": "MIN",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "16",
+			"teamSelectedId": "MIN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4060,7 +4060,7 @@
 			"homeTeamId": "MIN",
 			"homeTeamShort": "MIN",
 			"gameDate": "2024-12-17",
-			"teamSelectedId": "16",
+			"teamSelectedId": "MIN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4075,7 +4075,7 @@
 			"homeTeamId": "SEA",
 			"homeTeamShort": "SEA",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "16",
+			"teamSelectedId": "MIN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4090,7 +4090,7 @@
 			"homeTeamId": "MIN",
 			"homeTeamShort": "MIN",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "16",
+			"teamSelectedId": "MIN",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4105,7 +4105,7 @@
 			"homeTeamId": "DET",
 			"homeTeamShort": "DET",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "16",
+			"teamSelectedId": "MIN",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4122,7 +4122,7 @@
 			"homeTeamId": "CIN",
 			"homeTeamShort": "CIN",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "17",
+			"teamSelectedId": "NE",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4137,7 +4137,7 @@
 			"homeTeamId": "NE",
 			"homeTeamShort": "NE",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "17",
+			"teamSelectedId": "NE",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4152,7 +4152,7 @@
 			"homeTeamId": "NYJ",
 			"homeTeamShort": "NYJ",
 			"gameDate": "2024-09-20",
-			"teamSelectedId": "17",
+			"teamSelectedId": "NE",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4167,7 +4167,7 @@
 			"homeTeamId": "SF",
 			"homeTeamShort": "SF",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "17",
+			"teamSelectedId": "NE",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4182,7 +4182,7 @@
 			"homeTeamId": "NE",
 			"homeTeamShort": "NE",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "17",
+			"teamSelectedId": "NE",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4197,7 +4197,7 @@
 			"homeTeamId": "NE",
 			"homeTeamShort": "NE",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "17",
+			"teamSelectedId": "NE",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4212,7 +4212,7 @@
 			"homeTeamId": "JAX",
 			"homeTeamShort": "JAX",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "17",
+			"teamSelectedId": "NE",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4227,7 +4227,7 @@
 			"homeTeamId": "NE",
 			"homeTeamShort": "NE",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "17",
+			"teamSelectedId": "NE",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4242,7 +4242,7 @@
 			"homeTeamId": "TEN",
 			"homeTeamShort": "TEN",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "17",
+			"teamSelectedId": "NE",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4257,7 +4257,7 @@
 			"homeTeamId": "CHI",
 			"homeTeamShort": "CHI",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "17",
+			"teamSelectedId": "NE",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4272,7 +4272,7 @@
 			"homeTeamId": "NE",
 			"homeTeamShort": "NE",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "17",
+			"teamSelectedId": "NE",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4287,7 +4287,7 @@
 			"homeTeamId": "MIA",
 			"homeTeamShort": "MIA",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "17",
+			"teamSelectedId": "NE",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4302,7 +4302,7 @@
 			"homeTeamId": "NE",
 			"homeTeamShort": "NE",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "17",
+			"teamSelectedId": "NE",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4317,7 +4317,7 @@
 			"homeTeamId": "ARI",
 			"homeTeamShort": "ARI",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "17",
+			"teamSelectedId": "NE",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4332,7 +4332,7 @@
 			"homeTeamId": "BUF",
 			"homeTeamShort": "BUF",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "17",
+			"teamSelectedId": "NE",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4347,7 +4347,7 @@
 			"homeTeamId": "NE",
 			"homeTeamShort": "NE",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "17",
+			"teamSelectedId": "NE",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4362,7 +4362,7 @@
 			"homeTeamId": "NE",
 			"homeTeamShort": "NE",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "17",
+			"teamSelectedId": "NE",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4379,7 +4379,7 @@
 			"homeTeamId": "NO",
 			"homeTeamShort": "NO",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "18",
+			"teamSelectedId": "NO",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4394,7 +4394,7 @@
 			"homeTeamId": "DAL",
 			"homeTeamShort": "DAL",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "18",
+			"teamSelectedId": "NO",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4409,7 +4409,7 @@
 			"homeTeamId": "NO",
 			"homeTeamShort": "NO",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "18",
+			"teamSelectedId": "NO",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4424,7 +4424,7 @@
 			"homeTeamId": "ATL",
 			"homeTeamShort": "ATL",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "18",
+			"teamSelectedId": "NO",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4439,7 +4439,7 @@
 			"homeTeamId": "KC",
 			"homeTeamShort": "KC",
 			"gameDate": "2024-10-08",
-			"teamSelectedId": "18",
+			"teamSelectedId": "NO",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4454,7 +4454,7 @@
 			"homeTeamId": "NO",
 			"homeTeamShort": "NO",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "18",
+			"teamSelectedId": "NO",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4469,7 +4469,7 @@
 			"homeTeamId": "NO",
 			"homeTeamShort": "NO",
 			"gameDate": "2024-10-18",
-			"teamSelectedId": "18",
+			"teamSelectedId": "NO",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4484,7 +4484,7 @@
 			"homeTeamId": "LAC",
 			"homeTeamShort": "LAC",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "18",
+			"teamSelectedId": "NO",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4499,7 +4499,7 @@
 			"homeTeamId": "CAR",
 			"homeTeamShort": "CAR",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "18",
+			"teamSelectedId": "NO",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4514,7 +4514,7 @@
 			"homeTeamId": "NO",
 			"homeTeamShort": "NO",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "18",
+			"teamSelectedId": "NO",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4529,7 +4529,7 @@
 			"homeTeamId": "NO",
 			"homeTeamShort": "NO",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "18",
+			"teamSelectedId": "NO",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4544,7 +4544,7 @@
 			"homeTeamId": "NO",
 			"homeTeamShort": "NO",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "18",
+			"teamSelectedId": "NO",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4559,7 +4559,7 @@
 			"homeTeamId": "NYG",
 			"homeTeamShort": "NYG",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "18",
+			"teamSelectedId": "NO",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4574,7 +4574,7 @@
 			"homeTeamId": "NO",
 			"homeTeamShort": "NO",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "18",
+			"teamSelectedId": "NO",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4589,7 +4589,7 @@
 			"homeTeamId": "GB",
 			"homeTeamShort": "GB",
 			"gameDate": "2024-12-24",
-			"teamSelectedId": "18",
+			"teamSelectedId": "NO",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4604,7 +4604,7 @@
 			"homeTeamId": "NO",
 			"homeTeamShort": "NO",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "18",
+			"teamSelectedId": "NO",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4619,7 +4619,7 @@
 			"homeTeamId": "TB",
 			"homeTeamShort": "TB",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "18",
+			"teamSelectedId": "NO",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4636,7 +4636,7 @@
 			"homeTeamId": "NYG",
 			"homeTeamShort": "NYG",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "19",
+			"teamSelectedId": "NYG",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4651,7 +4651,7 @@
 			"homeTeamId": "WSH",
 			"homeTeamShort": "WSH",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "19",
+			"teamSelectedId": "NYG",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4666,7 +4666,7 @@
 			"homeTeamId": "CLE",
 			"homeTeamShort": "CLE",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "19",
+			"teamSelectedId": "NYG",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4681,7 +4681,7 @@
 			"homeTeamId": "NYG",
 			"homeTeamShort": "NYG",
 			"gameDate": "2024-09-27",
-			"teamSelectedId": "19",
+			"teamSelectedId": "NYG",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4696,7 +4696,7 @@
 			"homeTeamId": "SEA",
 			"homeTeamShort": "SEA",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "19",
+			"teamSelectedId": "NYG",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4711,7 +4711,7 @@
 			"homeTeamId": "NYG",
 			"homeTeamShort": "NYG",
 			"gameDate": "2024-10-14",
-			"teamSelectedId": "19",
+			"teamSelectedId": "NYG",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4726,7 +4726,7 @@
 			"homeTeamId": "NYG",
 			"homeTeamShort": "NYG",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "19",
+			"teamSelectedId": "NYG",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4741,7 +4741,7 @@
 			"homeTeamId": "PIT",
 			"homeTeamShort": "PIT",
 			"gameDate": "2024-10-29",
-			"teamSelectedId": "19",
+			"teamSelectedId": "NYG",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4756,7 +4756,7 @@
 			"homeTeamId": "NYG",
 			"homeTeamShort": "NYG",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "19",
+			"teamSelectedId": "NYG",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4771,7 +4771,7 @@
 			"homeTeamId": "CAR",
 			"homeTeamShort": "CAR",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "19",
+			"teamSelectedId": "NYG",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4786,7 +4786,7 @@
 			"homeTeamId": "NYG",
 			"homeTeamShort": "NYG",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "19",
+			"teamSelectedId": "NYG",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4801,7 +4801,7 @@
 			"homeTeamId": "DAL",
 			"homeTeamShort": "DAL",
 			"gameDate": "2024-11-28",
-			"teamSelectedId": "19",
+			"teamSelectedId": "NYG",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4816,7 +4816,7 @@
 			"homeTeamId": "NYG",
 			"homeTeamShort": "NYG",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "19",
+			"teamSelectedId": "NYG",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4831,7 +4831,7 @@
 			"homeTeamId": "NYG",
 			"homeTeamShort": "NYG",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "19",
+			"teamSelectedId": "NYG",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4846,7 +4846,7 @@
 			"homeTeamId": "ATL",
 			"homeTeamShort": "ATL",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "19",
+			"teamSelectedId": "NYG",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4861,7 +4861,7 @@
 			"homeTeamId": "NYG",
 			"homeTeamShort": "NYG",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "19",
+			"teamSelectedId": "NYG",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4876,7 +4876,7 @@
 			"homeTeamId": "PHI",
 			"homeTeamShort": "PHI",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "19",
+			"teamSelectedId": "NYG",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4893,7 +4893,7 @@
 			"homeTeamId": "SF",
 			"homeTeamShort": "SF",
 			"gameDate": "2024-09-10",
-			"teamSelectedId": "20",
+			"teamSelectedId": "NYJ",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4908,7 +4908,7 @@
 			"homeTeamId": "TEN",
 			"homeTeamShort": "TEN",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "20",
+			"teamSelectedId": "NYJ",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4923,7 +4923,7 @@
 			"homeTeamId": "NYJ",
 			"homeTeamShort": "NYJ",
 			"gameDate": "2024-09-20",
-			"teamSelectedId": "20",
+			"teamSelectedId": "NYJ",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4938,7 +4938,7 @@
 			"homeTeamId": "NYJ",
 			"homeTeamShort": "NYJ",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "20",
+			"teamSelectedId": "NYJ",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4953,7 +4953,7 @@
 			"homeTeamId": "MIN",
 			"homeTeamShort": "MIN",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "20",
+			"teamSelectedId": "NYJ",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4968,7 +4968,7 @@
 			"homeTeamId": "NYJ",
 			"homeTeamShort": "NYJ",
 			"gameDate": "2024-10-15",
-			"teamSelectedId": "20",
+			"teamSelectedId": "NYJ",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -4983,7 +4983,7 @@
 			"homeTeamId": "PIT",
 			"homeTeamShort": "PIT",
 			"gameDate": "2024-10-21",
-			"teamSelectedId": "20",
+			"teamSelectedId": "NYJ",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -4998,7 +4998,7 @@
 			"homeTeamId": "NE",
 			"homeTeamShort": "NE",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "20",
+			"teamSelectedId": "NYJ",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5013,7 +5013,7 @@
 			"homeTeamId": "NYJ",
 			"homeTeamShort": "NYJ",
 			"gameDate": "2024-11-01",
-			"teamSelectedId": "20",
+			"teamSelectedId": "NYJ",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5028,7 +5028,7 @@
 			"homeTeamId": "ARI",
 			"homeTeamShort": "ARI",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "20",
+			"teamSelectedId": "NYJ",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5043,7 +5043,7 @@
 			"homeTeamId": "NYJ",
 			"homeTeamShort": "NYJ",
 			"gameDate": "2024-11-18",
-			"teamSelectedId": "20",
+			"teamSelectedId": "NYJ",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5058,7 +5058,7 @@
 			"homeTeamId": "NYJ",
 			"homeTeamShort": "NYJ",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "20",
+			"teamSelectedId": "NYJ",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5073,7 +5073,7 @@
 			"homeTeamId": "MIA",
 			"homeTeamShort": "MIA",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "20",
+			"teamSelectedId": "NYJ",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5088,7 +5088,7 @@
 			"homeTeamId": "JAX",
 			"homeTeamShort": "JAX",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "20",
+			"teamSelectedId": "NYJ",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5103,7 +5103,7 @@
 			"homeTeamId": "NYJ",
 			"homeTeamShort": "NYJ",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "20",
+			"teamSelectedId": "NYJ",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5118,7 +5118,7 @@
 			"homeTeamId": "BUF",
 			"homeTeamShort": "BUF",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "20",
+			"teamSelectedId": "NYJ",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5133,7 +5133,7 @@
 			"homeTeamId": "NYJ",
 			"homeTeamShort": "NYJ",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "20",
+			"teamSelectedId": "NYJ",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5150,7 +5150,7 @@
 			"homeTeamId": "PHI",
 			"homeTeamShort": "PHI",
 			"gameDate": "2024-09-07",
-			"teamSelectedId": "21",
+			"teamSelectedId": "PHI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5165,7 +5165,7 @@
 			"homeTeamId": "PHI",
 			"homeTeamShort": "PHI",
 			"gameDate": "2024-09-17",
-			"teamSelectedId": "21",
+			"teamSelectedId": "PHI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5180,7 +5180,7 @@
 			"homeTeamId": "NO",
 			"homeTeamShort": "NO",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "21",
+			"teamSelectedId": "PHI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5195,7 +5195,7 @@
 			"homeTeamId": "TB",
 			"homeTeamShort": "TB",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "21",
+			"teamSelectedId": "PHI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5210,7 +5210,7 @@
 			"homeTeamId": "PHI",
 			"homeTeamShort": "PHI",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "21",
+			"teamSelectedId": "PHI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5225,7 +5225,7 @@
 			"homeTeamId": "NYG",
 			"homeTeamShort": "NYG",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "21",
+			"teamSelectedId": "PHI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5240,7 +5240,7 @@
 			"homeTeamId": "CIN",
 			"homeTeamShort": "CIN",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "21",
+			"teamSelectedId": "PHI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5255,7 +5255,7 @@
 			"homeTeamId": "PHI",
 			"homeTeamShort": "PHI",
 			"gameDate": "2024-11-04",
-			"teamSelectedId": "21",
+			"teamSelectedId": "PHI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5270,7 +5270,7 @@
 			"homeTeamId": "DAL",
 			"homeTeamShort": "DAL",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "21",
+			"teamSelectedId": "PHI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5285,7 +5285,7 @@
 			"homeTeamId": "PHI",
 			"homeTeamShort": "PHI",
 			"gameDate": "2024-11-15",
-			"teamSelectedId": "21",
+			"teamSelectedId": "PHI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5300,7 +5300,7 @@
 			"homeTeamId": "LAR",
 			"homeTeamShort": "LAR",
 			"gameDate": "2024-11-25",
-			"teamSelectedId": "21",
+			"teamSelectedId": "PHI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5315,7 +5315,7 @@
 			"homeTeamId": "BAL",
 			"homeTeamShort": "BAL",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "21",
+			"teamSelectedId": "PHI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5330,7 +5330,7 @@
 			"homeTeamId": "PHI",
 			"homeTeamShort": "PHI",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "21",
+			"teamSelectedId": "PHI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5345,7 +5345,7 @@
 			"homeTeamId": "PHI",
 			"homeTeamShort": "PHI",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "21",
+			"teamSelectedId": "PHI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5360,7 +5360,7 @@
 			"homeTeamId": "WSH",
 			"homeTeamShort": "WSH",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "21",
+			"teamSelectedId": "PHI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5375,7 +5375,7 @@
 			"homeTeamId": "PHI",
 			"homeTeamShort": "PHI",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "21",
+			"teamSelectedId": "PHI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5390,7 +5390,7 @@
 			"homeTeamId": "PHI",
 			"homeTeamShort": "PHI",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "21",
+			"teamSelectedId": "PHI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5407,7 +5407,7 @@
 			"homeTeamId": "BUF",
 			"homeTeamShort": "BUF",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "22",
+			"teamSelectedId": "ARI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5422,7 +5422,7 @@
 			"homeTeamId": "ARI",
 			"homeTeamShort": "ARI",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "22",
+			"teamSelectedId": "ARI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5437,7 +5437,7 @@
 			"homeTeamId": "ARI",
 			"homeTeamShort": "ARI",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "22",
+			"teamSelectedId": "ARI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5452,7 +5452,7 @@
 			"homeTeamId": "ARI",
 			"homeTeamShort": "ARI",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "22",
+			"teamSelectedId": "ARI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5467,7 +5467,7 @@
 			"homeTeamId": "SF",
 			"homeTeamShort": "SF",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "22",
+			"teamSelectedId": "ARI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5482,7 +5482,7 @@
 			"homeTeamId": "GB",
 			"homeTeamShort": "GB",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "22",
+			"teamSelectedId": "ARI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5497,7 +5497,7 @@
 			"homeTeamId": "ARI",
 			"homeTeamShort": "ARI",
 			"gameDate": "2024-10-22",
-			"teamSelectedId": "22",
+			"teamSelectedId": "ARI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5512,7 +5512,7 @@
 			"homeTeamId": "MIA",
 			"homeTeamShort": "MIA",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "22",
+			"teamSelectedId": "ARI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5527,7 +5527,7 @@
 			"homeTeamId": "ARI",
 			"homeTeamShort": "ARI",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "22",
+			"teamSelectedId": "ARI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5542,7 +5542,7 @@
 			"homeTeamId": "ARI",
 			"homeTeamShort": "ARI",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "22",
+			"teamSelectedId": "ARI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5557,7 +5557,7 @@
 			"homeTeamId": "SEA",
 			"homeTeamShort": "SEA",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "22",
+			"teamSelectedId": "ARI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5572,7 +5572,7 @@
 			"homeTeamId": "MIN",
 			"homeTeamShort": "MIN",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "22",
+			"teamSelectedId": "ARI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5587,7 +5587,7 @@
 			"homeTeamId": "ARI",
 			"homeTeamShort": "ARI",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "22",
+			"teamSelectedId": "ARI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5602,7 +5602,7 @@
 			"homeTeamId": "ARI",
 			"homeTeamShort": "ARI",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "22",
+			"teamSelectedId": "ARI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5617,7 +5617,7 @@
 			"homeTeamId": "CAR",
 			"homeTeamShort": "CAR",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "22",
+			"teamSelectedId": "ARI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5632,7 +5632,7 @@
 			"homeTeamId": "LAR",
 			"homeTeamShort": "LAR",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "22",
+			"teamSelectedId": "ARI",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5647,7 +5647,7 @@
 			"homeTeamId": "ARI",
 			"homeTeamShort": "ARI",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "22",
+			"teamSelectedId": "ARI",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5664,7 +5664,7 @@
 			"homeTeamId": "ATL",
 			"homeTeamShort": "ATL",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "23",
+			"teamSelectedId": "PIT",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5679,7 +5679,7 @@
 			"homeTeamId": "DEN",
 			"homeTeamShort": "DEN",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "23",
+			"teamSelectedId": "PIT",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5694,7 +5694,7 @@
 			"homeTeamId": "PIT",
 			"homeTeamShort": "PIT",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "23",
+			"teamSelectedId": "PIT",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5709,7 +5709,7 @@
 			"homeTeamId": "IND",
 			"homeTeamShort": "IND",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "23",
+			"teamSelectedId": "PIT",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5724,7 +5724,7 @@
 			"homeTeamId": "PIT",
 			"homeTeamShort": "PIT",
 			"gameDate": "2024-10-07",
-			"teamSelectedId": "23",
+			"teamSelectedId": "PIT",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5739,7 +5739,7 @@
 			"homeTeamId": "LV",
 			"homeTeamShort": "LV",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "23",
+			"teamSelectedId": "PIT",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5754,7 +5754,7 @@
 			"homeTeamId": "PIT",
 			"homeTeamShort": "PIT",
 			"gameDate": "2024-10-21",
-			"teamSelectedId": "23",
+			"teamSelectedId": "PIT",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5769,7 +5769,7 @@
 			"homeTeamId": "PIT",
 			"homeTeamShort": "PIT",
 			"gameDate": "2024-10-29",
-			"teamSelectedId": "23",
+			"teamSelectedId": "PIT",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5784,7 +5784,7 @@
 			"homeTeamId": "WSH",
 			"homeTeamShort": "WSH",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "23",
+			"teamSelectedId": "PIT",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5799,7 +5799,7 @@
 			"homeTeamId": "PIT",
 			"homeTeamShort": "PIT",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "23",
+			"teamSelectedId": "PIT",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5814,7 +5814,7 @@
 			"homeTeamId": "CLE",
 			"homeTeamShort": "CLE",
 			"gameDate": "2024-11-22",
-			"teamSelectedId": "23",
+			"teamSelectedId": "PIT",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5829,7 +5829,7 @@
 			"homeTeamId": "CIN",
 			"homeTeamShort": "CIN",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "23",
+			"teamSelectedId": "PIT",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5844,7 +5844,7 @@
 			"homeTeamId": "PIT",
 			"homeTeamShort": "PIT",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "23",
+			"teamSelectedId": "PIT",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5859,7 +5859,7 @@
 			"homeTeamId": "PHI",
 			"homeTeamShort": "PHI",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "23",
+			"teamSelectedId": "PIT",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5874,7 +5874,7 @@
 			"homeTeamId": "BAL",
 			"homeTeamShort": "BAL",
 			"gameDate": "2024-12-21",
-			"teamSelectedId": "23",
+			"teamSelectedId": "PIT",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5889,7 +5889,7 @@
 			"homeTeamId": "PIT",
 			"homeTeamShort": "PIT",
 			"gameDate": "2024-12-25",
-			"teamSelectedId": "23",
+			"teamSelectedId": "PIT",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5904,7 +5904,7 @@
 			"homeTeamId": "PIT",
 			"homeTeamShort": "PIT",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "23",
+			"teamSelectedId": "PIT",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5921,7 +5921,7 @@
 			"homeTeamId": "LAC",
 			"homeTeamShort": "LAC",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "24",
+			"teamSelectedId": "LAC",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5936,7 +5936,7 @@
 			"homeTeamId": "CAR",
 			"homeTeamShort": "CAR",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "24",
+			"teamSelectedId": "LAC",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5951,7 +5951,7 @@
 			"homeTeamId": "PIT",
 			"homeTeamShort": "PIT",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "24",
+			"teamSelectedId": "LAC",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5966,7 +5966,7 @@
 			"homeTeamId": "LAC",
 			"homeTeamShort": "LAC",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "24",
+			"teamSelectedId": "LAC",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -5981,7 +5981,7 @@
 			"homeTeamId": "DEN",
 			"homeTeamShort": "DEN",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "24",
+			"teamSelectedId": "LAC",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -5996,7 +5996,7 @@
 			"homeTeamId": "ARI",
 			"homeTeamShort": "ARI",
 			"gameDate": "2024-10-22",
-			"teamSelectedId": "24",
+			"teamSelectedId": "LAC",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6011,7 +6011,7 @@
 			"homeTeamId": "LAC",
 			"homeTeamShort": "LAC",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "24",
+			"teamSelectedId": "LAC",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6026,7 +6026,7 @@
 			"homeTeamId": "CLE",
 			"homeTeamShort": "CLE",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "24",
+			"teamSelectedId": "LAC",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6041,7 +6041,7 @@
 			"homeTeamId": "LAC",
 			"homeTeamShort": "LAC",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "24",
+			"teamSelectedId": "LAC",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6056,7 +6056,7 @@
 			"homeTeamId": "LAC",
 			"homeTeamShort": "LAC",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "24",
+			"teamSelectedId": "LAC",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6071,7 +6071,7 @@
 			"homeTeamId": "LAC",
 			"homeTeamShort": "LAC",
 			"gameDate": "2024-11-26",
-			"teamSelectedId": "24",
+			"teamSelectedId": "LAC",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6086,7 +6086,7 @@
 			"homeTeamId": "ATL",
 			"homeTeamShort": "ATL",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "24",
+			"teamSelectedId": "LAC",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6101,7 +6101,7 @@
 			"homeTeamId": "KC",
 			"homeTeamShort": "KC",
 			"gameDate": "2024-12-09",
-			"teamSelectedId": "24",
+			"teamSelectedId": "LAC",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6116,7 +6116,7 @@
 			"homeTeamId": "LAC",
 			"homeTeamShort": "LAC",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "24",
+			"teamSelectedId": "LAC",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6131,7 +6131,7 @@
 			"homeTeamId": "LAC",
 			"homeTeamShort": "LAC",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "24",
+			"teamSelectedId": "LAC",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6146,7 +6146,7 @@
 			"homeTeamId": "NE",
 			"homeTeamShort": "NE",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "24",
+			"teamSelectedId": "LAC",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6161,7 +6161,7 @@
 			"homeTeamId": "LV",
 			"homeTeamShort": "LV",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "24",
+			"teamSelectedId": "LAC",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6178,7 +6178,7 @@
 			"homeTeamId": "SF",
 			"homeTeamShort": "SF",
 			"gameDate": "2024-09-10",
-			"teamSelectedId": "25",
+			"teamSelectedId": "SF",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6193,7 +6193,7 @@
 			"homeTeamId": "MIN",
 			"homeTeamShort": "MIN",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "25",
+			"teamSelectedId": "SF",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6208,7 +6208,7 @@
 			"homeTeamId": "LAR",
 			"homeTeamShort": "LAR",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "25",
+			"teamSelectedId": "SF",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6223,7 +6223,7 @@
 			"homeTeamId": "SF",
 			"homeTeamShort": "SF",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "25",
+			"teamSelectedId": "SF",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6238,7 +6238,7 @@
 			"homeTeamId": "SF",
 			"homeTeamShort": "SF",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "25",
+			"teamSelectedId": "SF",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6253,7 +6253,7 @@
 			"homeTeamId": "SEA",
 			"homeTeamShort": "SEA",
 			"gameDate": "2024-10-11",
-			"teamSelectedId": "25",
+			"teamSelectedId": "SF",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6268,7 +6268,7 @@
 			"homeTeamId": "SF",
 			"homeTeamShort": "SF",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "25",
+			"teamSelectedId": "SF",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6283,7 +6283,7 @@
 			"homeTeamId": "SF",
 			"homeTeamShort": "SF",
 			"gameDate": "2024-10-28",
-			"teamSelectedId": "25",
+			"teamSelectedId": "SF",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6298,7 +6298,7 @@
 			"homeTeamId": "TB",
 			"homeTeamShort": "TB",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "25",
+			"teamSelectedId": "SF",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6313,7 +6313,7 @@
 			"homeTeamId": "SF",
 			"homeTeamShort": "SF",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "25",
+			"teamSelectedId": "SF",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6328,7 +6328,7 @@
 			"homeTeamId": "GB",
 			"homeTeamShort": "GB",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "25",
+			"teamSelectedId": "SF",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6343,7 +6343,7 @@
 			"homeTeamId": "BUF",
 			"homeTeamShort": "BUF",
 			"gameDate": "2024-12-02",
-			"teamSelectedId": "25",
+			"teamSelectedId": "SF",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6358,7 +6358,7 @@
 			"homeTeamId": "SF",
 			"homeTeamShort": "SF",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "25",
+			"teamSelectedId": "SF",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6373,7 +6373,7 @@
 			"homeTeamId": "SF",
 			"homeTeamShort": "SF",
 			"gameDate": "2024-12-13",
-			"teamSelectedId": "25",
+			"teamSelectedId": "SF",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6388,7 +6388,7 @@
 			"homeTeamId": "MIA",
 			"homeTeamShort": "MIA",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "25",
+			"teamSelectedId": "SF",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6403,7 +6403,7 @@
 			"homeTeamId": "SF",
 			"homeTeamShort": "SF",
 			"gameDate": "2024-12-31",
-			"teamSelectedId": "25",
+			"teamSelectedId": "SF",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6418,7 +6418,7 @@
 			"homeTeamId": "ARI",
 			"homeTeamShort": "ARI",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "25",
+			"teamSelectedId": "SF",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6435,7 +6435,7 @@
 			"homeTeamId": "SEA",
 			"homeTeamShort": "SEA",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "26",
+			"teamSelectedId": "SEA",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6450,7 +6450,7 @@
 			"homeTeamId": "NE",
 			"homeTeamShort": "NE",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "26",
+			"teamSelectedId": "SEA",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6465,7 +6465,7 @@
 			"homeTeamId": "SEA",
 			"homeTeamShort": "SEA",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "26",
+			"teamSelectedId": "SEA",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6480,7 +6480,7 @@
 			"homeTeamId": "DET",
 			"homeTeamShort": "DET",
 			"gameDate": "2024-10-01",
-			"teamSelectedId": "26",
+			"teamSelectedId": "SEA",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6495,7 +6495,7 @@
 			"homeTeamId": "SEA",
 			"homeTeamShort": "SEA",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "26",
+			"teamSelectedId": "SEA",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6510,7 +6510,7 @@
 			"homeTeamId": "SEA",
 			"homeTeamShort": "SEA",
 			"gameDate": "2024-10-11",
-			"teamSelectedId": "26",
+			"teamSelectedId": "SEA",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6525,7 +6525,7 @@
 			"homeTeamId": "ATL",
 			"homeTeamShort": "ATL",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "26",
+			"teamSelectedId": "SEA",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6540,7 +6540,7 @@
 			"homeTeamId": "SEA",
 			"homeTeamShort": "SEA",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "26",
+			"teamSelectedId": "SEA",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6555,7 +6555,7 @@
 			"homeTeamId": "SEA",
 			"homeTeamShort": "SEA",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "26",
+			"teamSelectedId": "SEA",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6570,7 +6570,7 @@
 			"homeTeamId": "SF",
 			"homeTeamShort": "SF",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "26",
+			"teamSelectedId": "SEA",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6585,7 +6585,7 @@
 			"homeTeamId": "SEA",
 			"homeTeamShort": "SEA",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "26",
+			"teamSelectedId": "SEA",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6600,7 +6600,7 @@
 			"homeTeamId": "NYJ",
 			"homeTeamShort": "NYJ",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "26",
+			"teamSelectedId": "SEA",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6615,7 +6615,7 @@
 			"homeTeamId": "ARI",
 			"homeTeamShort": "ARI",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "26",
+			"teamSelectedId": "SEA",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6630,7 +6630,7 @@
 			"homeTeamId": "SEA",
 			"homeTeamShort": "SEA",
 			"gameDate": "2024-12-16",
-			"teamSelectedId": "26",
+			"teamSelectedId": "SEA",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6645,7 +6645,7 @@
 			"homeTeamId": "SEA",
 			"homeTeamShort": "SEA",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "26",
+			"teamSelectedId": "SEA",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6660,7 +6660,7 @@
 			"homeTeamId": "CHI",
 			"homeTeamShort": "CHI",
 			"gameDate": "2024-12-27",
-			"teamSelectedId": "26",
+			"teamSelectedId": "SEA",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6675,7 +6675,7 @@
 			"homeTeamId": "LAR",
 			"homeTeamShort": "LAR",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "26",
+			"teamSelectedId": "SEA",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6692,7 +6692,7 @@
 			"homeTeamId": "TB",
 			"homeTeamShort": "TB",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "27",
+			"teamSelectedId": "TB",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6707,7 +6707,7 @@
 			"homeTeamId": "DET",
 			"homeTeamShort": "DET",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "27",
+			"teamSelectedId": "TB",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6722,7 +6722,7 @@
 			"homeTeamId": "TB",
 			"homeTeamShort": "TB",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "27",
+			"teamSelectedId": "TB",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6737,7 +6737,7 @@
 			"homeTeamId": "TB",
 			"homeTeamShort": "TB",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "27",
+			"teamSelectedId": "TB",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6752,7 +6752,7 @@
 			"homeTeamId": "ATL",
 			"homeTeamShort": "ATL",
 			"gameDate": "2024-10-04",
-			"teamSelectedId": "27",
+			"teamSelectedId": "TB",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6767,7 +6767,7 @@
 			"homeTeamId": "NO",
 			"homeTeamShort": "NO",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "27",
+			"teamSelectedId": "TB",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6782,7 +6782,7 @@
 			"homeTeamId": "TB",
 			"homeTeamShort": "TB",
 			"gameDate": "2024-10-22",
-			"teamSelectedId": "27",
+			"teamSelectedId": "TB",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6797,7 +6797,7 @@
 			"homeTeamId": "TB",
 			"homeTeamShort": "TB",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "27",
+			"teamSelectedId": "TB",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6812,7 +6812,7 @@
 			"homeTeamId": "KC",
 			"homeTeamShort": "KC",
 			"gameDate": "2024-11-05",
-			"teamSelectedId": "27",
+			"teamSelectedId": "TB",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6827,7 +6827,7 @@
 			"homeTeamId": "TB",
 			"homeTeamShort": "TB",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "27",
+			"teamSelectedId": "TB",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6842,7 +6842,7 @@
 			"homeTeamId": "NYG",
 			"homeTeamShort": "NYG",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "27",
+			"teamSelectedId": "TB",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6857,7 +6857,7 @@
 			"homeTeamId": "CAR",
 			"homeTeamShort": "CAR",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "27",
+			"teamSelectedId": "TB",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6872,7 +6872,7 @@
 			"homeTeamId": "TB",
 			"homeTeamShort": "TB",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "27",
+			"teamSelectedId": "TB",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6887,7 +6887,7 @@
 			"homeTeamId": "LAC",
 			"homeTeamShort": "LAC",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "27",
+			"teamSelectedId": "TB",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6902,7 +6902,7 @@
 			"homeTeamId": "DAL",
 			"homeTeamShort": "DAL",
 			"gameDate": "2024-12-23",
-			"teamSelectedId": "27",
+			"teamSelectedId": "TB",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6917,7 +6917,7 @@
 			"homeTeamId": "TB",
 			"homeTeamShort": "TB",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "27",
+			"teamSelectedId": "TB",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6932,7 +6932,7 @@
 			"homeTeamId": "TB",
 			"homeTeamShort": "TB",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "27",
+			"teamSelectedId": "TB",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6949,7 +6949,7 @@
 			"homeTeamId": "TB",
 			"homeTeamShort": "TB",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "28",
+			"teamSelectedId": "WSH",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6964,7 +6964,7 @@
 			"homeTeamId": "WSH",
 			"homeTeamShort": "WSH",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "28",
+			"teamSelectedId": "WSH",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -6979,7 +6979,7 @@
 			"homeTeamId": "CIN",
 			"homeTeamShort": "CIN",
 			"gameDate": "2024-09-24",
-			"teamSelectedId": "28",
+			"teamSelectedId": "WSH",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -6994,7 +6994,7 @@
 			"homeTeamId": "ARI",
 			"homeTeamShort": "ARI",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "28",
+			"teamSelectedId": "WSH",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7009,7 +7009,7 @@
 			"homeTeamId": "WSH",
 			"homeTeamShort": "WSH",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "28",
+			"teamSelectedId": "WSH",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7024,7 +7024,7 @@
 			"homeTeamId": "BAL",
 			"homeTeamShort": "BAL",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "28",
+			"teamSelectedId": "WSH",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7039,7 +7039,7 @@
 			"homeTeamId": "WSH",
 			"homeTeamShort": "WSH",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "28",
+			"teamSelectedId": "WSH",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7054,7 +7054,7 @@
 			"homeTeamId": "WSH",
 			"homeTeamShort": "WSH",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "28",
+			"teamSelectedId": "WSH",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7069,7 +7069,7 @@
 			"homeTeamId": "NYG",
 			"homeTeamShort": "NYG",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "28",
+			"teamSelectedId": "WSH",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7084,7 +7084,7 @@
 			"homeTeamId": "WSH",
 			"homeTeamShort": "WSH",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "28",
+			"teamSelectedId": "WSH",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7099,7 +7099,7 @@
 			"homeTeamId": "PHI",
 			"homeTeamShort": "PHI",
 			"gameDate": "2024-11-15",
-			"teamSelectedId": "28",
+			"teamSelectedId": "WSH",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7114,7 +7114,7 @@
 			"homeTeamId": "WSH",
 			"homeTeamShort": "WSH",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "28",
+			"teamSelectedId": "WSH",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7129,7 +7129,7 @@
 			"homeTeamId": "WSH",
 			"homeTeamShort": "WSH",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "28",
+			"teamSelectedId": "WSH",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7144,7 +7144,7 @@
 			"homeTeamId": "NO",
 			"homeTeamShort": "NO",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "28",
+			"teamSelectedId": "WSH",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7159,7 +7159,7 @@
 			"homeTeamId": "WSH",
 			"homeTeamShort": "WSH",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "28",
+			"teamSelectedId": "WSH",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7174,7 +7174,7 @@
 			"homeTeamId": "WSH",
 			"homeTeamShort": "WSH",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "28",
+			"teamSelectedId": "WSH",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7189,7 +7189,7 @@
 			"homeTeamId": "DAL",
 			"homeTeamShort": "DAL",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "28",
+			"teamSelectedId": "WSH",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7206,7 +7206,7 @@
 			"homeTeamId": "NO",
 			"homeTeamShort": "NO",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "29",
+			"teamSelectedId": "CAR",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7221,7 +7221,7 @@
 			"homeTeamId": "CAR",
 			"homeTeamShort": "CAR",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "29",
+			"teamSelectedId": "CAR",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7236,7 +7236,7 @@
 			"homeTeamId": "LV",
 			"homeTeamShort": "LV",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "29",
+			"teamSelectedId": "CAR",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7251,7 +7251,7 @@
 			"homeTeamId": "CAR",
 			"homeTeamShort": "CAR",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "29",
+			"teamSelectedId": "CAR",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7266,7 +7266,7 @@
 			"homeTeamId": "CHI",
 			"homeTeamShort": "CHI",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "29",
+			"teamSelectedId": "CAR",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7281,7 +7281,7 @@
 			"homeTeamId": "CAR",
 			"homeTeamShort": "CAR",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "29",
+			"teamSelectedId": "CAR",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7296,7 +7296,7 @@
 			"homeTeamId": "WSH",
 			"homeTeamShort": "WSH",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "29",
+			"teamSelectedId": "CAR",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7311,7 +7311,7 @@
 			"homeTeamId": "DEN",
 			"homeTeamShort": "DEN",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "29",
+			"teamSelectedId": "CAR",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7326,7 +7326,7 @@
 			"homeTeamId": "CAR",
 			"homeTeamShort": "CAR",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "29",
+			"teamSelectedId": "CAR",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7341,7 +7341,7 @@
 			"homeTeamId": "CAR",
 			"homeTeamShort": "CAR",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "29",
+			"teamSelectedId": "CAR",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7356,7 +7356,7 @@
 			"homeTeamId": "CAR",
 			"homeTeamShort": "CAR",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "29",
+			"teamSelectedId": "CAR",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7371,7 +7371,7 @@
 			"homeTeamId": "CAR",
 			"homeTeamShort": "CAR",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "29",
+			"teamSelectedId": "CAR",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7386,7 +7386,7 @@
 			"homeTeamId": "PHI",
 			"homeTeamShort": "PHI",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "29",
+			"teamSelectedId": "CAR",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7401,7 +7401,7 @@
 			"homeTeamId": "CAR",
 			"homeTeamShort": "CAR",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "29",
+			"teamSelectedId": "CAR",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7416,7 +7416,7 @@
 			"homeTeamId": "CAR",
 			"homeTeamShort": "CAR",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "29",
+			"teamSelectedId": "CAR",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7431,7 +7431,7 @@
 			"homeTeamId": "TB",
 			"homeTeamShort": "TB",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "29",
+			"teamSelectedId": "CAR",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7446,7 +7446,7 @@
 			"homeTeamId": "ATL",
 			"homeTeamShort": "ATL",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "29",
+			"teamSelectedId": "CAR",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7463,7 +7463,7 @@
 			"homeTeamId": "MIA",
 			"homeTeamShort": "MIA",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "30",
+			"teamSelectedId": "JAX",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7478,7 +7478,7 @@
 			"homeTeamId": "JAX",
 			"homeTeamShort": "JAX",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "30",
+			"teamSelectedId": "JAX",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7493,7 +7493,7 @@
 			"homeTeamId": "BUF",
 			"homeTeamShort": "BUF",
 			"gameDate": "2024-09-23",
-			"teamSelectedId": "30",
+			"teamSelectedId": "JAX",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7508,7 +7508,7 @@
 			"homeTeamId": "HOU",
 			"homeTeamShort": "HOU",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "30",
+			"teamSelectedId": "JAX",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7523,7 +7523,7 @@
 			"homeTeamId": "JAX",
 			"homeTeamShort": "JAX",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "30",
+			"teamSelectedId": "JAX",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7538,7 +7538,7 @@
 			"homeTeamId": "CHI",
 			"homeTeamShort": "CHI",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "30",
+			"teamSelectedId": "JAX",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7553,7 +7553,7 @@
 			"homeTeamId": "JAX",
 			"homeTeamShort": "JAX",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "30",
+			"teamSelectedId": "JAX",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7568,7 +7568,7 @@
 			"homeTeamId": "JAX",
 			"homeTeamShort": "JAX",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "30",
+			"teamSelectedId": "JAX",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7583,7 +7583,7 @@
 			"homeTeamId": "PHI",
 			"homeTeamShort": "PHI",
 			"gameDate": "2024-11-04",
-			"teamSelectedId": "30",
+			"teamSelectedId": "JAX",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7598,7 +7598,7 @@
 			"homeTeamId": "JAX",
 			"homeTeamShort": "JAX",
 			"gameDate": "2024-11-10",
-			"teamSelectedId": "30",
+			"teamSelectedId": "JAX",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7613,7 +7613,7 @@
 			"homeTeamId": "DET",
 			"homeTeamShort": "DET",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "30",
+			"teamSelectedId": "JAX",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7628,7 +7628,7 @@
 			"homeTeamId": "JAX",
 			"homeTeamShort": "JAX",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "30",
+			"teamSelectedId": "JAX",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7643,7 +7643,7 @@
 			"homeTeamId": "TEN",
 			"homeTeamShort": "TEN",
 			"gameDate": "2024-12-08",
-			"teamSelectedId": "30",
+			"teamSelectedId": "JAX",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7658,7 +7658,7 @@
 			"homeTeamId": "JAX",
 			"homeTeamShort": "JAX",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "30",
+			"teamSelectedId": "JAX",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7673,7 +7673,7 @@
 			"homeTeamId": "LV",
 			"homeTeamShort": "LV",
 			"gameDate": "2024-12-22",
-			"teamSelectedId": "30",
+			"teamSelectedId": "JAX",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7688,7 +7688,7 @@
 			"homeTeamId": "JAX",
 			"homeTeamShort": "JAX",
 			"gameDate": "2024-12-29",
-			"teamSelectedId": "30",
+			"teamSelectedId": "JAX",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7703,7 +7703,7 @@
 			"homeTeamId": "IND",
 			"homeTeamShort": "IND",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "30",
+			"teamSelectedId": "JAX",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7720,7 +7720,7 @@
 			"homeTeamId": "KC",
 			"homeTeamShort": "KC",
 			"gameDate": "2024-09-06",
-			"teamSelectedId": "33",
+			"teamSelectedId": "BAL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7735,7 +7735,7 @@
 			"homeTeamId": "BAL",
 			"homeTeamShort": "BAL",
 			"gameDate": "2024-09-15",
-			"teamSelectedId": "33",
+			"teamSelectedId": "BAL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7750,7 +7750,7 @@
 			"homeTeamId": "DAL",
 			"homeTeamShort": "DAL",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "33",
+			"teamSelectedId": "BAL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7765,7 +7765,7 @@
 			"homeTeamId": "BAL",
 			"homeTeamShort": "BAL",
 			"gameDate": "2024-09-30",
-			"teamSelectedId": "33",
+			"teamSelectedId": "BAL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7780,7 +7780,7 @@
 			"homeTeamId": "CIN",
 			"homeTeamShort": "CIN",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "33",
+			"teamSelectedId": "BAL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7795,7 +7795,7 @@
 			"homeTeamId": "BAL",
 			"homeTeamShort": "BAL",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "33",
+			"teamSelectedId": "BAL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7810,7 +7810,7 @@
 			"homeTeamId": "TB",
 			"homeTeamShort": "TB",
 			"gameDate": "2024-10-22",
-			"teamSelectedId": "33",
+			"teamSelectedId": "BAL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7825,7 +7825,7 @@
 			"homeTeamId": "CLE",
 			"homeTeamShort": "CLE",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "33",
+			"teamSelectedId": "BAL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7840,7 +7840,7 @@
 			"homeTeamId": "BAL",
 			"homeTeamShort": "BAL",
 			"gameDate": "2024-11-03",
-			"teamSelectedId": "33",
+			"teamSelectedId": "BAL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7855,7 +7855,7 @@
 			"homeTeamId": "BAL",
 			"homeTeamShort": "BAL",
 			"gameDate": "2024-11-08",
-			"teamSelectedId": "33",
+			"teamSelectedId": "BAL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7870,7 +7870,7 @@
 			"homeTeamId": "PIT",
 			"homeTeamShort": "PIT",
 			"gameDate": "2024-11-17",
-			"teamSelectedId": "33",
+			"teamSelectedId": "BAL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7885,7 +7885,7 @@
 			"homeTeamId": "LAC",
 			"homeTeamShort": "LAC",
 			"gameDate": "2024-11-26",
-			"teamSelectedId": "33",
+			"teamSelectedId": "BAL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7900,7 +7900,7 @@
 			"homeTeamId": "BAL",
 			"homeTeamShort": "BAL",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "33",
+			"teamSelectedId": "BAL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7915,7 +7915,7 @@
 			"homeTeamId": "NYG",
 			"homeTeamShort": "NYG",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "33",
+			"teamSelectedId": "BAL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7930,7 +7930,7 @@
 			"homeTeamId": "BAL",
 			"homeTeamShort": "BAL",
 			"gameDate": "2024-12-21",
-			"teamSelectedId": "33",
+			"teamSelectedId": "BAL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7945,7 +7945,7 @@
 			"homeTeamId": "HOU",
 			"homeTeamShort": "HOU",
 			"gameDate": "2024-12-25",
-			"teamSelectedId": "33",
+			"teamSelectedId": "BAL",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7960,7 +7960,7 @@
 			"homeTeamId": "BAL",
 			"homeTeamShort": "BAL",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "33",
+			"teamSelectedId": "BAL",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -7977,7 +7977,7 @@
 			"homeTeamId": "IND",
 			"homeTeamShort": "IND",
 			"gameDate": "2024-09-08",
-			"teamSelectedId": "34",
+			"teamSelectedId": "HOU",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -7992,7 +7992,7 @@
 			"homeTeamId": "HOU",
 			"homeTeamShort": "HOU",
 			"gameDate": "2024-09-16",
-			"teamSelectedId": "34",
+			"teamSelectedId": "HOU",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -8007,7 +8007,7 @@
 			"homeTeamId": "MIN",
 			"homeTeamShort": "MIN",
 			"gameDate": "2024-09-22",
-			"teamSelectedId": "34",
+			"teamSelectedId": "HOU",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -8022,7 +8022,7 @@
 			"homeTeamId": "HOU",
 			"homeTeamShort": "HOU",
 			"gameDate": "2024-09-29",
-			"teamSelectedId": "34",
+			"teamSelectedId": "HOU",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -8037,7 +8037,7 @@
 			"homeTeamId": "HOU",
 			"homeTeamShort": "HOU",
 			"gameDate": "2024-10-06",
-			"teamSelectedId": "34",
+			"teamSelectedId": "HOU",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -8052,7 +8052,7 @@
 			"homeTeamId": "NE",
 			"homeTeamShort": "NE",
 			"gameDate": "2024-10-13",
-			"teamSelectedId": "34",
+			"teamSelectedId": "HOU",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -8067,7 +8067,7 @@
 			"homeTeamId": "GB",
 			"homeTeamShort": "GB",
 			"gameDate": "2024-10-20",
-			"teamSelectedId": "34",
+			"teamSelectedId": "HOU",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -8082,7 +8082,7 @@
 			"homeTeamId": "HOU",
 			"homeTeamShort": "HOU",
 			"gameDate": "2024-10-27",
-			"teamSelectedId": "34",
+			"teamSelectedId": "HOU",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -8097,7 +8097,7 @@
 			"homeTeamId": "NYJ",
 			"homeTeamShort": "NYJ",
 			"gameDate": "2024-11-01",
-			"teamSelectedId": "34",
+			"teamSelectedId": "HOU",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -8112,7 +8112,7 @@
 			"homeTeamId": "HOU",
 			"homeTeamShort": "HOU",
 			"gameDate": "2024-11-11",
-			"teamSelectedId": "34",
+			"teamSelectedId": "HOU",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -8127,7 +8127,7 @@
 			"homeTeamId": "DAL",
 			"homeTeamShort": "DAL",
 			"gameDate": "2024-11-19",
-			"teamSelectedId": "34",
+			"teamSelectedId": "HOU",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -8142,7 +8142,7 @@
 			"homeTeamId": "HOU",
 			"homeTeamShort": "HOU",
 			"gameDate": "2024-11-24",
-			"teamSelectedId": "34",
+			"teamSelectedId": "HOU",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -8157,7 +8157,7 @@
 			"homeTeamId": "JAX",
 			"homeTeamShort": "JAX",
 			"gameDate": "2024-12-01",
-			"teamSelectedId": "34",
+			"teamSelectedId": "HOU",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -8172,7 +8172,7 @@
 			"homeTeamId": "HOU",
 			"homeTeamShort": "HOU",
 			"gameDate": "2024-12-15",
-			"teamSelectedId": "34",
+			"teamSelectedId": "HOU",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -8187,7 +8187,7 @@
 			"homeTeamId": "KC",
 			"homeTeamShort": "KC",
 			"gameDate": "2024-12-21",
-			"teamSelectedId": "34",
+			"teamSelectedId": "HOU",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
@@ -8202,7 +8202,7 @@
 			"homeTeamId": "HOU",
 			"homeTeamShort": "HOU",
 			"gameDate": "2024-12-25",
-			"teamSelectedId": "34",
+			"teamSelectedId": "HOU",
 			"show": true,
 			"selectedTeam": true,
 			"league": "NFL"
@@ -8217,7 +8217,7 @@
 			"homeTeamId": "TEN",
 			"homeTeamShort": "TEN",
 			"gameDate": "2025-01-05",
-			"teamSelectedId": "34",
+			"teamSelectedId": "HOU",
 			"show": false,
 			"selectedTeam": false,
 			"league": "NFL"
