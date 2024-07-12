@@ -145,7 +145,7 @@
 
 .tNHL-UTA {
   color: #090909;
-  background-color: #71AFE5;
+  background-color: #71afe5;
 }
 
 .tNHL-ARI {
@@ -321,4 +321,246 @@
 .tNFL-28 {
   color: #5a1414;
   background-color: #ffb612;
+}
+
+.tNBA-1 {
+  color: #c8102e;
+  background-color: #fdb927;
+}
+.tNBA-2 {
+  color: #008348;
+  background-color: #ffffff;
+}
+.tNBA-17 {
+  color: #000000;
+  background-color: #ffffff;
+}
+.tNBA-30 {
+  color: #008ca8;
+  background-color: #1d1060;
+}
+.tNBA-4 {
+  color: #ce1141;
+  background-color: #000000;
+}
+.tNBA-5 {
+  color: #860038;
+  background-color: #bc945c;
+}
+.tNBA-6 {
+  color: #0064b1;
+  background-color: #bbc4ca;
+}
+.tNBA-7 {
+  color: #0e2240;
+  background-color: #fec524;
+}
+.tNBA-8 {
+  color: #1d428a;
+  background-color: #c8102e;
+}
+.tNBA-9 {
+  color: #fdb927;
+  background-color: #1d428a;
+}
+.tNBA-10 {
+  color: #ce1141;
+  background-color: #000000;
+}
+.tNBA-11 {
+  color: #002d62;
+  background-color: #fdbb30;
+}
+.tNBA-12 {
+  color: #1d428a;
+  background-color: #c8102e;
+}
+.tNBA-13 {
+  color: #552583;
+  background-color: #fdb927;
+}
+.tNBA-29 {
+  color: #5d76a9;
+  background-color: #12173f;
+}
+.tNBA-14 {
+  color: #98002e;
+  background-color: #000000;
+}
+.tNBA-15 {
+  color: #00471b;
+  background-color: #eee1c6;
+}
+.tNBA-16 {
+  color: #266092;
+  background-color: #79bc43;
+}
+.tNBA-3 {
+  color: #0a2240;
+  background-color: #b4975a;
+}
+.tNBA-18 {
+  color: #1d428a;
+  background-color: #f58426;
+}
+.tNBA-25 {
+  color: #007ac1;
+  background-color: #ef3b24;
+}
+.tNBA-19 {
+  color: #0077c0;
+  background-color: #c4ced4;
+}
+.tNBA-20 {
+  color: #1d428a;
+  background-color: #e01234;
+}
+.tNBA-21 {
+  color: #29127a;
+  background-color: #e56020;
+}
+.tNBA-22 {
+  color: #e03a3e;
+  background-color: #000000;
+}
+.tNBA-23 {
+  color: #5a2d81;
+  background-color: #6a7a82;
+}
+.tNBA-24 {
+  color: #000000;
+  background-color: #c4ced4;
+}
+.tNBA-28 {
+  color: #d91244;
+  background-color: #000000;
+}
+.tNBA-26 {
+  color: #000000;
+  background-color: #fff21f;
+}
+.tNBA-27 {
+  color: #e31837;
+  background-color: #002b5c;
+}
+
+.tMLB-29 {
+  color: #aa1f2e;
+  background-color: #000000;
+}
+.tMLB-15 {
+  color: #0c2340;
+  background-color: #ba0c2f;
+}
+.tMLB-1 {
+  color: #df4601;
+  background-color: #000000;
+}
+.tMLB-2 {
+  color: #0d2b56;
+  background-color: #bd3039;
+}
+.tMLB-16 {
+  color: #0e3386;
+  background-color: #cc3433;
+}
+.tMLB-4 {
+  color: #000000;
+  background-color: #c4ced4;
+}
+.tMLB-17 {
+  color: #c6011f;
+  background-color: #ffffff;
+}
+.tMLB-5 {
+  color: #002b5c;
+  background-color: #e31937;
+}
+.tMLB-27 {
+  color: #33006f;
+  background-color: #000000;
+}
+.tMLB-6 {
+  color: #002d5c;
+  background-color: #ff6600;
+}
+.tMLB-18 {
+  color: #002d62;
+  background-color: #eb6e1f;
+}
+.tMLB-7 {
+  color: #004687;
+  background-color: #7ab2dd;
+}
+.tMLB-3 {
+  color: #ba0021;
+  background-color: #c4ced4;
+}
+.tMLB-19 {
+  color: #005a9c;
+  background-color: #ffffff;
+}
+.tMLB-28 {
+  color: #00a3e0;
+  background-color: #000000;
+}
+.tMLB-8 {
+  color: #13294b;
+  background-color: #ffc72c;
+}
+.tMLB-9 {
+  color: #031f40;
+  background-color: #e20e32;
+}
+.tMLB-21 {
+  color: #002d72;
+  background-color: #ff5910;
+}
+.tMLB-10 {
+  color: #132448;
+  background-color: #c4ced4;
+}
+.tMLB-11 {
+  color: #006241;
+  background-color: #efb21e;
+}
+.tMLB-22 {
+  color: #e81828;
+  background-color: #003278;
+}
+.tMLB-23 {
+  color: #000000;
+  background-color: #fdb827;
+}
+.tMLB-25 {
+  color: #3e2312;
+  background-color: #ffc425;
+}
+.tMLB-26 {
+  color: #000000;
+  background-color: #fd5a1e;
+}
+.tMLB-12 {
+  color: #005c5c;
+  background-color: #0c2c56;
+}
+.tMLB-24 {
+  color: #be0a14;
+  background-color: #001541;
+}
+.tMLB-30 {
+  color: #092c5c;
+  background-color: #8fbce6;
+}
+.tMLB-13 {
+  color: #003278;
+  background-color: #c0111f;
+}
+.tMLB-14 {
+  color: #134a8e;
+  background-color: #6cace5;
+}
+.tMLB-20 {
+  color: #ab0003;
+  background-color: #11225b;
 }

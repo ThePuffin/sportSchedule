@@ -1,30 +1,29 @@
 import { Games, Teams, db, eq } from 'astro:db'
 import { writeJsonFile } from 'write-json-file'
-import allTeamsFile from '../../temporaryData/allTeamsNFL.json'
+import allTeamsFile from '../../temporaryData/allTeamsMLB.json'
 import currentGames from '../../temporaryData/currentSeason.json'
 import type { GameFormatted } from '../interface/game.ts'
-import type { NFLGameAPI } from '../interface/gameNFL.ts'
+import type { MLBGameAPI } from '../interface/gameMLB.ts'
 import type { TeamESPN, TeamType } from '../interface/team.ts'
 import { isExpiredData, readableDate } from '../utils/date.js'
 import { League } from './enum.ts'
-const leagueName = League.NFL
+const leagueName = League.MLB
 const { NODE_ENV } = process.env
 
-export const getNFLTeams = async () => {
+export const getMLBTeams = async () => {
   try {
-    const NFLTeams = await db.select().from(Teams).where(eq(Teams.league, leagueName))
-    if (NFLTeams[0] && !isExpiredData(NFLTeams[0].updateDate)) {
-      getNFLSchedule()
-      return NFLTeams
+    const MLBTeams = await db.select().from(Teams).where(eq(Teams.league, leagueName))
+    if (MLBTeams[0] && !isExpiredData(MLBTeams[0].updateDate)) {
+      getMLBSchedule()
+      return MLBTeams
     }
     let allTeams
 
-    const fetchedTeams = await fetch('https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams')
+    const fetchedTeams = await fetch('https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/teams')
     const fetchTeams: TeamESPN = await fetchedTeams.json()
     const { sports } = fetchTeams
     const { leagues } = sports[0]
     allTeams = leagues[0].teams
-
 
     const activeTeams = allTeams
       .filter(({ team }) => team.isActive)
@@ -48,8 +47,8 @@ export const getNFLTeams = async () => {
       })
 
     if (NODE_ENV === 'development') {
-      await writeJsonFile('./temporaryData/allTeamsNFL.json', { activeTeams })
-      console.log('updated allTeamsNFL.json')
+      await writeJsonFile('./temporaryData/allTeamsMLB.json', { activeTeams })
+      console.log('updated allTeamsMLB.json')
     }
 
     activeTeams.forEach(async (team: TeamType) => {
@@ -65,56 +64,56 @@ export const getNFLTeams = async () => {
           },
         })
     })
-    getNFLSchedule()
+    getMLBSchedule()
     return activeTeams
   } catch (error) {
     console.log('Error fetching data =>', error)
-    getNFLSchedule()
+    getMLBSchedule()
     return allTeamsFile.activeTeams
   }
 }
 
-export const getNFLSchedule = async () => {
+export const getMLBSchedule = async () => {
   const allGames = {}
   const activeTeams: TeamType[] = await db.select().from(Teams).where(eq(Teams.league, leagueName))
   await Promise.all(
     activeTeams.map(async ({ id, abbrev }) => {
       const leagueID = `${leagueName}-${id}`
-      allGames[leagueID] = await getNFLTeamSchedule(id, abbrev)
+      allGames[leagueID] = await getMLBTeamSchedule(id, abbrev)
     })
   )
 
   if (NODE_ENV === 'development') {
     const firstKey = activeTeams[0]?.id
 
-    const NFLgames = await db.select().from(Games).where(eq(Games.teamSelectedId, firstKey)).limit(1)
+    const MLBgames = await db.select().from(Games).where(eq(Games.teamSelectedId, firstKey)).limit(1)
 
-    const updateDate = (firstKey && NFLgames[0]?.updateDate) || new Date('2020-02-20')
+    const updateDate = (firstKey && MLBgames[0]?.updateDate) || new Date('2020-02-20')
     const expiredData = isExpiredData(updateDate)
 
     if (expiredData) {
-      await writeJsonFile('./temporaryData/updatecurrentSeasonNFL.json', allGames)
-      console.log('updated updatecurrentSeasonNFL.json')
+      await writeJsonFile('./temporaryData/updatecurrentSeasonMLB.json', allGames)
+      console.log('updated updatecurrentSeasonMLB.json')
     }
   }
-  console.log('updated NFL')
+  console.log('updated MLB')
   return allGames
 }
 
-const getNFLTeamSchedule = async (id: string, abbrev: string) => {
+const getMLBTeamSchedule = async (id: string, abbrev: string) => {
   try {
-    const NFLgames = await db.select().from(Games).where(eq(Games.homeTeamShort, id))
+    const MLBgames = await db.select().from(Games).where(eq(Games.homeTeamShort, id))
 
-    if (NFLgames[0]?.updateDate && isExpiredData(NFLgames[0]?.updateDate)) {
-      return NFLgames
+    if (MLBgames[0]?.updateDate && isExpiredData(MLBgames[0]?.updateDate)) {
+      return MLBgames
     }
 
     let games
     try {
       const fetchedGames = await fetch(
-        ` https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/${id}/schedule`
+        ` https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/teams/${id}/schedule`
       )
-      const fetchGames: NFLGameAPI = await fetchedGames.json()
+      const fetchGames: MLBGameAPI = await fetchedGames.json()
       games = await fetchGames.events
     } catch (error) {
       console.log('errrroorrr', error)
