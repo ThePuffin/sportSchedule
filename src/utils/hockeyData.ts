@@ -114,8 +114,9 @@ const getNhlTeamSchedule = async (id: string, value: string) => {
     try {
       const fetchedGames = await fetch(`https://api-web.nhle.com/v1/club-schedule-season/${id}/now`);
       const fetchGames = await fetchedGames.json();
-      games = await fetchGames.games;
+      console.log('yes', value);
     } catch (error) {
+      console.log('no', value);
       games = currentGames[id];
     }
 

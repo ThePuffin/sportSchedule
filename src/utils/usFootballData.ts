@@ -115,7 +115,9 @@ const getNFLTeamSchedule = async ({ id, abbrev, value }) => {
       );
       const fetchGames: NFLGameAPI = await fetchedGames.json();
       games = fetchGames.events;
+      console.log('yes', value);
     } catch (error) {
+      console.log('no', value);
       console.log('errrroorrr', error);
 
       games = currentGames[id];
