@@ -2,7 +2,7 @@
 	"activeTeams": [
 		{
 			"uniqueId": "MLB-ARI",
-			"value": "29",
+			"value": "MLB-ARI",
 			"id": "29",
 			"abbrev": "ARI",
 			"label": "Arizona Diamondbacks",
@@ -14,7 +14,7 @@
 		},
 		{
 			"uniqueId": "MLB-ATL",
-			"value": "15",
+			"value": "MLB-ATL",
 			"id": "15",
 			"abbrev": "ATL",
 			"label": "Atlanta Braves",
@@ -26,7 +26,7 @@
 		},
 		{
 			"uniqueId": "MLB-BAL",
-			"value": "1",
+			"value": "MLB-BAL",
 			"id": "1",
 			"abbrev": "BAL",
 			"label": "Baltimore Orioles",
@@ -38,7 +38,7 @@
 		},
 		{
 			"uniqueId": "MLB-BOS",
-			"value": "2",
+			"value": "MLB-BOS",
 			"id": "2",
 			"abbrev": "BOS",
 			"label": "Boston Red Sox",
@@ -50,7 +50,7 @@
 		},
 		{
 			"uniqueId": "MLB-CHC",
-			"value": "16",
+			"value": "MLB-CHC",
 			"id": "16",
 			"abbrev": "CHC",
 			"label": "Chicago Cubs",
@@ -62,7 +62,7 @@
 		},
 		{
 			"uniqueId": "MLB-CHW",
-			"value": "4",
+			"value": "MLB-CHW",
 			"id": "4",
 			"abbrev": "CHW",
 			"label": "Chicago White Sox",
@@ -74,7 +74,7 @@
 		},
 		{
 			"uniqueId": "MLB-CIN",
-			"value": "17",
+			"value": "MLB-CIN",
 			"id": "17",
 			"abbrev": "CIN",
 			"label": "Cincinnati Reds",
@@ -86,7 +86,7 @@
 		},
 		{
 			"uniqueId": "MLB-CLE",
-			"value": "5",
+			"value": "MLB-CLE",
 			"id": "5",
 			"abbrev": "CLE",
 			"label": "Cleveland Guardians",
@@ -98,7 +98,7 @@
 		},
 		{
 			"uniqueId": "MLB-COL",
-			"value": "27",
+			"value": "MLB-COL",
 			"id": "27",
 			"abbrev": "COL",
 			"label": "Colorado Rockies",
@@ -110,7 +110,7 @@
 		},
 		{
 			"uniqueId": "MLB-DET",
-			"value": "6",
+			"value": "MLB-DET",
 			"id": "6",
 			"abbrev": "DET",
 			"label": "Detroit Tigers",
@@ -122,7 +122,7 @@
 		},
 		{
 			"uniqueId": "MLB-HOU",
-			"value": "18",
+			"value": "MLB-HOU",
 			"id": "18",
 			"abbrev": "HOU",
 			"label": "Houston Astros",
@@ -134,7 +134,7 @@
 		},
 		{
 			"uniqueId": "MLB-KC",
-			"value": "7",
+			"value": "MLB-KC",
 			"id": "7",
 			"abbrev": "KC",
 			"label": "Kansas City Royals",
@@ -146,7 +146,7 @@
 		},
 		{
 			"uniqueId": "MLB-LAA",
-			"value": "3",
+			"value": "MLB-LAA",
 			"id": "3",
 			"abbrev": "LAA",
 			"label": "Los Angeles Angels",
@@ -158,7 +158,7 @@
 		},
 		{
 			"uniqueId": "MLB-LAD",
-			"value": "19",
+			"value": "MLB-LAD",
 			"id": "19",
 			"abbrev": "LAD",
 			"label": "Los Angeles Dodgers",
@@ -170,7 +170,7 @@
 		},
 		{
 			"uniqueId": "MLB-MIA",
-			"value": "28",
+			"value": "MLB-MIA",
 			"id": "28",
 			"abbrev": "MIA",
 			"label": "Miami Marlins",
@@ -182,7 +182,7 @@
 		},
 		{
 			"uniqueId": "MLB-MIL",
-			"value": "8",
+			"value": "MLB-MIL",
 			"id": "8",
 			"abbrev": "MIL",
 			"label": "Milwaukee Brewers",
@@ -194,7 +194,7 @@
 		},
 		{
 			"uniqueId": "MLB-MIN",
-			"value": "9",
+			"value": "MLB-MIN",
 			"id": "9",
 			"abbrev": "MIN",
 			"label": "Minnesota Twins",
@@ -206,7 +206,7 @@
 		},
 		{
 			"uniqueId": "MLB-NYM",
-			"value": "21",
+			"value": "MLB-NYM",
 			"id": "21",
 			"abbrev": "NYM",
 			"label": "New York Mets",
@@ -218,7 +218,7 @@
 		},
 		{
 			"uniqueId": "MLB-NYY",
-			"value": "10",
+			"value": "MLB-NYY",
 			"id": "10",
 			"abbrev": "NYY",
 			"label": "New York Yankees",
@@ -230,7 +230,7 @@
 		},
 		{
 			"uniqueId": "MLB-OAK",
-			"value": "11",
+			"value": "MLB-OAK",
 			"id": "11",
 			"abbrev": "OAK",
 			"label": "Oakland Athletics",
@@ -242,7 +242,7 @@
 		},
 		{
 			"uniqueId": "MLB-PHI",
-			"value": "22",
+			"value": "MLB-PHI",
 			"id": "22",
 			"abbrev": "PHI",
 			"label": "Philadelphia Phillies",
@@ -254,7 +254,7 @@
 		},
 		{
 			"uniqueId": "MLB-PIT",
-			"value": "23",
+			"value": "MLB-PIT",
 			"id": "23",
 			"abbrev": "PIT",
 			"label": "Pittsburgh Pirates",
@@ -266,7 +266,7 @@
 		},
 		{
 			"uniqueId": "MLB-SD",
-			"value": "25",
+			"value": "MLB-SD",
 			"id": "25",
 			"abbrev": "SD",
 			"label": "San Diego Padres",
@@ -278,7 +278,7 @@
 		},
 		{
 			"uniqueId": "MLB-SF",
-			"value": "26",
+			"value": "MLB-SF",
 			"id": "26",
 			"abbrev": "SF",
 			"label": "San Francisco Giants",
@@ -290,7 +290,7 @@
 		},
 		{
 			"uniqueId": "MLB-SEA",
-			"value": "12",
+			"value": "MLB-SEA",
 			"id": "12",
 			"abbrev": "SEA",
 			"label": "Seattle Mariners",
@@ -302,7 +302,7 @@
 		},
 		{
 			"uniqueId": "MLB-STL",
-			"value": "24",
+			"value": "MLB-STL",
 			"id": "24",
 			"abbrev": "STL",
 			"label": "St. Louis Cardinals",
@@ -314,7 +314,7 @@
 		},
 		{
 			"uniqueId": "MLB-TB",
-			"value": "30",
+			"value": "MLB-TB",
 			"id": "30",
 			"abbrev": "TB",
 			"label": "Tampa Bay Rays",
@@ -326,7 +326,7 @@
 		},
 		{
 			"uniqueId": "MLB-TEX",
-			"value": "13",
+			"value": "MLB-TEX",
 			"id": "13",
 			"abbrev": "TEX",
 			"label": "Texas Rangers",
@@ -338,7 +338,7 @@
 		},
 		{
 			"uniqueId": "MLB-TOR",
-			"value": "14",
+			"value": "MLB-TOR",
 			"id": "14",
 			"abbrev": "TOR",
 			"label": "Toronto Blue Jays",
@@ -350,7 +350,7 @@
 		},
 		{
 			"uniqueId": "MLB-WSH",
-			"value": "20",
+			"value": "MLB-WSH",
 			"id": "20",
 			"abbrev": "WSH",
 			"label": "Washington Nationals",

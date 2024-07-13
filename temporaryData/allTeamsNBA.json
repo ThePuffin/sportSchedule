@@ -2,7 +2,7 @@
 	"activeTeams": [
 		{
 			"uniqueId": "NBA-ATL",
-			"value": "1",
+			"value": "NBA-ATL",
 			"id": "1",
 			"abbrev": "ATL",
 			"label": "Atlanta Hawks",
@@ -14,7 +14,7 @@
 		},
 		{
 			"uniqueId": "NBA-BOS",
-			"value": "2",
+			"value": "NBA-BOS",
 			"id": "2",
 			"abbrev": "BOS",
 			"label": "Boston Celtics",
@@ -26,7 +26,7 @@
 		},
 		{
 			"uniqueId": "NBA-BKN",
-			"value": "17",
+			"value": "NBA-BKN",
 			"id": "17",
 			"abbrev": "BKN",
 			"label": "Brooklyn Nets",
@@ -38,7 +38,7 @@
 		},
 		{
 			"uniqueId": "NBA-CHA",
-			"value": "30",
+			"value": "NBA-CHA",
 			"id": "30",
 			"abbrev": "CHA",
 			"label": "Charlotte Hornets",
@@ -50,7 +50,7 @@
 		},
 		{
 			"uniqueId": "NBA-CHI",
-			"value": "4",
+			"value": "NBA-CHI",
 			"id": "4",
 			"abbrev": "CHI",
 			"label": "Chicago Bulls",
@@ -62,7 +62,7 @@
 		},
 		{
 			"uniqueId": "NBA-CLE",
-			"value": "5",
+			"value": "NBA-CLE",
 			"id": "5",
 			"abbrev": "CLE",
 			"label": "Cleveland Cavaliers",
@@ -74,7 +74,7 @@
 		},
 		{
 			"uniqueId": "NBA-DAL",
-			"value": "6",
+			"value": "NBA-DAL",
 			"id": "6",
 			"abbrev": "DAL",
 			"label": "Dallas Mavericks",
@@ -86,7 +86,7 @@
 		},
 		{
 			"uniqueId": "NBA-DEN",
-			"value": "7",
+			"value": "NBA-DEN",
 			"id": "7",
 			"abbrev": "DEN",
 			"label": "Denver Nuggets",
@@ -98,7 +98,7 @@
 		},
 		{
 			"uniqueId": "NBA-DET",
-			"value": "8",
+			"value": "NBA-DET",
 			"id": "8",
 			"abbrev": "DET",
 			"label": "Detroit Pistons",
@@ -110,7 +110,7 @@
 		},
 		{
 			"uniqueId": "NBA-GS",
-			"value": "9",
+			"value": "NBA-GS",
 			"id": "9",
 			"abbrev": "GS",
 			"label": "Golden State Warriors",
@@ -122,7 +122,7 @@
 		},
 		{
 			"uniqueId": "NBA-HOU",
-			"value": "10",
+			"value": "NBA-HOU",
 			"id": "10",
 			"abbrev": "HOU",
 			"label": "Houston Rockets",
@@ -134,7 +134,7 @@
 		},
 		{
 			"uniqueId": "NBA-IND",
-			"value": "11",
+			"value": "NBA-IND",
 			"id": "11",
 			"abbrev": "IND",
 			"label": "Indiana Pacers",
@@ -146,7 +146,7 @@
 		},
 		{
 			"uniqueId": "NBA-LAC",
-			"value": "12",
+			"value": "NBA-LAC",
 			"id": "12",
 			"abbrev": "LAC",
 			"label": "LA Clippers",
@@ -158,7 +158,7 @@
 		},
 		{
 			"uniqueId": "NBA-LAL",
-			"value": "13",
+			"value": "NBA-LAL",
 			"id": "13",
 			"abbrev": "LAL",
 			"label": "Los Angeles Lakers",
@@ -170,7 +170,7 @@
 		},
 		{
 			"uniqueId": "NBA-MEM",
-			"value": "29",
+			"value": "NBA-MEM",
 			"id": "29",
 			"abbrev": "MEM",
 			"label": "Memphis Grizzlies",
@@ -182,7 +182,7 @@
 		},
 		{
 			"uniqueId": "NBA-MIA",
-			"value": "14",
+			"value": "NBA-MIA",
 			"id": "14",
 			"abbrev": "MIA",
 			"label": "Miami Heat",
@@ -194,7 +194,7 @@
 		},
 		{
 			"uniqueId": "NBA-MIL",
-			"value": "15",
+			"value": "NBA-MIL",
 			"id": "15",
 			"abbrev": "MIL",
 			"label": "Milwaukee Bucks",
@@ -206,7 +206,7 @@
 		},
 		{
 			"uniqueId": "NBA-MIN",
-			"value": "16",
+			"value": "NBA-MIN",
 			"id": "16",
 			"abbrev": "MIN",
 			"label": "Minnesota Timberwolves",
@@ -218,7 +218,7 @@
 		},
 		{
 			"uniqueId": "NBA-NO",
-			"value": "3",
+			"value": "NBA-NO",
 			"id": "3",
 			"abbrev": "NO",
 			"label": "New Orleans Pelicans",
@@ -230,7 +230,7 @@
 		},
 		{
 			"uniqueId": "NBA-NY",
-			"value": "18",
+			"value": "NBA-NY",
 			"id": "18",
 			"abbrev": "NY",
 			"label": "New York Knicks",
@@ -242,7 +242,7 @@
 		},
 		{
 			"uniqueId": "NBA-OKC",
-			"value": "25",
+			"value": "NBA-OKC",
 			"id": "25",
 			"abbrev": "OKC",
 			"label": "Oklahoma City Thunder",
@@ -254,7 +254,7 @@
 		},
 		{
 			"uniqueId": "NBA-ORL",
-			"value": "19",
+			"value": "NBA-ORL",
 			"id": "19",
 			"abbrev": "ORL",
 			"label": "Orlando Magic",
@@ -266,7 +266,7 @@
 		},
 		{
 			"uniqueId": "NBA-PHI",
-			"value": "20",
+			"value": "NBA-PHI",
 			"id": "20",
 			"abbrev": "PHI",
 			"label": "Philadelphia 76ers",
@@ -278,7 +278,7 @@
 		},
 		{
 			"uniqueId": "NBA-PHX",
-			"value": "21",
+			"value": "NBA-PHX",
 			"id": "21",
 			"abbrev": "PHX",
 			"label": "Phoenix Suns",
@@ -290,7 +290,7 @@
 		},
 		{
 			"uniqueId": "NBA-POR",
-			"value": "22",
+			"value": "NBA-POR",
 			"id": "22",
 			"abbrev": "POR",
 			"label": "Portland Trail Blazers",
@@ -302,7 +302,7 @@
 		},
 		{
 			"uniqueId": "NBA-SAC",
-			"value": "23",
+			"value": "NBA-SAC",
 			"id": "23",
 			"abbrev": "SAC",
 			"label": "Sacramento Kings",
@@ -314,7 +314,7 @@
 		},
 		{
 			"uniqueId": "NBA-SA",
-			"value": "24",
+			"value": "NBA-SA",
 			"id": "24",
 			"abbrev": "SA",
 			"label": "San Antonio Spurs",
@@ -326,7 +326,7 @@
 		},
 		{
 			"uniqueId": "NBA-TOR",
-			"value": "28",
+			"value": "NBA-TOR",
 			"id": "28",
 			"abbrev": "TOR",
 			"label": "Toronto Raptors",
@@ -338,7 +338,7 @@
 		},
 		{
 			"uniqueId": "NBA-UTAH",
-			"value": "26",
+			"value": "NBA-UTAH",
 			"id": "26",
 			"abbrev": "UTAH",
 			"label": "Utah Jazz",
@@ -350,7 +350,7 @@
 		},
 		{
 			"uniqueId": "NBA-WSH",
-			"value": "27",
+			"value": "NBA-WSH",
 			"id": "27",
 			"abbrev": "WSH",
 			"label": "Washington Wizards",
