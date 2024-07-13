@@ -2,7 +2,7 @@
 	"activeTeams": [
 		{
 			"uniqueId": "NFL-ARI",
-			"value": "22",
+			"value": "NFL-ARI",
 			"id": "22",
 			"abbrev": "ARI",
 			"label": "Arizona Cardinals",
@@ -14,7 +14,7 @@
 		},
 		{
 			"uniqueId": "NFL-ATL",
-			"value": "1",
+			"value": "NFL-ATL",
 			"id": "1",
 			"abbrev": "ATL",
 			"label": "Atlanta Falcons",
@@ -26,7 +26,7 @@
 		},
 		{
 			"uniqueId": "NFL-BAL",
-			"value": "33",
+			"value": "NFL-BAL",
 			"id": "33",
 			"abbrev": "BAL",
 			"label": "Baltimore Ravens",
@@ -38,7 +38,7 @@
 		},
 		{
 			"uniqueId": "NFL-BUF",
-			"value": "2",
+			"value": "NFL-BUF",
 			"id": "2",
 			"abbrev": "BUF",
 			"label": "Buffalo Bills",
@@ -50,7 +50,7 @@
 		},
 		{
 			"uniqueId": "NFL-CAR",
-			"value": "29",
+			"value": "NFL-CAR",
 			"id": "29",
 			"abbrev": "CAR",
 			"label": "Carolina Panthers",
@@ -62,7 +62,7 @@
 		},
 		{
 			"uniqueId": "NFL-CHI",
-			"value": "3",
+			"value": "NFL-CHI",
 			"id": "3",
 			"abbrev": "CHI",
 			"label": "Chicago Bears",
@@ -74,7 +74,7 @@
 		},
 		{
 			"uniqueId": "NFL-CIN",
-			"value": "4",
+			"value": "NFL-CIN",
 			"id": "4",
 			"abbrev": "CIN",
 			"label": "Cincinnati Bengals",
@@ -86,7 +86,7 @@
 		},
 		{
 			"uniqueId": "NFL-CLE",
-			"value": "5",
+			"value": "NFL-CLE",
 			"id": "5",
 			"abbrev": "CLE",
 			"label": "Cleveland Browns",
@@ -98,7 +98,7 @@
 		},
 		{
 			"uniqueId": "NFL-DAL",
-			"value": "6",
+			"value": "NFL-DAL",
 			"id": "6",
 			"abbrev": "DAL",
 			"label": "Dallas Cowboys",
@@ -110,7 +110,7 @@
 		},
 		{
 			"uniqueId": "NFL-DEN",
-			"value": "7",
+			"value": "NFL-DEN",
 			"id": "7",
 			"abbrev": "DEN",
 			"label": "Denver Broncos",
@@ -122,7 +122,7 @@
 		},
 		{
 			"uniqueId": "NFL-DET",
-			"value": "8",
+			"value": "NFL-DET",
 			"id": "8",
 			"abbrev": "DET",
 			"label": "Detroit Lions",
@@ -134,7 +134,7 @@
 		},
 		{
 			"uniqueId": "NFL-GB",
-			"value": "9",
+			"value": "NFL-GB",
 			"id": "9",
 			"abbrev": "GB",
 			"label": "Green Bay Packers",
@@ -146,7 +146,7 @@
 		},
 		{
 			"uniqueId": "NFL-HOU",
-			"value": "34",
+			"value": "NFL-HOU",
 			"id": "34",
 			"abbrev": "HOU",
 			"label": "Houston Texans",
@@ -158,7 +158,7 @@
 		},
 		{
 			"uniqueId": "NFL-IND",
-			"value": "11",
+			"value": "NFL-IND",
 			"id": "11",
 			"abbrev": "IND",
 			"label": "Indianapolis Colts",
@@ -170,7 +170,7 @@
 		},
 		{
 			"uniqueId": "NFL-JAX",
-			"value": "30",
+			"value": "NFL-JAX",
 			"id": "30",
 			"abbrev": "JAX",
 			"label": "Jacksonville Jaguars",
@@ -182,7 +182,7 @@
 		},
 		{
 			"uniqueId": "NFL-KC",
-			"value": "12",
+			"value": "NFL-KC",
 			"id": "12",
 			"abbrev": "KC",
 			"label": "Kansas City Chiefs",
@@ -194,7 +194,7 @@
 		},
 		{
 			"uniqueId": "NFL-LV",
-			"value": "13",
+			"value": "NFL-LV",
 			"id": "13",
 			"abbrev": "LV",
 			"label": "Las Vegas Raiders",
@@ -206,7 +206,7 @@
 		},
 		{
 			"uniqueId": "NFL-LAC",
-			"value": "24",
+			"value": "NFL-LAC",
 			"id": "24",
 			"abbrev": "LAC",
 			"label": "Los Angeles Chargers",
@@ -218,7 +218,7 @@
 		},
 		{
 			"uniqueId": "NFL-LAR",
-			"value": "14",
+			"value": "NFL-LAR",
 			"id": "14",
 			"abbrev": "LAR",
 			"label": "Los Angeles Rams",
@@ -230,7 +230,7 @@
 		},
 		{
 			"uniqueId": "NFL-MIA",
-			"value": "15",
+			"value": "NFL-MIA",
 			"id": "15",
 			"abbrev": "MIA",
 			"label": "Miami Dolphins",
@@ -242,7 +242,7 @@
 		},
 		{
 			"uniqueId": "NFL-MIN",
-			"value": "16",
+			"value": "NFL-MIN",
 			"id": "16",
 			"abbrev": "MIN",
 			"label": "Minnesota Vikings",
@@ -254,7 +254,7 @@
 		},
 		{
 			"uniqueId": "NFL-NE",
-			"value": "17",
+			"value": "NFL-NE",
 			"id": "17",
 			"abbrev": "NE",
 			"label": "New England Patriots",
@@ -266,7 +266,7 @@
 		},
 		{
 			"uniqueId": "NFL-NO",
-			"value": "18",
+			"value": "NFL-NO",
 			"id": "18",
 			"abbrev": "NO",
 			"label": "New Orleans Saints",
@@ -278,7 +278,7 @@
 		},
 		{
 			"uniqueId": "NFL-NYG",
-			"value": "19",
+			"value": "NFL-NYG",
 			"id": "19",
 			"abbrev": "NYG",
 			"label": "New York Giants",
@@ -290,7 +290,7 @@
 		},
 		{
 			"uniqueId": "NFL-NYJ",
-			"value": "20",
+			"value": "NFL-NYJ",
 			"id": "20",
 			"abbrev": "NYJ",
 			"label": "New York Jets",
@@ -302,7 +302,7 @@
 		},
 		{
 			"uniqueId": "NFL-PHI",
-			"value": "21",
+			"value": "NFL-PHI",
 			"id": "21",
 			"abbrev": "PHI",
 			"label": "Philadelphia Eagles",
@@ -314,7 +314,7 @@
 		},
 		{
 			"uniqueId": "NFL-PIT",
-			"value": "23",
+			"value": "NFL-PIT",
 			"id": "23",
 			"abbrev": "PIT",
 			"label": "Pittsburgh Steelers",
@@ -326,7 +326,7 @@
 		},
 		{
 			"uniqueId": "NFL-SF",
-			"value": "25",
+			"value": "NFL-SF",
 			"id": "25",
 			"abbrev": "SF",
 			"label": "San Francisco 49ers",
@@ -338,7 +338,7 @@
 		},
 		{
 			"uniqueId": "NFL-SEA",
-			"value": "26",
+			"value": "NFL-SEA",
 			"id": "26",
 			"abbrev": "SEA",
 			"label": "Seattle Seahawks",
@@ -350,7 +350,7 @@
 		},
 		{
 			"uniqueId": "NFL-TB",
-			"value": "27",
+			"value": "NFL-TB",
 			"id": "27",
 			"abbrev": "TB",
 			"label": "Tampa Bay Buccaneers",
@@ -362,7 +362,7 @@
 		},
 		{
 			"uniqueId": "NFL-TEN",
-			"value": "10",
+			"value": "NFL-TEN",
 			"id": "10",
 			"abbrev": "TEN",
 			"label": "Tennessee Titans",
@@ -374,7 +374,7 @@
 		},
 		{
 			"uniqueId": "NFL-WSH",
-			"value": "28",
+			"value": "NFL-WSH",
 			"id": "28",
 			"abbrev": "WSH",
 			"label": "Washington Commanders",

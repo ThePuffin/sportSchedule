@@ -1,9 +1,10 @@
 export const readableDate = (date) => {
-  return new Date(date).toISOString().split("T")[0];
+  return new Date(date).toISOString().split('T')[0];
 };
 
 export const isExpiredData = (date) => {
-  const expirationDay = 7;
+  date = date ?? new Date('2020-02-20');
+  const expirationDay = 0.000001;
   const now = new Date();
   const differenceInMilliseconds = now.getTime() - new Date(date).getTime();
   const differenceInDays = differenceInMilliseconds / (1000 * 60 * 60 * 24);

@@ -12,7 +12,7 @@ export const Teams = defineTable({
     conferenceName: column.text(),
     divisionName: column.text(),
     league: column.text(),
-    abbrev: column.text({ default: '' }),
+    abbrev: column.text({ default: 'no' }),
     updateDate: column.date({ default: now }),
   },
 });

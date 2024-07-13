@@ -1,11 +1,11 @@
-import { Component } from 'react'
-import Select from 'react-select'
-import type { TeamType } from '../../../../interface/team.ts'
-import { teamSelected } from '../../../../store/store.js'
+import { Component } from 'react';
+import Select from 'react-select';
+import type { TeamType } from '../../../../interface/team.ts';
+import { teamSelected } from '../../../../store/store.js';
 
 export default class Selector extends Component<any, any> {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       availableTeams: [],
@@ -14,72 +14,79 @@ export default class Selector extends Component<any, any> {
       i: props.i,
       teamSelectedId: props.teamSelectedId,
       label: '',
-    }
+    };
   }
 
-  subcriptionTeams = undefined
+  subcriptionTeams = undefined;
 
   defineAvailableTeams(teamsSelectedIds) {
-    const { activeTeams, teamSelectedId } = this.state
-    const teamId = teamSelectedId
-    const selectedTeams = teamsSelectedIds.filter((team: string) => team !== teamId)
+    const { activeTeams, teamSelectedId } = this.state;
+    const teamId = teamSelectedId;
+    const selectedTeams = teamsSelectedIds.filter((team: string) => team !== teamId);
 
-    let selectableTeams = activeTeams.filter((team: TeamType) => !selectedTeams.includes(team.id))
+    let selectableTeams = activeTeams.filter((team: TeamType) => !selectedTeams.includes(team.id));
 
-    const teamData = activeTeams.find((team: TeamType) => team.value === teamId)
-    const { label = '' } = teamData
+    const teamData = activeTeams.find((team: TeamType) => team.value === teamId);
+    const { label = '' } = teamData;
     this.setState(() => ({
       availableTeams: selectableTeams,
       label,
-    }))
+    }));
   }
 
   subscribeTogamesSelected() {
     const newSubscriptionGames = teamSelected.subscribe((teams) => {
       this.setState(() => ({
         teamsSelectedIds: teams,
-      }))
-      this.defineAvailableTeams(teams)
-    })
+      }));
+      this.defineAvailableTeams(teams);
+    });
 
     // Store the subscriptionTeam for later cleanup
-    this.subcriptionTeams = newSubscriptionGames
+    this.subcriptionTeams = newSubscriptionGames;
   }
 
   async componentDidMount() {
-    const { teamsSelectedIds } = this.state
+    const { teamsSelectedIds } = this.state;
 
-    this.subscribeTogamesSelected()
+    this.subscribeTogamesSelected();
 
     if (teamSelected.get().includes(undefined)) {
-      teamSelected.set(teamsSelectedIds)
+      teamSelected.set(teamsSelectedIds);
     }
-    this.defineAvailableTeams(teamsSelectedIds)
+    this.defineAvailableTeams(teamsSelectedIds);
   }
 
   componentWillUnmount() {
     if (this.subcriptionTeams) {
-      this.subcriptionTeams.unsubscribe()
+      this.subcriptionTeams.unsubscribe();
     }
   }
 
   changeTeam = async (event: { value: string }) => {
-    const newSelection = event.value
-    let teamsId = [...teamSelected.get()]
-    teamsId[this.state.i] = newSelection
+    const newSelection = event.value;
+    let teamsId = [...teamSelected.get()];
+    teamsId[this.state.i] = newSelection;
 
     await this.setState(() => ({
       teamSelectedId: newSelection,
-    }))
-    teamSelected.set(teamsId)
-  }
+    }));
+    teamSelected.set(teamsId);
+  };
 
   render() {
-    const { availableTeams, teamSelectedId, label } = this.state
+    const { availableTeams, teamSelectedId, label } = this.state;
+
     return (
       <div className="App">
-        <Select defaultValue={teamSelectedId} placeholder={label} isSearchable options={availableTeams} onChange={this.changeTeam} />
+        <Select
+          defaultValue={teamSelectedId}
+          placeholder={label}
+          isSearchable
+          options={availableTeams}
+          onChange={this.changeTeam}
+        />
       </div>
-    )
+    );
   }
 }

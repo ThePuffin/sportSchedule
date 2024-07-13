@@ -55,13 +55,13 @@ const TeamCard = (props: PropsCard) => {
 
   const hideDate = false
 
-  const homeOrAway = selectedTeam ? `card t${league}-${teamSelectedId}` : `card awayGame`
+  const homeOrAway = selectedTeam ? `card t${teamSelectedId}` : `card awayGame`
 
   let cardClass = !!homeTeamId && show ? homeOrAway : 'card unclickable'
   if (props.isSelected) {
     cardClass += ' selected'
   }
-  // update show for nfl !!!
+
   const extBoxClass = show ? 'ext-box' : 'whiteCard'
   const dateClass = hideDate ? 'cardText hideDate' : 'cardText'
   return (

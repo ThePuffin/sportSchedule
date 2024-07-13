@@ -78,9 +78,9 @@ export const getNBASchedule = async () => {
   const allGames = {}
   const activeTeams: TeamType[] = await db.select().from(Teams).where(eq(Teams.league, leagueName))
   await Promise.all(
-    activeTeams.map(async ({ id, abbrev }) => {
+    activeTeams.map(async ({ id, abbrev, value }) => {
       const leagueID = `${leagueName}-${id}`
-      allGames[leagueID] = await getNBATeamSchedule(id, abbrev)
+      allGames[leagueID] = await getNBATeamSchedule({id,value, abbrev})
     })
   )
 
@@ -101,7 +101,7 @@ export const getNBASchedule = async () => {
   return allGames
 }
 
-const getNBATeamSchedule = async (id: string, abbrev: string) => {
+const getNBATeamSchedule = async ({id, value, abbrev}) => {
   try {
     const NBAgames = await db.select().from(Games).where(eq(Games.homeTeamShort, id))
 
@@ -140,7 +140,7 @@ const getNBATeamSchedule = async (id: string, abbrev: string) => {
         homeTeamId: homeTeam.team.abbreviation,
         homeTeamShort: homeTeam.team.abbreviation,
         gameDate: gameDate,
-        teamSelectedId: id,
+        teamSelectedId: value,
         show: homeTeam.team.abbreviation === abbrev,
         selectedTeam: homeTeam.team.abbreviation === abbrev,
         league: leagueName,
