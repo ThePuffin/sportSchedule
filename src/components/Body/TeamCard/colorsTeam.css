@@ -163,404 +163,462 @@
   background-color: #001628;
 }
 
-.tNFL-22 {
+.tNFL-ARI {
   color: #a4113e;
   background-color: #ffffff;
 }
 
-.tNFL-1 {
+.tNFL-ATL {
   color: #a71930;
   background-color: #000000;
 }
 
-.tNFL-33 {
+.tNFL-BAL {
   color: #29126f;
   background-color: #000000;
 }
 
-.tNFL-2 {
+.tNFL-BUF {
   color: #00338d;
   background-color: #d50a0a;
 }
 
-.tNFL-29 {
+.tNFL-CAR {
   color: #0085ca;
   background-color: #000000;
 }
 
-.tNFL-3 {
+.tNFL-CHI {
   color: #0b1c3a;
   background-color: #e64100;
 }
 
-.tNFL-4 {
+.tNFL-CIN {
   color: #fb4f14;
   background-color: #000000;
 }
 
-.tNFL-5 {
+.tNFL-CLE {
   color: #472a08;
   background-color: #ff3c00;
 }
 
-.tNFL-6 {
+.tNFL-DAL {
   color: #002a5c;
   background-color: #b0b7bc;
 }
 
-.tNFL-7 {
+.tNFL-DEN {
   color: #0a2343;
   background-color: #fc4c02;
 }
 
-.tNFL-8 {
+.tNFL-DET {
   color: #0076b6;
   background-color: #bbbbbb;
 }
 
-.tNFL-9 {
+.tNFL-GB {
   color: #204e32;
   background-color: #ffb612;
 }
 
-.tNFL-34 {
+.tNFL-HOU {
   color: #00143f;
   background-color: #c41230;
 }
 
-.tNFL-11 {
+.tNFL-IND {
   color: #003b75;
   background-color: #ffffff;
 }
 
-.tNFL-30 {
+.tNFL-JAX {
   color: #007487;
   background-color: #d7a22a;
 }
 
-.tNFL-12 {
+.tNFL-KC {
   color: #e31837;
   background-color: #ffb612;
 }
 
-.tNFL-13 {
+.tNFL-LV {
   color: #000000;
   background-color: #a5acaf;
 }
 
-.tNFL-24 {
+.tNFL-LAC {
   color: #0080c6;
   background-color: #ffc20e;
 }
 
-.tNFL-14 {
+.tNFL-LAR {
   color: #003594;
   background-color: #ffd100;
 }
 
-.tNFL-15 {
+.tNFL-MIA {
   color: #008e97;
   background-color: #fc4c02;
 }
 
-.tNFL-16 {
+.tNFL-MIN {
   color: #4f2683;
   background-color: #ffc62f;
 }
 
-.tNFL-17 {
+.tNFL-NE {
   color: #002a5c;
   background-color: #c60c30;
 }
 
-.tNFL-18 {
+.tNFL-NO {
   color: #d3bc8d;
   background-color: #000000;
 }
 
-.tNFL-19 {
+.tNFL-NYG {
   color: #003c7f;
   background-color: #c9243f;
 }
 
-.tNFL-20 {
+.tNFL-NYJ {
   color: #115740;
   background-color: #ffffff;
 }
 
-.tNFL-21 {
+.tNFL-PHI {
   color: #06424d;
   background-color: #000000;
 }
 
-.tNFL-23 {
+.tNFL-PIT {
   color: #000000;
   background-color: #ffb612;
 }
 
-.tNFL-25 {
+.tNFL-SF {
   color: #aa0000;
   background-color: #b3995d;
 }
 
-.tNFL-26 {
+.tNFL-SEA {
   color: #002a5c;
   background-color: #69be28;
 }
 
-.tNFL-27 {
+.tNFL-TB {
   color: #bd1c36;
   background-color: #3e3a35;
 }
 
-.tNFL-10 {
+.tNFL-TEN {
   color: #4b92db;
   background-color: #002a5c;
 }
 
-.tNFL-28 {
+.tNFL-WSH {
   color: #5a1414;
   background-color: #ffb612;
 }
 
-.tNBA-1 {
+.tNBA-ATL {
   color: #c8102e;
   background-color: #fdb927;
 }
-.tNBA-2 {
+
+.tNBA-BOS {
   color: #008348;
   background-color: #ffffff;
 }
-.tNBA-17 {
+
+.tNBA-BKN {
   color: #000000;
   background-color: #ffffff;
 }
-.tNBA-30 {
+
+.tNBA-CHA {
   color: #008ca8;
   background-color: #1d1060;
 }
-.tNBA-4 {
+
+.tNBA-CHI {
   color: #ce1141;
   background-color: #000000;
 }
-.tNBA-5 {
+
+.tNBA-CLE {
   color: #860038;
   background-color: #bc945c;
 }
-.tNBA-6 {
+
+.tNBA-DAL {
   color: #0064b1;
   background-color: #bbc4ca;
 }
-.tNBA-7 {
+
+.tNBA-DEN {
   color: #0e2240;
   background-color: #fec524;
 }
-.tNBA-8 {
+
+.tNBA-DET {
   color: #1d428a;
   background-color: #c8102e;
 }
-.tNBA-9 {
+
+.tNBA-GS {
   color: #fdb927;
   background-color: #1d428a;
 }
-.tNBA-10 {
+
+.tNBA-HOU {
   color: #ce1141;
   background-color: #000000;
 }
-.tNBA-11 {
+
+.tNBA-IND {
   color: #002d62;
   background-color: #fdbb30;
 }
-.tNBA-12 {
+
+.tNBA-LAC {
   color: #1d428a;
   background-color: #c8102e;
 }
-.tNBA-13 {
+
+.tNBA-LAL {
   color: #552583;
   background-color: #fdb927;
 }
-.tNBA-29 {
+
+.tNBA-MEM {
   color: #5d76a9;
   background-color: #12173f;
 }
-.tNBA-14 {
+
+.tNBA-MIA {
   color: #98002e;
   background-color: #000000;
 }
-.tNBA-15 {
+
+.tNBA-MIL {
   color: #00471b;
   background-color: #eee1c6;
 }
-.tNBA-16 {
+
+.tNBA-MIN {
   color: #266092;
   background-color: #79bc43;
 }
-.tNBA-3 {
+
+.tNBA-NO {
   color: #0a2240;
   background-color: #b4975a;
 }
-.tNBA-18 {
+
+.tNBA-NY {
   color: #1d428a;
   background-color: #f58426;
 }
-.tNBA-25 {
+
+.tNBA-OKC {
   color: #007ac1;
   background-color: #ef3b24;
 }
-.tNBA-19 {
+
+.tNBA-ORL {
   color: #0077c0;
   background-color: #c4ced4;
 }
-.tNBA-20 {
+
+.tNBA-PHI {
   color: #1d428a;
   background-color: #e01234;
 }
-.tNBA-21 {
+
+.tNBA-PHX {
   color: #29127a;
   background-color: #e56020;
 }
-.tNBA-22 {
+
+.tNBA-POR {
   color: #e03a3e;
   background-color: #000000;
 }
-.tNBA-23 {
+
+.tNBA-SAC {
   color: #5a2d81;
   background-color: #6a7a82;
 }
-.tNBA-24 {
+
+.tNBA-SA {
   color: #000000;
   background-color: #c4ced4;
 }
-.tNBA-28 {
+
+.tNBA-TOR {
   color: #d91244;
   background-color: #000000;
 }
-.tNBA-26 {
+
+.tNBA-UTAH {
   color: #000000;
   background-color: #fff21f;
 }
-.tNBA-27 {
+
+.tNBA-WSH {
   color: #e31837;
   background-color: #002b5c;
 }
 
-.tMLB-29 {
+.tMLB-ARI {
   color: #aa1f2e;
   background-color: #000000;
 }
-.tMLB-15 {
+
+.tMLB-ATL {
   color: #0c2340;
   background-color: #ba0c2f;
 }
-.tMLB-1 {
+
+.tMLB-BAL {
   color: #df4601;
   background-color: #000000;
 }
-.tMLB-2 {
+
+.tMLB-BOS {
   color: #0d2b56;
   background-color: #bd3039;
 }
-.tMLB-16 {
+
+.tMLB-CHC {
   color: #0e3386;
   background-color: #cc3433;
 }
-.tMLB-4 {
+
+.tMLB-CHW {
   color: #000000;
   background-color: #c4ced4;
 }
-.tMLB-17 {
+
+.tMLB-CIN {
   color: #c6011f;
   background-color: #ffffff;
 }
-.tMLB-5 {
+
+.tMLB-CLE {
   color: #002b5c;
   background-color: #e31937;
 }
-.tMLB-27 {
+
+.tMLB-COL {
   color: #33006f;
   background-color: #000000;
 }
-.tMLB-6 {
+
+.tMLB-DET {
   color: #002d5c;
   background-color: #ff6600;
 }
-.tMLB-18 {
+
+.tMLB-HOU {
   color: #002d62;
   background-color: #eb6e1f;
 }
-.tMLB-7 {
+
+.tMLB-KC {
   color: #004687;
   background-color: #7ab2dd;
 }
-.tMLB-3 {
+
+.tMLB-LAA {
   color: #ba0021;
   background-color: #c4ced4;
 }
-.tMLB-19 {
+
+.tMLB-LAD {
   color: #005a9c;
   background-color: #ffffff;
 }
-.tMLB-28 {
+
+.tMLB-MIA {
   color: #00a3e0;
   background-color: #000000;
 }
-.tMLB-8 {
+
+.tMLB-MIL {
   color: #13294b;
   background-color: #ffc72c;
 }
-.tMLB-9 {
+
+.tMLB-MIN {
   color: #031f40;
   background-color: #e20e32;
 }
-.tMLB-21 {
+
+.tMLB-NYM {
   color: #002d72;
   background-color: #ff5910;
 }
-.tMLB-10 {
+
+.tMLB-NYY {
   color: #132448;
   background-color: #c4ced4;
 }
-.tMLB-11 {
+
+.tMLB-OAK {
   color: #006241;
   background-color: #efb21e;
 }
-.tMLB-22 {
+
+.tMLB-PHI {
   color: #e81828;
   background-color: #003278;
 }
-.tMLB-23 {
+
+.tMLB-PIT {
   color: #000000;
   background-color: #fdb827;
 }
-.tMLB-25 {
+
+.tMLB-SD {
   color: #3e2312;
   background-color: #ffc425;
 }
-.tMLB-26 {
+
+.tMLB-SF {
   color: #000000;
   background-color: #fd5a1e;
 }
-.tMLB-12 {
+
+.tMLB-SEA {
   color: #005c5c;
   background-color: #0c2c56;
 }
-.tMLB-24 {
+
+.tMLB-STL {
   color: #be0a14;
   background-color: #001541;
 }
-.tMLB-30 {
+
+.tMLB-TB {
   color: #092c5c;
   background-color: #8fbce6;
 }
-.tMLB-13 {
+
+.tMLB-TEX {
   color: #003278;
   background-color: #c0111f;
 }
-.tMLB-14 {
+
+.tMLB-TOR {
   color: #134a8e;
   background-color: #6cace5;
 }
-.tMLB-20 {
+
+.tMLB-WSH {
   color: #ab0003;
   background-color: #11225b;
 }
