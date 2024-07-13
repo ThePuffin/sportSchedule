@@ -31,10 +31,10 @@ export const getMLBTeams = async () => {
       .map(({ team }) => {
         const { abbreviation, displayName, logos, nickname, id } = team;
         const teamID = abbreviation;
-
+        const uniqueId = `${leagueName}-${teamID}`;
         return {
-          uniqueId: `${leagueName}-${teamID}`,
-          value: id,
+          uniqueId,
+          value: uniqueId,
           id: id,
           abbrev: teamID,
           label: displayName,
@@ -114,8 +114,11 @@ const getMLBTeamSchedule = async ({ id, abbrev, value }) => {
         ` https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/teams/${id}/schedule`
       );
       const fetchGames: MLBGameAPI = await fetchedGames.json();
-      games = await fetchGames.events;
+      games = fetchGames.events;
+      console.log('yes', value);
     } catch (error) {
+      console.log('no', value);
+
       console.log('errrroorrr', error);
 
       games = currentGames[id];
@@ -128,9 +131,9 @@ const getMLBTeamSchedule = async ({ id, abbrev, value }) => {
 
       const awayTeam = competitors.find((team) => team.homeAway === 'away');
       const homeTeam = competitors.find((team) => team.homeAway === 'home');
-
+      const random = Math.floor(Math.random() * 100);
       return {
-        uniqueId: `${leagueName}.${id}.${gameDate}`,
+        uniqueId: `${leagueName}.${id}.${gameDate}.${random}`,
         arenaName: venue?.fullName || '',
         awayTeamId: awayTeam.team.abbreviation,
         awayTeam: awayTeam.team.displayName,
@@ -139,7 +142,7 @@ const getMLBTeamSchedule = async ({ id, abbrev, value }) => {
         homeTeamId: homeTeam.team.abbreviation,
         homeTeamShort: homeTeam.team.abbreviation,
         gameDate: gameDate,
-        teamSelectedId: id,
+        teamSelectedId: value,
         show: homeTeam.team.abbreviation === abbrev,
         selectedTeam: homeTeam.team.abbreviation === abbrev,
         league: leagueName,

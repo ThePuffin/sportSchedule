@@ -13,7 +13,7 @@ export const Teams = defineTable({
     divisionName: column.text(),
     league: column.text(),
     abbrev: column.text({ default: 'no' }),
-    updateDate: column.date({ default: now }),
+    updateDate: column.text({ default: now.toISOString() }),
   },
 });
 

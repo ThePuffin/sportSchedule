@@ -104,7 +104,7 @@ export const getNhlSchedule = async () => {
 
 const getNhlTeamSchedule = async (id: string, value: string) => {
   try {
-    const NHLgames = await db.select().from(Games).where(eq(Games.homeTeamShort, id));
+    const NHLgames = await db.select().from(Games).where(eq(Games.teamSelectedId, value));
 
     if (NHLgames[0]?.updateDate && isExpiredData(NHLgames[0]?.updateDate)) {
       return NHLgames;
@@ -115,10 +115,7 @@ const getNhlTeamSchedule = async (id: string, value: string) => {
       const fetchedGames = await fetch(`https://api-web.nhle.com/v1/club-schedule-season/${id}/now`);
       const fetchGames = await fetchedGames.json();
       games = await fetchGames.games;
-      console.log('yes for ', value);
     } catch (error) {
-      console.log('no game fetched for ', value);
-
       games = currentGames[id];
     }
 

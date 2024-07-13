@@ -8,7 +8,7 @@ export interface TeamType {
   conferenceName: string
   divisionName: string
   league: string
-  updateDate?: Date
+  updateDate?: string
   abbrev?: string
 }
 

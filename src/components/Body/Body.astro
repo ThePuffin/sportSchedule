@@ -2,11 +2,11 @@
 import { db, Games, Teams } from 'astro:db';
 import { getMLBTeams } from '../../utils/baseballData';
 import { getNBATeams } from '../../utils/basketballData';
-import { getNhlTeams } from '../../utils/hockeyData.ts';
-import { getNFLTeams } from '../../utils/usFootballData';
 import DateSelector from './DateSelector/DateSelector.astro';
 import GamesSelected from './GamesSelected/GamesSelected.tsx';
 import Team from './Team/Team';
+import { getNhlTeams } from '../../utils/hockeyData';
+import { getNFLTeams } from '../../utils/usFootballData';
 
 let activeTeams = await db.select().from(Teams);
 
@@ -16,7 +16,8 @@ await getNBATeams();
 await getMLBTeams();
 const teamsGames = await db.select().from(Games);
 
-let teamsSelectedIds: string[] = ['NHL-WPG', 'NHL-EDM', 'NHL-CGY', 'NHL-VAN', 'NHL-SEA'];
+// let teamsSelectedIds: string[] = ['NHL-WPG', 'NHL-EDM', 'NHL-CGY', 'NHL-VAN', 'NHL-SEA'];
+let teamsSelectedIds = [];
 while (teamsSelectedIds.length < 5) {
   const randomTeam = activeTeams[Math.floor(Math.random() * activeTeams.length)].value;
   if (!teamsSelectedIds.includes(randomTeam)) {
