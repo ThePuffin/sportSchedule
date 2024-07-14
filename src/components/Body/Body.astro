@@ -16,9 +16,9 @@ await getNFLTeams();
 await getNBATeams();
 await getMLBTeams();
 
-let teamsSelectedIds: string[] = ['NHL-WPG', 'NHL-EDM', 'NHL-CGY', 'NHL-VAN', 'NHL-SEA'];
+let teamsSelectedIds: string[] = ['NHL-WPG', 'NHL-EDM', 'NHL-CGY', 'NHL-VAN', 'NHL-SEA', 'MLF-SEA', 'NFL-SEA'];
 // let teamsSelectedIds = [];
-while (teamsSelectedIds.length < 5) {
+while (teamsSelectedIds.length < 7) {
   const randomTeam = activeTeams[Math.floor(Math.random() * activeTeams.length)].value;
   if (!teamsSelectedIds.includes(randomTeam)) {
     teamsSelectedIds.push(randomTeam);
