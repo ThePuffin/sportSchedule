@@ -1,7 +1,6 @@
 import { Games, Teams, db, eq } from 'astro:db';
 import { writeJsonFile } from 'write-json-file';
 import allTeamsFile from '../../temporaryData/allTeamsMLB.json';
-import currentGames from '../../temporaryData/currentSeason.json';
 import type { GameFormatted } from '../interface/game.ts';
 import type { MLBGameAPI } from '../interface/gameMLB.ts';
 import type { TeamESPN, TeamType } from '../interface/team.ts';
@@ -102,10 +101,13 @@ export const getMLBSchedule = async () => {
 
 const getMLBTeamSchedule = async ({ id, abbrev, value }) => {
   try {
-    const MLBgames = await db.select().from(Games).where(eq(Games.homeTeamShort, id));
+    const MLBgames = await db.select().from(Games).where(eq(Games.teamSelectedId, value));
 
-    if (MLBgames[0]?.updateDate && isExpiredData(MLBgames[0]?.updateDate)) {
-      return MLBgames;
+    if (MLBgames[0]?.updateDate && !isExpiredData(MLBgames[0]?.updateDate)) {
+      return MLBgames.map((game: GameFormatted) => {
+        delete game.updateDate;
+        return game;
+      });
     }
 
     let games;
@@ -121,9 +123,9 @@ const getMLBTeamSchedule = async ({ id, abbrev, value }) => {
 
       console.log('errrroorrr', error);
 
-      games = currentGames[id];
+      games = [];
     }
-
+    let number = 0;
     let gamesData = games.map((game) => {
       const { date, competitions } = game;
       const { venue, competitors } = competitions[0];
@@ -131,9 +133,9 @@ const getMLBTeamSchedule = async ({ id, abbrev, value }) => {
 
       const awayTeam = competitors.find((team) => team.homeAway === 'away');
       const homeTeam = competitors.find((team) => team.homeAway === 'home');
-      const random = Math.floor(Math.random() * 100);
+      number++;
       return {
-        uniqueId: `${leagueName}.${id}.${gameDate}.${random}`,
+        uniqueId: `${leagueName}.${id}.${gameDate}.${number}`,
         arenaName: venue?.fullName || '',
         awayTeamId: awayTeam.team.abbreviation,
         awayTeam: awayTeam.team.displayName,

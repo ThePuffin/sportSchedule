@@ -1,7 +1,6 @@
 import { Games, Teams, db, eq } from 'astro:db';
 import { writeJsonFile } from 'write-json-file';
 import allTeamsFile from '../../temporaryData/allTeamsNHL.json';
-import currentGames from '../../temporaryData/currentSeason.json';
 import type { GameFormatted } from '../interface/game.ts';
 import type { NHLGameAPI } from '../interface/gameNHL';
 import type { TeamNHL, TeamType } from '../interface/team.ts';
@@ -106,8 +105,11 @@ const getNhlTeamSchedule = async (id: string, value: string) => {
   try {
     const NHLgames = await db.select().from(Games).where(eq(Games.teamSelectedId, value));
 
-    if (NHLgames[0]?.updateDate && isExpiredData(NHLgames[0]?.updateDate)) {
-      return NHLgames;
+    if (NHLgames[0]?.updateDate && !isExpiredData(NHLgames[0]?.updateDate)) {
+      return NHLgames.map((game: GameFormatted) => {
+        delete game.updateDate;
+        return game;
+      });
     }
 
     let games;
@@ -118,7 +120,8 @@ const getNhlTeamSchedule = async (id: string, value: string) => {
       console.log('yes', value);
     } catch (error) {
       console.log('no', value);
-      games = currentGames[id];
+
+      games = [];
     }
 
     let gamesData: GameFormatted[] = games.map((game: NHLGameAPI) => {

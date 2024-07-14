@@ -24,7 +24,7 @@ export default class Selector extends Component<any, any> {
     const teamId = teamSelectedId;
     const selectedTeams = teamsSelectedIds.filter((team: string) => team !== teamId);
 
-    let selectableTeams = activeTeams.filter((team: TeamType) => !selectedTeams.includes(team.id));
+    let selectableTeams = activeTeams.filter((team: TeamType) => !selectedTeams.includes(team.uniqueId));
 
     const teamData = activeTeams.find((team: TeamType) => team.value === teamId);
     const { label = '' } = teamData;

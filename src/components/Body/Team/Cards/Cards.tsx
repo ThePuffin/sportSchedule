@@ -64,7 +64,7 @@ export default class Cards extends Component<any, any> {
         finishingDate: dateFinishing,
       }));
 
-      this.getGames(this.state.id, {
+      this.getGames(this.state.team.value, {
         beginingDate: dateBegining,
         finishingDate: dateFinishing,
       });

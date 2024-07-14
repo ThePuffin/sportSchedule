@@ -1,7 +1,6 @@
 import { Games, Teams, db, eq } from 'astro:db';
 import { writeJsonFile } from 'write-json-file';
 import allTeamsFile from '../../temporaryData/allTeamsNBA.json';
-import currentGames from '../../temporaryData/currentSeason.json';
 import type { GameFormatted } from '../interface/game.ts';
 import type { NBAGameAPI } from '../interface/gameNBA.ts';
 import type { TeamESPN, TeamType } from '../interface/team.ts';
@@ -92,8 +91,8 @@ export const getNBASchedule = async () => {
     const expiredData = isExpiredData(updateDate);
 
     if (expiredData) {
-    await writeJsonFile('./temporaryData/updatecurrentSeasonNBA.json', allGames);
-    console.log('updated updatecurrentSeasonNBA.json');
+      await writeJsonFile('./temporaryData/updatecurrentSeasonNBA.json', allGames);
+      console.log('updated updatecurrentSeasonNBA.json');
     }
   }
   console.log('updated NBA');
@@ -102,10 +101,13 @@ export const getNBASchedule = async () => {
 
 const getNBATeamSchedule = async ({ id, value, abbrev }) => {
   try {
-    const NBAgames = await db.select().from(Games).where(eq(Games.homeTeamShort, id));
+    const NBAgames = await db.select().from(Games).where(eq(Games.teamSelectedId, value));
 
-    if (NBAgames[0]?.updateDate && isExpiredData(NBAgames[0]?.updateDate)) {
-      return NBAgames;
+    if (NBAgames[0]?.updateDate && !isExpiredData(NBAgames[0]?.updateDate)) {
+      return NBAgames.map((game: GameFormatted) => {
+        delete game.updateDate;
+        return game;
+      });
     }
 
     let games;
@@ -117,10 +119,10 @@ const getNBATeamSchedule = async ({ id, value, abbrev }) => {
       games = fetchGames.events;
       console.log('yes', value);
     } catch (error) {
-      console.log('no', value);
+      console.log('no !!!!!!!!!!!!', value);
       console.log('errrroorrr', error);
 
-      games = currentGames[id];
+      games = [];
     }
 
     let gamesData = games.map((game) => {

@@ -11,14 +11,13 @@ import lastGamesNHL from '../temporaryData/updatecurrentSeasonNHL.json';
 // https://astro.build/db/seed
 export default async function insertTeams() {
   const allTeams = [
-  ...lastAllTeamsNHL.activeTeams,
-  ...lastAllTeamsNFL.activeTeams,
-  ...lastAllTeamsNBA.activeTeams,
+    ...lastAllTeamsNHL.activeTeams,
+    ...lastAllTeamsNFL.activeTeams,
+    ...lastAllTeamsNBA.activeTeams,
     ...lastAllTeamsMLB.activeTeams,
   ];
-  // let lastGames = { ...lastGamesNHL, ...lastGamesNFL, ...lastGamesNBA, ...lastGamesMLB }
 
-  let lastGames = { ...lastGamesNHL };
+  const lastGames = { ...lastGamesNHL, ...lastGamesNFL, ...lastGamesNBA, ...lastGamesMLB };
 
   await db.insert(Teams).values(allTeams);
   for (const [team, games] of Object.entries(lastGames)) {
