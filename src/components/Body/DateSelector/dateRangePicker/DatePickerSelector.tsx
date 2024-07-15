@@ -1,39 +1,43 @@
-import { useState } from 'react';
-import { dateSelected } from '../../../../store/store.js';
-import { readableDate } from '../../../../utils/date.js';
-import './DatePickerSelector.css';
+import { useState } from 'react'
+import { dateSelected } from '../../../../store/store.js'
+import { readableDate } from '../../../../utils/date.js'
+import './DatePickerSelector.css'
 
 export default function DatePickerSelector() {
-  let { beginingDate, finishingDate, endSeason } = dateSelected.get();
-  const [startDate, setStartDate] = useState(beginingDate);
-  const [endDate, setEndDate] = useState(finishingDate);
+  let { beginingDate, finishingDate, maxSelectable } = dateSelected.get()
+  const [startDate, setStartDate] = useState(beginingDate)
+  const [endDate, setEndDate] = useState(finishingDate)
 
   const changeDate = ({ id, value }) => {
-    let newStartDate = startDate;
-    let newEndDate = endDate;
+    let newStartDate = startDate
+    let newEndDate = endDate
 
     if (id === 'startDatePicker') {
-      newStartDate = new Date(value);
+      newStartDate = new Date(value)
     } else {
-      newEndDate = new Date(value);
+      newEndDate = new Date(value)
     }
 
     if (newStartDate > newEndDate) {
-      newEndDate = new Date(newStartDate);
-      newEndDate.setDate(newEndDate.getDate() + 7);
+      newEndDate = new Date(newStartDate)
+      newEndDate.setDate(newEndDate.getDate() + 7)
     }
 
-    newEndDate = newEndDate <= endSeason ? newEndDate : endSeason;
+    newEndDate = newEndDate <= maxSelectable ? newEndDate : maxSelectable
 
-    setStartDate(newStartDate);
-    setEndDate(newEndDate);
+    setStartDate(newStartDate)
+    setEndDate(newEndDate)
+
+    // Save the dates in local storage
+    localStorage.setItem('startDate', newStartDate.toString())
+    localStorage.setItem('endDate', newEndDate.toISOString())
 
     dateSelected.set({
-      endSeason,
+      maxSelectable,
       beginingDate: newStartDate,
       finishingDate: newEndDate,
-    });
-  };
+    })
+  }
 
   return (
     <div>
@@ -44,7 +48,7 @@ export default function DatePickerSelector() {
         onChange={(e) => changeDate(e.target)}
         id="startDatePicker"
         min={readableDate(new Date())}
-        max={readableDate(endSeason)}
+        max={readableDate(maxSelectable)}
         name="trip-start"
         value={readableDate(startDate)}
       />
@@ -56,10 +60,10 @@ export default function DatePickerSelector() {
         onChange={(e) => changeDate(e.target)}
         id="endDatePicker"
         min={readableDate(beginingDate)}
-        max={readableDate(endSeason)}
+        max={readableDate(maxSelectable)}
         value={readableDate(finishingDate)}
         name="trip-end"
       />
     </div>
-  );
+  )
 }

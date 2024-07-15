@@ -32,6 +32,8 @@ export const Games = defineTable({
     show: column.boolean(),
     selectedTeam: column.boolean({ default: false }),
     league: column.text(),
+    venueTimezone: column.text({ default: '' }),
+    timeStart: column.text({ default: '' }),
     updateDate: column.date({ default: now }),
   },
 });

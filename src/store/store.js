@@ -1,20 +1,16 @@
 import { atom } from 'nanostores';
 
 let size = 5;
-const year = new Date().getFullYear();
-const now = new Date();
 let startDate = new Date();
 let endDate = new Date(startDate);
 endDate.setMonth(endDate.getMonth() + 1);
 
-const endSeason =
-  now > new Date(`${year} 06 30`) && now < new Date(`${year + 1} 01 01`)
-    ? new Date(`${year + 1} 06 30 `)
-    : new Date(`${year} 06 30 `);
-endDate = endDate <= endSeason ? endDate : endSeason;
+
+let maxSelectable = new Date();
+maxSelectable.setFullYear(maxSelectable.getFullYear() + 1);
 
 let teamsEmpty = [...Array(size)].fill(undefined);
-let dateEmpty = { endSeason, beginingDate: startDate, finishingDate: endDate };
+let dateEmpty = { maxSelectable, beginingDate: startDate, finishingDate: endDate };
 let gamesSelectedEmpty = [];
 
 export const dateSelected = atom(dateEmpty);

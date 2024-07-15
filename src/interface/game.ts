@@ -13,4 +13,6 @@ export interface GameFormatted {
   selectedTeam: boolean
   league: string
   updateDate: Date
+  venueTimezone?: string
+  timeStart?: string
 }
