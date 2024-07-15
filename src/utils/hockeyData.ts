@@ -123,10 +123,10 @@ const getNhlTeamSchedule = async (id: string, value: string) => {
 
       games = [];
     }
-
+    const now = new Date();
     let gamesData: GameFormatted[] = games.map((game: NHLGameAPI) => {
       const { awayTeam, homeTeam, venue, gameDate } = game;
-
+      if (new Date(gameDate) < now) return;
       return {
         uniqueId: `${leagueName}.${id}.${game.gameDate}`,
         awayTeamId: awayTeam.abbrev,
@@ -144,6 +144,7 @@ const getNhlTeamSchedule = async (id: string, value: string) => {
       };
     });
 
+    gamesData = gamesData.filter((game) => game !== undefined && game !== null);
     gamesData.forEach(async (gameTeam: GameFormatted) => {
       const { uniqueId, ...gameData } = gameTeam;
       await db
