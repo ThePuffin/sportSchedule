@@ -49,14 +49,20 @@ export default class Selector extends Component<any, any> {
   }
 
   async componentDidMount() {
-    const { teamsSelectedIds } = this.state
+    const { teamsSelectedIds, i } = this.state
 
     this.subscribeTogamesSelected()
+    let selection = teamSelected.get()
 
-    if (teamSelected.get().includes(undefined)) {
+    if (selection.includes(undefined)) {
       teamSelected.set(teamsSelectedIds)
+      selection = teamsSelectedIds
     }
-    this.defineAvailableTeams(teamsSelectedIds)
+    await this.setState(() => ({
+      teamSelectedId: selection[i],
+    }))
+
+    this.defineAvailableTeams(selection)
   }
 
   componentWillUnmount() {
@@ -73,6 +79,10 @@ export default class Selector extends Component<any, any> {
     await this.setState(() => ({
       teamSelectedId: newSelection,
     }))
+
+    // Save the selected teams in local storage
+    localStorage.setItem('teamsSelected', teamsId.join(';'))
+
     teamSelected.set(teamsId)
   }
 

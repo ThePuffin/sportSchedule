@@ -30,7 +30,7 @@ export default function DatePickerSelector() {
 
     // Save the dates in local storage
     localStorage.setItem('startDate', newStartDate.toString())
-    localStorage.setItem('endDate', newEndDate.toISOString())
+    localStorage.setItem('endDate', newEndDate.toString())
 
     dateSelected.set({
       maxSelectable,

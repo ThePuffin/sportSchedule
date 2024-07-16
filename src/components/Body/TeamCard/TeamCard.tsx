@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import TeamDataMLB from '../../../../temporaryData/allTeamsMLB.json'
 import TeamDataNBA from '../../../../temporaryData/allTeamsNBA.json'
 import TeamDataNFL from '../../../../temporaryData/allTeamsNFL.json'
 import TeamDataNHL from '../../../../temporaryData/allTeamsNHL.json'
+
 import type { PropsCard } from '../../../interface/card.js'
 import type { GameFormatted } from '../../../interface/game.js'
 import { gamesSelected } from '../../../store/store.js'
@@ -25,6 +26,9 @@ const TeamCard = (props: PropsCard) => {
       selectedGamesCopy.push(card)
       selectedGamesCopy.sort((a, b) => new Date(a.gameDate).getTime() - new Date(b.gameDate).getTime())
     }
+
+    // Save the selected games in local storage
+    localStorage.setItem('gameSelected', selectedGamesCopy.map((game) => JSON.stringify(game)).join(';'))
 
     gamesSelected.set(selectedGamesCopy)
     setGame(card)

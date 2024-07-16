@@ -1,26 +1,26 @@
 ---
-import { db, Games, Teams } from 'astro:db';
-import { League } from '../../utils/enum';
-import { getTeams } from '../../utils/espnAllData';
-import { getNhlTeams } from '../../utils/hockeyData';
-import DateSelector from './DateSelector/DateSelector.astro';
-import GamesSelected from './GamesSelected/GamesSelected.tsx';
-import Team from './Team/Team';
+import { db, Games, Teams } from 'astro:db'
+import { League } from '../../utils/enum'
+import { getTeams } from '../../utils/espnAllData'
+import { getNhlTeams } from '../../utils/hockeyData'
+import Interactions from './Interactions/Interactions.astro'
+import GamesSelected from './GamesSelected/GamesSelected.tsx'
+import Team from './Team/Team'
 
-const teamsGames = await db.select().from(Games);
-let activeTeams = await db.select().from(Teams);
-await Promise.all([getNhlTeams(), getTeams(League.MLB), getTeams(League.NBA), getTeams(League.NFL)]);
+const teamsGames = await db.select().from(Games)
+let activeTeams = await db.select().from(Teams)
+await Promise.all([getNhlTeams(), getTeams(League.MLB), getTeams(League.NBA), getTeams(League.NFL)])
 
-let teamsSelectedIds: string[] = ['NHL-WPG', 'NHL-EDM', 'NHL-CGY', 'NHL-VAN', 'NHL-SEA', 'NFL-SEA'];
-// let teamsSelectedIds = [];
+let teamsSelectedIds: string[] = []
+
 while (teamsSelectedIds.length < 6) {
-  const randomTeam = activeTeams[Math.floor(Math.random() * activeTeams.length)].value;
+  const randomTeam = activeTeams[Math.floor(Math.random() * activeTeams.length)].value
   if (!teamsSelectedIds.includes(randomTeam)) {
-    teamsSelectedIds.push(randomTeam);
+    teamsSelectedIds.push(randomTeam)
   }
 }
 ---
 
+<Interactions />
 <GamesSelected client:visible />
-<DateSelector />
 <Team {activeTeams} {teamsSelectedIds} {teamsGames} client:visible />

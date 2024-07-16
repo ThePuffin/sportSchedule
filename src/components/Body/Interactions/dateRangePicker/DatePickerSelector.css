@@ -31,17 +31,22 @@
 
 .fa {
   padding: 0 1vw;
-  display: none;
   color: #0a0a0a;
+  display: inline-block;
 }
 
 @media (min-width: 768px) {
   .inputDate {
-    width: 15%;
+    width: 25%;
     margin: initial;
     display: initial;
+    margin-left: 5%;
+    margin-right: 10%;
   }
-  .fa {
-    display: inline-block;
+}
+@media (max-width: 768px) {
+  .inputDate {
+    width: 85%;
+    display: initial;
   }
 }

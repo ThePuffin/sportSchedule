@@ -1,21 +1,26 @@
 import { atom } from 'nanostores';
 
-let size = 5;
-let startDate = new Date();
-let endDate = new Date(startDate);
-endDate.setMonth(endDate.getMonth() + 1);
+// Teams selected
+let size = 6;
+const storedSelectedTeams = typeof window !== 'undefined' && window.localStorage && localStorage.getItem('teamsSelected') ? localStorage.getItem('teamsSelected').split(';') : [...Array(size)].fill(undefined);
 
-
+// Date selected
+const now = new Date();
+const oneMonthMore = new Date().setMonth(now.getMonth() + 1);
+const storedStartDate = typeof window !== 'undefined' && window.localStorage && localStorage.getItem('startDate') ? localStorage.getItem('startDate') : now;
+const storedEndDate = typeof window !== 'undefined' && window.localStorage && localStorage.getItem('startDate') ? localStorage.getItem('endDate') : oneMonthMore;
+let startDate = new Date(storedStartDate);
+let endDate = new Date(storedEndDate);
 let maxSelectable = new Date();
 maxSelectable.setFullYear(maxSelectable.getFullYear() + 1);
-
-let teamsEmpty = [...Array(size)].fill(undefined);
 let dateEmpty = { maxSelectable, beginingDate: startDate, finishingDate: endDate };
-let gamesSelectedEmpty = [];
+
+// Game selected
+let gamesSelectedEmpty = typeof window !== 'undefined' && window.localStorage && localStorage.getItem('gameSelected') ? localStorage.getItem('gameSelected').split(';').map(game => JSON.parse(game)) : [];
 
 export const dateSelected = atom(dateEmpty);
 
-export const teamSelected = atom(teamsEmpty);
+export const teamSelected = atom(storedSelectedTeams);
 
 export const teamsGames = atom({});
 

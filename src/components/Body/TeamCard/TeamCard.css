@@ -1,14 +1,9 @@
 img {
-  height: 25px;
+  height: 1.3rem;
 }
 
 .cardText {
   margin: 0.5rem;
-}
-
-.cardCentered {
-  background-color: red !important;
-  color: red;
 }
 
 .hourClass {
@@ -33,15 +28,15 @@ img {
 }
 
 .unclickable > .whiteCard {
-  & h4,
-  & p {
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
+  & h4 {
+    height: 1.1rem;
+  }
+  & .cardText {
+    margin: 0.8rem 0.4rem;
   }
 }
 
 .arena {
-  width: 98%;
   white-space: wrap;
 }
 
