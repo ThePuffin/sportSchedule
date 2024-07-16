@@ -1,41 +1,47 @@
-import React from 'react';
-import type { GameFormatted } from '../../../interface/game.ts';
-import type { TeamType } from '../../../interface/team.ts';
+import { useEffect, useState } from 'react';
+import type { TeamBodyProps } from '../../../interface/card.ts';
+import { teamSelected } from '../../../store/store.js';
 import TeamCard from './Cards/Cards.tsx';
 import Selector from './Selector/Selector.tsx';
 
-interface BodyProps {
-  teamsSelectedIds: string[];
-  activeTeams: TeamType[];
-  teamsGames: GameFormatted[];
+export default function Team(astroProps) {
+  const [teamsSelected, setTeamsSelected] = useState(teamSelected.get());
+  const { activeTeams, teamsSelectedIds, teamsGames }: TeamBodyProps = astroProps;
+  const isStoredSelectedTeams = !!teamSelected.get()?.filter((team) => team !== undefined).length;
+  if (!isStoredSelectedTeams) {
+    teamSelected.set(teamsSelectedIds);
+  }
+
+  useEffect(() => {
+    teamSelected.subscribe(async (value) => {
+      setTeamsSelected([...value]);
+    });
+  }, []);
+
+  return (
+    <table style={{ tableLayout: 'fixed', width: '100%' }}>
+      <tbody>
+        <tr>
+          {teamsSelected?.length === 0 || activeTeams?.length === 0 ? (
+            <p>Wait for it... Please</p>
+          ) : (
+            teamsSelected.map((teamSelectedId, i) => {
+              const props = { i, activeTeams, teamsSelected, teamSelectedId, teamsGames };
+              const keyCard = `${i}${teamSelectedId}`;
+              const keySelector = `${teamSelectedId}${i}`;
+              const width = 100 / teamsSelected.length;
+              return (
+                <td key={teamSelectedId} style={{ width: `${width}%`, height: '100%' }}>
+                  <div>
+                    <Selector key={keySelector} {...props} />
+                    <TeamCard key={keyCard} id={i} {...props} />
+                  </div>
+                </td>
+              );
+            })
+          )}
+        </tr>
+      </tbody>
+    </table>
+  );
 }
-
-const Team: React.FC<BodyProps> = ({ teamsSelectedIds, activeTeams, teamsGames }) => (
-  <table style={{ tableLayout: 'fixed', width: '100%' }}>
-    <tbody>
-      <tr>
-        {teamsSelectedIds?.length === 0 || activeTeams?.length === 0 ? (
-          <p>Wait for it... Please</p>
-        ) : (
-          teamsSelectedIds.map((teamSelectedId, i) => {
-            const props = { i, activeTeams, teamsSelectedIds, teamSelectedId, teamsGames };
-
-            const keyCard = `${i}${teamSelectedId}`;
-            const keySelector = `${teamSelectedId}${i}`;
-            const width = 100 / teamsSelectedIds.length;
-            return (
-              <td key={teamSelectedId} style={{ width: `${width}%`, height: '100%' }}>
-                <div>
-                  <Selector key={keySelector} {...props} />
-                  <TeamCard key={keyCard} id={i} {...props} />
-                </div>
-              </td>
-            );
-          })
-        )}
-      </tr>
-    </tbody>
-  </table>
-);
-
-export default Team;

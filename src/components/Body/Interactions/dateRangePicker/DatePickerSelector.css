@@ -1,3 +1,10 @@
+.dateDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .inputDate {
   margin: 0 auto;
   display: block;
@@ -15,11 +22,13 @@
   font-weight: 400;
   height: 40px;
   transition: all 0.2s ease;
+
   :hover {
     box-shadow:
       0 0 0 0 #fff inset,
       #1de9b6 0 0 0 2px;
   }
+
   :focus {
     background: #fff;
     outline: 0;
@@ -40,10 +49,11 @@
     width: 25%;
     margin: initial;
     display: initial;
-    margin-left: 5%;
+    margin-left: 3%;
     margin-right: 10%;
   }
 }
+
 @media (max-width: 768px) {
   .inputDate {
     width: 85%;

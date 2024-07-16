@@ -112,8 +112,13 @@ export const getTeamsSchedule = async (leagueName) => {
 
     const updateDate = (firstKey && teamgames[0]?.updateDate) || new Date('2020-02-20');
     const expiredData = isExpiredData(updateDate);
+    for (const team of Object.keys(allGames)) {
+      if (allGames[team].length === 0) {
+        delete allGames[team];
+      }
+    }
 
-    if (expiredData) {
+    if (expiredData && Object.keys(allGames).length > 0) {
       await writeJsonFile(`./temporaryData/updatecurrentSeason${leagueName}.json`, allGames);
       console.log(`updated updatecurrentSeason${leagueName}.json`);
     }

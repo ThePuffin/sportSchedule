@@ -1,40 +1,40 @@
-import { Games, Teams, db, eq } from 'astro:db'
-import { writeJsonFile } from 'write-json-file'
-import allTeamsFile from '../../temporaryData/allTeamsNHL.json'
-import type { GameFormatted } from '../interface/game.ts'
-import type { NHLGameAPI } from '../interface/gameNHL'
-import type { TeamNHL, TeamType } from '../interface/team.ts'
-import { getHourGame, isExpiredData } from '../utils/date.js'
-import { League } from './enum.ts'
-const leagueName = League.NHL
-const { NODE_ENV } = process.env
+import { Games, Teams, db, eq } from 'astro:db';
+import { writeJsonFile } from 'write-json-file';
+import allTeamsFile from '../../temporaryData/allTeamsNHL.json';
+import type { GameFormatted } from '../interface/game.ts';
+import type { NHLGameAPI } from '../interface/gameNHL';
+import type { TeamNHL, TeamType } from '../interface/team.ts';
+import { getHourGame, isExpiredData } from '../utils/date.js';
+import { League } from './enum.ts';
+const leagueName = League.NHL;
+const { NODE_ENV } = process.env;
 
 export const getNhlTeams = async () => {
   try {
-    const nhlTeams = await db.select().from(Teams).where(eq(Teams.league, leagueName))
+    const nhlTeams = await db.select().from(Teams).where(eq(Teams.league, leagueName));
     if (nhlTeams[0] && !isExpiredData(nhlTeams[0]?.updateDate)) {
-      getNhlSchedule()
-      return nhlTeams
+      getNhlSchedule();
+      return nhlTeams;
     }
-    let allTeams
+    let allTeams;
 
-    const fetchedTeams = await fetch('https://api-web.nhle.com/v1/standings/now')
-    const fetchTeams = await fetchedTeams.json()
-    allTeams = await fetchTeams.standings
+    const fetchedTeams = await fetch('https://api-web.nhle.com/v1/standings/now');
+    const fetchTeams = await fetchedTeams.json();
+    allTeams = await fetchTeams.standings;
 
     allTeams = allTeams.map((team: TeamNHL) => {
       if (team.teamAbbrev.default === 'ARI') {
-        team.teamAbbrev.default = 'UTA'
-        team.teamCommonName.default = 'Utah'
+        team.teamAbbrev.default = 'UTA';
+        team.teamCommonName.default = 'Utah';
       }
-      return team
-    })
+      return team;
+    });
     const activeTeams = allTeams
       .sort((a: TeamNHL, b: TeamNHL) => (a.placeName?.default > b.placeName?.default ? 1 : -1))
       .map((team: TeamNHL) => {
-        const { teamAbbrev, teamName, teamLogo, divisionName, teamCommonName, conferenceName } = team
-        const teamID = teamAbbrev.default
-        const uniqueId = `${leagueName}-${teamID}`
+        const { teamAbbrev, teamName, teamLogo, divisionName, teamCommonName, conferenceName } = team;
+        const teamID = teamAbbrev.default;
+        const uniqueId = `${leagueName}-${teamID}`;
         return {
           uniqueId,
           value: uniqueId,
@@ -46,15 +46,15 @@ export const getNhlTeams = async () => {
           conferenceName,
           divisionName,
           league: leagueName,
-        }
-      })
+        };
+      });
     if (NODE_ENV === 'development') {
-      await writeJsonFile('./temporaryData/allTeamsNHL.json', { activeTeams })
-      console.log('updated allTeamsNHL.json')
+      await writeJsonFile('./temporaryData/allTeamsNHL.json', { activeTeams });
+      console.log('updated allTeamsNHL.json');
     }
 
     activeTeams.forEach(async (team: TeamType) => {
-      const { uniqueId, ...teamData } = team
+      const { uniqueId, ...teamData } = team;
 
       await db
         .insert(Teams)
@@ -64,72 +64,78 @@ export const getNhlTeams = async () => {
           set: {
             ...teamData,
           },
-        })
-    })
-    getNhlSchedule()
-    return activeTeams
+        });
+    });
+    getNhlSchedule();
+    return activeTeams;
   } catch (error) {
-    console.log('Error fetching data =>', error)
-    getNhlSchedule()
-    return allTeamsFile.activeTeams
+    console.log('Error fetching data =>', error);
+    getNhlSchedule();
+    return allTeamsFile.activeTeams;
   }
-}
+};
 
 export const getNhlSchedule = async () => {
-  const allGames = {}
-  const activeTeams: TeamType[] = await db.select().from(Teams).where(eq(Teams.league, leagueName))
+  const allGames = {};
+  const activeTeams: TeamType[] = await db.select().from(Teams).where(eq(Teams.league, leagueName));
   await Promise.all(
     activeTeams.map(async ({ id, value }) => {
-      const leagueID = `${leagueName}-${id}`
-      allGames[leagueID] = await getNhlTeamSchedule(id, value)
+      const leagueID = `${leagueName}-${id}`;
+      allGames[leagueID] = await getNhlTeamSchedule(id, value);
     })
-  )
+  );
 
   if (NODE_ENV === 'development') {
-    const firstKey = activeTeams[0]?.id
-    const NHLgames = await db.select().from(Games).where(eq(Games.homeTeamShort, firstKey)).limit(1)
+    const firstKey = activeTeams[0]?.id;
+    const NHLgames = await db.select().from(Games).where(eq(Games.homeTeamShort, firstKey)).limit(1);
 
-    const updateDate = (firstKey && NHLgames[0]?.updateDate) || new Date('2020-02-20')
-    const expiredData = isExpiredData(updateDate)
+    const updateDate = (firstKey && NHLgames[0]?.updateDate) || new Date('2020-02-20');
+    const expiredData = isExpiredData(updateDate);
 
-    if (expiredData) {
-      await writeJsonFile('./temporaryData/updatecurrentSeasonNHL.json', allGames)
-      console.log('updated updatecurrentSeasonNHL.json')
+    for (const team of Object.keys(allGames)) {
+      if (allGames[team].length === 0) {
+        delete allGames[team];
+      }
+    }
+
+    if (expiredData && Object.keys(allGames).length > 0) {
+      await writeJsonFile('./temporaryData/updatecurrentSeasonNHL.json', allGames);
+      console.log('updated updatecurrentSeasonNHL.json');
     }
   }
-  console.log('updated NHL')
-  return allGames
-}
+  console.log('updated NHL');
+  return allGames;
+};
 
 const getNhlTeamSchedule = async (id: string, value: string) => {
   try {
-    const NHLgames = await db.select().from(Games).where(eq(Games.teamSelectedId, value))
+    const NHLgames = await db.select().from(Games).where(eq(Games.teamSelectedId, value));
 
     if (NHLgames[0]?.updateDate && !isExpiredData(NHLgames[0]?.updateDate)) {
       return NHLgames.map((game: GameFormatted) => {
-        delete game.updateDate
-        return game
-      })
+        delete game.updateDate;
+        return game;
+      });
     }
 
-    let games
+    let games;
     try {
-      const fetchedGames = await fetch(`https://api-web.nhle.com/v1/club-schedule-season/${id}/now`)
-      const fetchGames = await fetchedGames.json()
-      games = await fetchGames.games
-      console.log('yes', value)
+      const fetchedGames = await fetch(`https://api-web.nhle.com/v1/club-schedule-season/${id}/now`);
+      const fetchGames = await fetchedGames.json();
+      games = await fetchGames.games;
+      console.log('yes', value);
     } catch (error) {
-      console.log('no', value)
+      console.log('no', value);
 
-      games = []
+      games = [];
     }
-    const now = new Date()
+    const now = new Date();
     let gamesData: GameFormatted[] = games.map((game: NHLGameAPI) => {
-      const { awayTeam, homeTeam, venue, gameDate, venueTimezone, startTimeUTC, venueUTCOffset } = game
+      const { awayTeam, homeTeam, venue, gameDate, venueTimezone, startTimeUTC, venueUTCOffset } = game;
 
-      const timeStart = getHourGame(startTimeUTC, venueUTCOffset)
+      const timeStart = getHourGame(startTimeUTC, venueUTCOffset);
 
-      if (new Date(gameDate) < now) return
+      if (new Date(gameDate) < now) return;
       return {
         uniqueId: `${leagueName}.${id}.${game.gameDate}`,
         awayTeamId: awayTeam.abbrev,
@@ -146,12 +152,12 @@ const getNhlTeamSchedule = async (id: string, value: string) => {
         league: leagueName,
         venueTimezone: venueTimezone,
         timeStart,
-      }
-    })
+      };
+    });
 
-    gamesData = gamesData.filter((game) => game !== undefined && game !== null)
+    gamesData = gamesData.filter((game) => game !== undefined && game !== null);
     gamesData.forEach(async (gameTeam: GameFormatted) => {
-      const { uniqueId, ...gameData } = gameTeam
+      const { uniqueId, ...gameData } = gameTeam;
       await db
         .insert(Games)
         .values({ ...gameTeam })
@@ -160,12 +166,12 @@ const getNhlTeamSchedule = async (id: string, value: string) => {
           set: {
             ...gameData,
           },
-        })
-    })
+        });
+    });
 
-    return gamesData
+    return gamesData;
   } catch (error) {
-    console.log('Error fetching data', error)
-    return {}
+    console.log('Error fetching data', error);
+    return {};
   }
-}
+};

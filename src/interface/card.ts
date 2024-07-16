@@ -14,3 +14,9 @@ export interface PropsCard {
   game: GameFormatted;
   isSelected: boolean;
 }
+
+export interface TeamBodyProps {
+  teamsSelectedIds: string[];
+  activeTeams: TeamType[];
+  teamsGames: GameFormatted[];
+}
