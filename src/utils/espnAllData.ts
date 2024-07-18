@@ -1,43 +1,52 @@
-import { Games, Teams, db, eq } from 'astro:db';
-import { writeJsonFile } from 'write-json-file';
-import allTeamsFileMLB from '../../temporaryData/allTeamsMLB.json';
-import allTeamsFileNBA from '../../temporaryData/allTeamsNBA.json';
-import allTeamsFileNFL from '../../temporaryData/allTeamsNFL.json';
-import type { GameFormatted } from '../interface/game.ts';
-import type { MLBGameAPI } from '../interface/gameMLB.ts';
-import type { NBAGameAPI } from '../interface/gameNBA.ts';
-import type { NFLGameAPI } from '../interface/gameNFL.ts';
-import type { TeamESPN, TeamType } from '../interface/team.ts';
-import { isExpiredData, readableDate } from '../utils/date.js';
-import { League } from './enum.ts';
+import { Games, Teams, db, eq } from "astro:db";
+import { writeJsonFile } from "write-json-file";
+import allTeamsFileMLB from "../../temporaryData/allTeamsMLB.json";
+import allTeamsFileNBA from "../../temporaryData/allTeamsNBA.json";
+import allTeamsFileNFL from "../../temporaryData/allTeamsNFL.json";
+import type { GameFormatted } from "../interface/game.ts";
+import type { MLBGameAPI } from "../interface/gameMLB.ts";
+import type { NBAGameAPI } from "../interface/gameNBA.ts";
+import type { NFLGameAPI } from "../interface/gameNFL.ts";
+import type { ESPNTeam, TeamESPN, TeamType } from "../interface/team.ts";
+import { isExpiredData, readableDate } from "../utils/date.js";
+import { League } from "./enum.ts";
 const { NODE_ENV } = process.env;
 
 const leaguesData = {
   [League.MLB]: {
     leagueName: League.MLB,
-    fetchTeam: 'https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/teams',
-    fetchGames: 'https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/teams/${id}/schedule',
+    fetchTeam:
+      "https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/teams",
+    fetchGames:
+      "https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/teams/${id}/schedule",
   },
   [League.NBA]: {
     leagueName: League.NBA,
-    fetchTeam: 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams',
-    fetchGames: 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/${id}/schedule',
+    fetchTeam:
+      "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams",
+    fetchGames:
+      "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/${id}/schedule",
   },
   [League.NFL]: {
     leagueName: League.NFL,
-    fetchTeam: 'https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams',
-    fetchGames: 'https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/${id}/schedule',
+    fetchTeam:
+      "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams",
+    fetchGames:
+      "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/${id}/schedule",
   },
 };
 
 export const getTeams = async (leagueName: string) => {
   try {
-    const teams = await db.select().from(Teams).where(eq(Teams.league, leagueName));
+    const teams = await db
+      .select()
+      .from(Teams)
+      .where(eq(Teams.league, leagueName));
     if (teams[0] && !isExpiredData(teams[0].updateDate)) {
       getTeamsSchedule(leagueName);
       return teams;
     }
-    let allTeams;
+    let allTeams: ESPNTeam[];
 
     const fetchedTeams = await fetch(leaguesData[leagueName].fetchTeam);
     const fetchTeams: TeamESPN = await fetchedTeams.json();
@@ -60,14 +69,16 @@ export const getTeams = async (leagueName: string) => {
           label: displayName,
           teamLogo: logos[0].href,
           teamCommonName: nickname,
-          conferenceName: '',
-          divisionName: '',
+          conferenceName: "",
+          divisionName: "",
           league: leagueName,
         };
       });
 
-    if (NODE_ENV === 'development') {
-      await writeJsonFile(`./temporaryData/allTeams${leagueName}.json`, { activeTeams });
+    if (NODE_ENV === "development") {
+      await writeJsonFile(`./temporaryData/allTeams${leagueName}.json`, {
+        activeTeams,
+      });
       console.log(`updated allTeams${leagueName}.json`);
     }
 
@@ -87,7 +98,7 @@ export const getTeams = async (leagueName: string) => {
     getTeamsSchedule(leagueName);
     return activeTeams;
   } catch (error) {
-    console.log('Error fetching data =>', error);
+    console.log("Error fetching data =>", error);
     getTeamsSchedule(leagueName);
     if (leagueName === League.NFL) return allTeamsFileNFL.activeTeams;
     if (leagueName === League.NBA) return allTeamsFileNBA.activeTeams;
@@ -97,20 +108,33 @@ export const getTeams = async (leagueName: string) => {
 
 export const getTeamsSchedule = async (leagueName) => {
   const allGames = {};
-  const activeTeams: TeamType[] = await db.select().from(Teams).where(eq(Teams.league, leagueName));
+  const activeTeams: TeamType[] = await db
+    .select()
+    .from(Teams)
+    .where(eq(Teams.league, leagueName));
   await Promise.all(
     activeTeams.map(async ({ id, abbrev, value }) => {
       const leagueID = `${leagueName}-${id}`;
-      allGames[leagueID] = await getEachTeamSchedule({ id, abbrev, value, leagueName });
-    })
+      allGames[leagueID] = await getEachTeamSchedule({
+        id,
+        abbrev,
+        value,
+        leagueName,
+      });
+    }),
   );
 
-  if (NODE_ENV === 'development') {
+  if (NODE_ENV === "development") {
     const firstKey = activeTeams[0]?.id;
 
-    const teamgames = await db.select().from(Games).where(eq(Games.teamSelectedId, firstKey)).limit(1);
+    const teamgames = await db
+      .select()
+      .from(Games)
+      .where(eq(Games.teamSelectedId, firstKey))
+      .limit(1);
 
-    const updateDate = (firstKey && teamgames[0]?.updateDate) || new Date('2020-02-20');
+    const updateDate =
+      (firstKey && teamgames[0]?.updateDate) || new Date("2020-02-20");
     const expiredData = isExpiredData(updateDate);
     for (const team of Object.keys(allGames)) {
       if (allGames[team].length === 0) {
@@ -119,7 +143,10 @@ export const getTeamsSchedule = async (leagueName) => {
     }
 
     if (expiredData && Object.keys(allGames).length > 0) {
-      await writeJsonFile(`./temporaryData/updatecurrentSeason${leagueName}.json`, allGames);
+      await writeJsonFile(
+        `./temporaryData/updatecurrentSeason${leagueName}.json`,
+        allGames,
+      );
       console.log(`updated updatecurrentSeason${leagueName}.json`);
     }
   }
@@ -129,7 +156,10 @@ export const getTeamsSchedule = async (leagueName) => {
 
 const getEachTeamSchedule = async ({ id, abbrev, value, leagueName }) => {
   try {
-    const teamGames = await db.select().from(Games).where(eq(Games.teamSelectedId, value));
+    const teamGames = await db
+      .select()
+      .from(Games)
+      .where(eq(Games.teamSelectedId, value));
 
     if (teamGames[0]?.updateDate && !isExpiredData(teamGames[0]?.updateDate)) {
       return teamGames.map((game: GameFormatted) => {
@@ -140,13 +170,14 @@ const getEachTeamSchedule = async ({ id, abbrev, value, leagueName }) => {
 
     let games;
     try {
-      const link = leaguesData[leagueName].fetchGames.replace('${id}', id);
+      const link = leaguesData[leagueName].fetchGames.replace("${id}", id);
       const fetchedGames = await fetch(link);
-      const fetchGames: MLBGameAPI | NBAGameAPI | NFLGameAPI = await fetchedGames.json();
+      const fetchGames: MLBGameAPI | NBAGameAPI | NFLGameAPI =
+        await fetchedGames.json();
       games = fetchGames.events ?? [];
-      console.log('yes', value);
+      console.log("yes", value);
     } catch (error) {
-      console.log('no', value, error);
+      console.log("no", value, error);
       games = [];
     }
     let number = 0;
@@ -157,19 +188,21 @@ const getEachTeamSchedule = async ({ id, abbrev, value, leagueName }) => {
 
       if (new Date(date) < now) return;
       const { venue, competitors } = competitions[0];
-      const venueTimezone = 'America/New_York';
+      const venueTimezone = "America/New_York";
       const gameDate = readableDate(new Date(date));
-      const currentDate = new Date(new Date(date).toLocaleString('en-US', { timeZone: venueTimezone }));
-      const hourStart = currentDate.getUTCHours().toString().padStart(2, '0');
-      const minStart = currentDate.getMinutes().toString().padStart(2, '0');
+      const currentDate = new Date(
+        new Date(date).toLocaleString("en-US", { timeZone: venueTimezone }),
+      );
+      const hourStart = currentDate.getUTCHours().toString().padStart(2, "0");
+      const minStart = currentDate.getMinutes().toString().padStart(2, "0");
       const timeStart = `${hourStart}:${minStart}`;
 
-      const awayTeam = competitors.find((team) => team.homeAway === 'away');
-      const homeTeam = competitors.find((team) => team.homeAway === 'home');
+      const awayTeam = competitors.find((team) => team.homeAway === "away");
+      const homeTeam = competitors.find((team) => team.homeAway === "home");
       number++;
       return {
         uniqueId: `${leagueName}.${id}.${gameDate}.${number}`,
-        arenaName: venue?.fullName || '',
+        arenaName: venue?.fullName || "",
         awayTeamId: awayTeam.team.abbreviation,
         awayTeam: awayTeam.team.displayName,
         awayTeamShort: awayTeam.team.abbreviation,
@@ -202,7 +235,7 @@ const getEachTeamSchedule = async ({ id, abbrev, value, leagueName }) => {
 
     return gamesData;
   } catch (error) {
-    console.log('Error fetching data', error);
+    console.log("Error fetching data", error);
     return {};
   }
 };

@@ -1,7 +1,7 @@
-import { Component } from 'react';
-import Select from 'react-select';
-import type { TeamType } from '../../../../interface/team.ts';
-import { teamSelected } from '../../../../store/store.js';
+import { Component } from "react";
+import Select from "react-select";
+import type { TeamType } from "../../../../interface/team.ts";
+import { teamSelected } from "../../../../store/store.js";
 
 export default class Selector extends Component<any, any> {
   constructor(props) {
@@ -12,21 +12,24 @@ export default class Selector extends Component<any, any> {
       activeTeams: props.activeTeams,
       i: props.i,
       teamSelectedId: props.teamSelectedId,
-      label: '',
+      label: "",
     };
   }
 
   defineAvailableTeams(teamsSelectedIds) {
     const { activeTeams, teamSelectedId } = this.state;
     const teamId = teamSelectedId;
-    const selectedTeams = teamsSelectedIds?.filter((team: string) => team !== teamId) ?? [];
+    const selectedTeams =
+      teamsSelectedIds?.filter((team: string) => team !== teamId) ?? [];
 
     let selectableTeams = activeTeams
       .filter((team: TeamType) => !selectedTeams.includes(team.uniqueId))
       .sort((a: TeamType, b: TeamType) => (a.label > b.label ? 1 : -1));
 
-    const teamData = activeTeams.find((team: TeamType) => team.value === teamId);
-    const { label = '' } = teamData;
+    const teamData = activeTeams.find(
+      (team: TeamType) => team.value === teamId,
+    );
+    const { label = "" } = teamData;
     this.setState(() => ({
       availableTeams: selectableTeams,
       label,
@@ -72,7 +75,7 @@ export default class Selector extends Component<any, any> {
     }));
 
     // Save the selected teams in local storage
-    localStorage.setItem('teamsSelected', teamsId.join(';'));
+    localStorage.setItem("teamsSelected", teamsId.join(";"));
 
     teamSelected.set(teamsId);
   };
@@ -83,12 +86,12 @@ export default class Selector extends Component<any, any> {
     const customStyles = {
       control: (base) => ({
         ...base,
-        minHeight: 'initial',
+        minHeight: "initial",
       }),
       valueContainer: (base) => ({
         ...base,
         height: `${targetHeight - 1 - 1}px`,
-        padding: '0 8px',
+        padding: "0 8px",
       }),
       clearIndicator: (base) => ({
         ...base,

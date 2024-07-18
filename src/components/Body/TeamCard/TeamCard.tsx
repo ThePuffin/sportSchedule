@@ -1,38 +1,48 @@
-import { useState } from 'react'
-import TeamDataMLB from '../../../../temporaryData/allTeamsMLB.json'
-import TeamDataNBA from '../../../../temporaryData/allTeamsNBA.json'
-import TeamDataNFL from '../../../../temporaryData/allTeamsNFL.json'
-import TeamDataNHL from '../../../../temporaryData/allTeamsNHL.json'
+import { useState } from "react";
+import TeamDataMLB from "../../../../temporaryData/allTeamsMLB.json";
+import TeamDataNBA from "../../../../temporaryData/allTeamsNBA.json";
+import TeamDataNFL from "../../../../temporaryData/allTeamsNFL.json";
+import TeamDataNHL from "../../../../temporaryData/allTeamsNHL.json";
 
-import type { PropsCard } from '../../../interface/card.js'
-import type { GameFormatted } from '../../../interface/game.js'
-import { gamesSelected } from '../../../store/store.js'
-import './TeamCard.css'
-import './colorsTeam.css'
+import type { PropsCard } from "../../../interface/card.js";
+import type { GameFormatted } from "../../../interface/game.js";
+import { gamesSelected } from "../../../store/store.js";
+import "./TeamCard.css";
+import "./colorsTeam.css";
 
 const TeamCard = (props: PropsCard) => {
-  const [game, setGame] = useState(props.game)
+  const [game, setGame] = useState(props.game);
 
   const onClick = async (card) => {
-    let selectedGamesCopy: GameFormatted[] = []
-    selectedGamesCopy = gamesSelected.get()
+    let selectedGamesCopy: GameFormatted[] = [];
+    selectedGamesCopy = gamesSelected.get();
 
-    const alreadySelected = selectedGamesCopy.find((selectedGame) => selectedGame.uniqueId === card.uniqueId)
+    const alreadySelected = selectedGamesCopy.find(
+      (selectedGame) => selectedGame.uniqueId === card.uniqueId,
+    );
     selectedGamesCopy = selectedGamesCopy.filter(
-      (selectedGame) => selectedGame.gameDate !== card.gameDate && selectedGame.teamSelectedId !== card.teamSelectedId
-    )
+      (selectedGame) =>
+        selectedGame.gameDate !== card.gameDate &&
+        selectedGame.teamSelectedId !== card.teamSelectedId,
+    );
 
     if (!alreadySelected) {
-      selectedGamesCopy.push(card)
-      selectedGamesCopy.sort((a, b) => new Date(a.gameDate).getTime() - new Date(b.gameDate).getTime())
+      selectedGamesCopy.push(card);
+      selectedGamesCopy.sort(
+        (a, b) =>
+          new Date(a.gameDate).getTime() - new Date(b.gameDate).getTime(),
+      );
     }
 
     // Save the selected games in local storage
-    localStorage.setItem('gameSelected', selectedGamesCopy.map((game) => JSON.stringify(game)).join(';'))
+    localStorage.setItem(
+      "gameSelected",
+      selectedGamesCopy.map((game) => JSON.stringify(game)).join(";"),
+    );
 
-    gamesSelected.set(selectedGamesCopy)
-    setGame(card)
-  }
+    gamesSelected.set(selectedGamesCopy);
+    setGame(card);
+  };
 
   const {
     arenaName,
@@ -49,32 +59,43 @@ const TeamCard = (props: PropsCard) => {
     teamSelectedId,
     venueTimezone,
     timeStart,
-  } = game
-  let homeTeamLogo
-  let awayTeamLogo
-  const visibleDate = new Date(gameDate).toLocaleDateString()
-  const timeZone = venueTimezone ? `(${venueTimezone?.replace('/', ' / ').replace('_', ' ')})` : ''
+  } = game;
+  let homeTeamLogo;
+  let awayTeamLogo;
+  const visibleDate = new Date(gameDate).toLocaleDateString();
+  const timeZone = venueTimezone
+    ? `(${venueTimezone?.replace("/", " / ").replace("_", " ")})`
+    : "";
 
-  const activeTeams = [...TeamDataNHL.activeTeams, ...TeamDataNFL.activeTeams, ...TeamDataNBA.activeTeams, ...TeamDataMLB.activeTeams]
-  const homeTeamUniqueId = league + '-' + homeTeamId
-  const awayTeamUniqueId = league + '-' + awayTeamId
+  const activeTeams = [
+    ...TeamDataNHL.activeTeams,
+    ...TeamDataNFL.activeTeams,
+    ...TeamDataNBA.activeTeams,
+    ...TeamDataMLB.activeTeams,
+  ];
+  const homeTeamUniqueId = league + "-" + homeTeamId;
+  const awayTeamUniqueId = league + "-" + awayTeamId;
 
-  homeTeamLogo = activeTeams.find((team) => team.uniqueId.includes(homeTeamUniqueId))?.teamLogo
-  awayTeamLogo = activeTeams.find((team) => team.uniqueId.includes(awayTeamUniqueId))?.teamLogo
+  homeTeamLogo = activeTeams.find((team) =>
+    team.uniqueId.includes(homeTeamUniqueId),
+  )?.teamLogo;
+  awayTeamLogo = activeTeams.find((team) =>
+    team.uniqueId.includes(awayTeamUniqueId),
+  )?.teamLogo;
 
-  const hideDate = false
+  const hideDate = false;
 
-  const homeOrAway = selectedTeam ? `card t${teamSelectedId}` : `card awayGame`
-  const logoClass = show && homeTeamLogo && awayTeamLogo ? 'onlyLogo' : ''
+  const homeOrAway = selectedTeam ? `card t${teamSelectedId}` : `card awayGame`;
+  const logoClass = show && homeTeamLogo && awayTeamLogo ? "onlyLogo" : "";
 
-  let cardClass = !!homeTeamId && show ? homeOrAway : 'card unclickable'
+  let cardClass = !!homeTeamId && show ? homeOrAway : "card unclickable";
   if (props.isSelected) {
-    cardClass += ' selected'
+    cardClass += " selected";
   }
 
-  let extBoxClass = show ? 'ext-box' : 'whiteCard'
+  let extBoxClass = show ? "ext-box" : "whiteCard";
 
-  const dateClass = hideDate ? 'cardText hideDate' : 'cardText'
+  const dateClass = hideDate ? "cardText hideDate" : "cardText";
   return (
     <div className={cardClass} onClick={() => onClick(game)}>
       <div className={extBoxClass}>
@@ -96,7 +117,7 @@ const TeamCard = (props: PropsCard) => {
         <p className="cardText arena"> {arenaName}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default TeamCard
+export default TeamCard;

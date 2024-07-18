@@ -1,5 +1,5 @@
-import type { GameFormatted } from './game';
-import type { TeamType } from './team';
+import type { GameFormatted } from "./game";
+import type { TeamType } from "./team";
 
 export interface PropsCards {
   i: number;

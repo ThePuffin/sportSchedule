@@ -1,28 +1,60 @@
-import React, { useEffect, useState } from 'react';
-import type { GameFormatted } from '../../../interface/game.ts';
-import { gamesSelected } from '../../../store/store.js';
-import TeamCard from '../TeamCard/TeamCard.tsx';
+import { useEffect, useState } from "react";
+import type { GameFormatted } from "../../../interface/game.ts";
+import {
+  dateSelected,
+  gamesSelected,
+  teamSelected,
+} from "../../../store/store.js";
+import TeamCard from "../TeamCard/TeamCard.tsx";
 
 const GamesSelected = () => {
   const [games, setGames] = useState([]);
+  const [teamsSelected, setTeamsSelected] = useState(teamSelected.get());
 
   useEffect(() => {
-    gamesSelected.subscribe((newGames: GameFormatted[]) => {
+    gamesSelected.subscribe(async (newGames: GameFormatted[]) => {
       setGames(newGames);
     });
+    teamSelected.subscribe(async (value: string[]) => {
+      setTeamsSelected([...value]);
+      const selectedGames = gamesSelected.get();
 
-    // Cleanup function
-    return () => {
-      // if (subscription) {
-      //   subscription.unsubscribe()
-      // }
-    };
+      const newSelectedGames =
+        selectedGames?.filter((game: GameFormatted) =>
+          value.includes(game.teamSelectedId),
+        ) ?? [];
+
+      setGames(newSelectedGames);
+      gamesSelected.set(newSelectedGames);
+      localStorage.setItem(
+        "gameSelected",
+        newSelectedGames.map((game) => JSON.stringify(game)).join(";"),
+      );
+    });
+
+    dateSelected.subscribe(({ beginingDate, finishingDate }) => {
+      const selectedGames = gamesSelected.get();
+      // fix it
+      const newSelectedGames =
+        selectedGames?.filter(
+          (game: GameFormatted) =>
+            beginingDate <= new Date(game.gameDate) &&
+            new Date(game.gameDate) <= finishingDate,
+        ) ?? [];
+
+      setGames(newSelectedGames);
+      gamesSelected.set(newSelectedGames);
+      localStorage.setItem(
+        "gameSelected",
+        newSelectedGames.map((game) => JSON.stringify(game)).join(";"),
+      );
+    });
   }, []);
 
   if (games.length) {
     return (
       <div>
-        <table style={{ tableLayout: 'fixed', width: '100%' }}>
+        <table style={{ tableLayout: "fixed", width: "100%" }}>
           <tbody>
             <tr>
               {games.map((game) => {

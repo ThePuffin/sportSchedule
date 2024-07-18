@@ -1,4 +1,4 @@
-import { column, defineDb, defineTable } from 'astro:db';
+import { column, defineDb, defineTable } from "astro:db";
 const now = new Date();
 
 export const Teams = defineTable({
@@ -12,7 +12,7 @@ export const Teams = defineTable({
     conferenceName: column.text(),
     divisionName: column.text(),
     league: column.text(),
-    abbrev: column.text({ default: 'no' }),
+    abbrev: column.text({ default: "no" }),
     updateDate: column.text({ default: now.toISOString() }),
   },
 });
@@ -22,18 +22,18 @@ export const Games = defineTable({
     uniqueId: column.text({ primaryKey: true }),
     awayTeamId: column.text(),
     awayTeamShort: column.text(),
-    awayTeam: column.text({ default: '' }),
+    awayTeam: column.text({ default: "" }),
     homeTeamId: column.text(),
     homeTeamShort: column.text(),
-    homeTeam: column.text({ default: '' }),
+    homeTeam: column.text({ default: "" }),
     arenaName: column.text(),
     gameDate: column.text(),
     teamSelectedId: column.text(),
     show: column.boolean(),
     selectedTeam: column.boolean({ default: false }),
     league: column.text(),
-    venueTimezone: column.text({ default: '' }),
-    timeStart: column.text({ default: '' }),
+    venueTimezone: column.text({ default: "" }),
+    timeStart: column.text({ default: "" }),
     updateDate: column.date({ default: now }),
   },
 });

@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { dateSelected } from '../../../../store/store.js';
-import { readableDate } from '../../../../utils/date.js';
-import './DatePickerSelector.css';
+import { useState } from "react";
+import { dateSelected } from "../../../../store/store.js";
+import { readableDate } from "../../../../utils/date.js";
+import "./DatePickerSelector.css";
 
 export default function DatePickerSelector() {
   let { beginingDate, finishingDate, maxSelectable } = dateSelected.get();
@@ -12,7 +12,7 @@ export default function DatePickerSelector() {
     let newStartDate = startDate;
     let newEndDate = endDate;
 
-    if (id === 'startDatePicker') {
+    if (id === "startDatePicker") {
       newStartDate = new Date(value);
     } else {
       newEndDate = new Date(value);
@@ -29,15 +29,15 @@ export default function DatePickerSelector() {
     setEndDate(newEndDate);
 
     // Save the dates in local storage
-    localStorage.setItem('startDate', newStartDate.toString());
-    localStorage.setItem('endDate', newEndDate.toString());
+    localStorage.setItem("startDate", newStartDate.toString());
+    localStorage.setItem("endDate", newEndDate.toString());
 
     dateSelected.set({
       maxSelectable,
       beginingDate: newStartDate,
       finishingDate: newEndDate,
     });
-    document.getElementById('endDatePicker').focus();
+    document.getElementById("endDatePicker").focus();
   };
 
   return (

@@ -1,1 +1,1 @@
- # Welcome to my project: Sport Schedule USa
+# Welcome to my project: Sport Schedule US
