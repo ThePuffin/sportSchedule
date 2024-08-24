@@ -174,8 +174,8 @@ const getEachTeamSchedule = async ({ id, abbrev, value, leagueName }) => {
       const fetchedGames = await fetch(link);
       const fetchGames: MLBGameAPI | NBAGameAPI | NFLGameAPI =
         await fetchedGames.json();
-      games = fetchGames.events?.length ? fetchedGames.events : [];
-      console.log("yes", value);
+      games = fetchGames.events[0] ? fetchedGames : [];
+      console.log("yes", value, games[0]);
     } catch (error) {
       console.log("no", value, error);
       games = [];
