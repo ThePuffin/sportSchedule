@@ -11,12 +11,12 @@
     "lint": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,astro}\" && eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro}\""
   },
   "dependencies": {
-    "@astrojs/check": "^0.7.0",
-    "@astrojs/db": "^0.11.7",
-    "@astrojs/react": "3.6.0",
+    "@astrojs/check": "^0.9.3",
+    "@astrojs/db": "^0.14.1",
+    "@astrojs/react": "^3.6.2",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "astro": "4.11.3",
+    "astro": "^4.15.4",
     "axios": "^1.7.2",
     "eslint-plugin-astro": "^1.2.0",
     "nanostores": "^0.10.3",
