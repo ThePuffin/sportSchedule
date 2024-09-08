@@ -14,14 +14,20 @@ export const getNBASchedule = async () => {
 
 export const filterGamesByTeam = (team, value) => {
   const teamTricodeMap = {
-    SA: 'SAS',
+    GS: 'GSW',
     NO: 'NOP',
+    NY: 'NYK',
+    SA: 'SAS',
     UTAH: 'UTA',
+    WSH: 'WAS',
   };
   const inverseTeamTricodeMap = {
-    SAS: 'SA',
+    GSW: 'GS',
     NOP: 'NO',
+    NYK: 'NY',
+    SAS: 'SA',
     UTA: 'UTAH',
+    WAS: 'WSH',
   };
 
   const teamTricode = teamTricodeMap[team] || team;
