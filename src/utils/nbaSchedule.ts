@@ -50,7 +50,7 @@ export const filterGamesByTeam = (team, value) => {
         const minStart = date.getMinutes();
 
         return {
-          uniqueId: `${teamTricode}${gameCode}`,
+          uniqueId: `${value}${gameCode}`,
           arenaName: arenaName || '',
           awayTeamId: awayAbbrev,
           awayTeam: `${awayTeam.teamCity} ${awayTeam.teamName}`,
