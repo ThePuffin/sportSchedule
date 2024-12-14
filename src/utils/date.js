@@ -4,7 +4,7 @@ export const readableDate = (date) => {
 
 export const isExpiredData = (date) => {
   date = date ?? new Date('2020-02-20');
-  const expirationDay = 0.25;
+  const expirationDay = 1;
   const now = new Date();
   const differenceInMilliseconds = now.getTime() - new Date(date).getTime();
   const differenceInDays = differenceInMilliseconds / (1000 * 60 * 60 * 24);
