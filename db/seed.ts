@@ -27,7 +27,8 @@ export default async function insertTeams() {
   await db.insert(Teams).values(allTeams);
   for (const [team = 'no team', games = []] of Object.entries(lastGames)) {
     if (games?.length) {
-      await db.insert(Games).values(games);
+      const filteredGames = [...new Map(games.map((item) => [item.uniqueId, item])).values()];
+      await db.insert(Games).values(filteredGames);
     } else {
       console.log('No games found for', team);
     }
