@@ -26,7 +26,7 @@ export default async function insertTeams() {
 
   await db.insert(Teams).values(allTeams);
   for (const [team = 'no team', games = []] of Object.entries(lastGames)) {
-    if (games?.length) {
+    if (Array.isArray(games) && games.length > 0) {
       const filteredGames = [...new Map(games.map((item) => [item.uniqueId, item])).values()];
       await db.insert(Games).values(filteredGames);
     } else {
